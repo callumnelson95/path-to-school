@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "nodemon server.js -e js,pug", // runs nodemon to watch for server updates
+    "start": "node server.js" // runs the server without nodemon
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/callumnelson95/path-to-school/issues"
   },
-  "homepage": "https://github.com/callumnelson95/path-to-school#readme"
+  "homepage": "https://github.com/callumnelson95/path-to-school#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consolidate": "^0.15.0",
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "nodemon": "^1.17.2",
+    "path": "^0.12.7",
+    "pug": "^2.0.1",
+    "python-shell": "^0.5.0"
+  }
 }
