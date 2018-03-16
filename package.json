@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon server.js -e js,pug", // runs nodemon to watch for server updates
-    "start": "node server.js" // runs the server without nodemon
+    "watch": "nodemon server.js -e js,pug",
+    "start": "node server.js" 
   },
   "repository": {
     "type": "git",
