@@ -228,6 +228,43 @@ function loadMap(allData) {
 
         })
 
+        function search_for(search_val) {
+
+            var year = $("#yearslider")[0].value;
+            var query = { search: search_val, year: year }
+
+            $.get('/search.json', query, function(res){
+              if(res.length != 0) {
+                showSearchResults(res);
+              }else {
+                alert("Sorry, your search yielded 0 results!");
+              }
+            })
+        }
+
+        function showSearchResults(result) {
+
+            var id_list = [];
+
+            for (var i=0; i < result.length; i++){
+              id_list.push(result[i].school_id);
+            }
+
+            svg.selectAll('.dot').each( function(d) {
+              d3.select(this).attr('opacity', 1);
+            })
+
+            svg.selectAll('.dot').each( function(d) {
+
+              if (id_list.indexOf(d.school_id) == -1){
+                  d3.select(this)
+                    .attr('opacity', 0.05)
+                    .attr('stroke', 'none');
+              }
+            });
+
+        }
+
         function zoomed() {
           svg.attr("transform", d3.event.transform);
           xAxis.scale(d3.event.transform.rescaleX(xScale));
@@ -497,22 +534,4 @@ function showCharacteristics(school_name, data) {
 
 }
 
-function search_for(search_val) {
 
-    var year = $("#yearslider")[0].value;
-    var query = { search: search_val, year: year }
-
-    $.get('/search.json', query, function(res){
-      if(res.length != 0) {
-        showSearchResults(res);
-      }else {
-        alert("Sorry, your search yielded 0 results!");
-      }
-    })
-}
-
-function showSearchResults(result) {
-
-    console.log(result);
-
-}
