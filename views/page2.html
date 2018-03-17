@@ -8,107 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
-
-  <!--Move this styling to separate CSS page when working-->
-  <style type="text/css">
-                    body {
-                      margin: 10px;
-                    }
-                    .main-content {
-                      margin-top: 50px;
-                    }
-                    #map_wrapper {
-                      float: left;
-                      margin-left: 0px;
-                      border-style: solid;
-                      height: 700px;
-                    }
-                    #chart {
-                        margin-left: 0px;
-                        margin-right: 20px;
-                        height: 506px;
-                        margin-bottom: 0px;
-                    }
-                    text {
-                        font: 11px sans-serif;
-                    }
-                    .dot {
-                        stroke: #000;
-                        stroke-width: 1;
-                    }
-
-                    .view {
-                      fill: "none";
-                      stroke: "none";
-                    }
-
-                    #buttons {
-                        border: none;
-                        color: white;
-                        text-align: center;
-                        text-decoration: none;
-                        font-size: 10px;
-                        cursor: pointer;
-                    }
-                    #info {
-                        margin-top: 0px;
-                        margin-left: 80px;
-                        font-size: 18px;
-                        text-decoration: none;
-                        display: inline-block;
-                    }
-                    #school_name {
-                      height: 22px;
-                    }
-                    #graph_wrapper{
-                        float: right;
-                        justify-content: center;
-                        width: 41%;
-                        border-style: solid;
-                        height: 340px;
-                    }
-                    #neighbors_title {
-                        margin-left: 50px;
-                    }
-                    #chars_wrapper{
-                        float: right;
-                        justify-content: center;
-                        margin-top: 15px;
-                        width: 41%;
-                        border-style: solid;
-                        height: 340px;
-                    }
-                    #chars_title {
-                      margin-left: 50px;
-                    }
-                    #sliderwrapper {
-                      margin-top:5px;
-                      width: 100%;
-                      text-align: center;
-                      display: block;
-                    }
-                    #yearslider {
-                      width:30%;
-                    }
-                    #yearlabel {
-                      color: gray;
-                      font-size: 25px;
-                    }
-                    #neighbors_explanation {
-                      font: 11px sans-serif;
-                      margin-left: 285px;
-                    }
-                    #footer {
-                      font: 11px sans-serif;
-                      margin-left: 285px;
-                    }
-
-
-        </style>
+  <link rel="stylesheet" href="../css/page2.css"></link>
 </head>
-<body>
-
-  <nav class="navbar navbar">
+  <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="/">The Path to School Project</a>
@@ -120,17 +22,22 @@
     </div>
   </nav>
   
+  <body>
+  
   <section class="main-content">
-        <div id="map_wrapper">
-          <p id="chart">
-              <div id="info">
-                  <div id = "school_name"><span></span></div>
-                  <div id = "level"><b>Level: </b><span></span> </div>
-                  <div id = "town"><b>Town: </b><span></span> </div>
-                  <div id = "charter_stat"><b>Charter Status: </b><span></span></div>
-              </div>
-              <div id="sliderwrapper">
-                <div id="yearlabel"><span>2002</span></div>
+        <div id="control_wrapper">
+          <div id="buttons">
+            <!--<button id="success">Success (default)</button>
+            <button id="charter">Charter Status</button> 
+            <button id="math">Math Success</button>-->
+            <button id="reset"  type="button" class="btn-lg btn-success">Reset Map</button>
+          </div>
+          <div id="currentyear">
+            <span>Current Year: </span></div>
+          <div id="yearlabel">
+            <span>2002</span>
+          </div>
+            <div id="sliderwrapper">
               <input type="range" min="2002" max="2014" value="2002" id="yearslider" step="1" list="yearsettings">
               <datalist id="volsettings">
                 <option>2002</option>
@@ -147,14 +54,31 @@
                 <option>2013</option>
                 <option>2014</option>
               </datalist>
+            </div>
+          <div id="searchwrapper">
+            <div class="input-group">
+              <input id="search_input" type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button id="search_button" class="btn btn-success" type="button" ><i class="fa fa-search fa-fw"></i> Search</button>
+                  </span>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div id="map_wrapper">
+          <p id="chart">
+              <div id="info">
+                  <div id = "school_name"><span></span></div>
+                  <div id = "level"><b>Level: </b><span></span> </div>
+                  <div id = "town"><b>Town: </b><span></span> </div>
+                  <div id = "charter_stat"><b>Charter Status: </b><span></span></div>
               </div>
-              <div id="buttons">
-                      <button id="success">Success (default)</button>
-                      <button id="charter">Charter Status</button> 
-                      <button id="math">Math Success</button>
-                      <button id="reset">Reset</button>
-              </div>
+              
           </p>
+          <div id="mapdirections">
+            <p>Click and drag to explore. Pinch to zoom.</p>
+          </div>
         </div>
         <div id="graph_wrapper">
           <h4 id="neighbors_title">Nearest Neighbors Success Comparison</h4>

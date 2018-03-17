@@ -7,7 +7,7 @@ $( document ).ready(function() {
 function getMapData() {
 
   $.get('/mapData.json', function(res){
-        console.log(res);
+        //console.log(res);
         loadMap(res);
     });
 }
@@ -163,6 +163,15 @@ function loadMap(allData) {
             $("#reset").trigger("click");
           })
 
+        d3.select("#search_button")
+          .on("click", function() {
+            var search_val = $("#search_input")[0].value;
+            console.log("User searching for " + search_val);
+            
+            search_for(search_val);
+
+          })
+
         // Add a title.
 
         dot.append("title")
@@ -215,7 +224,6 @@ function loadMap(allData) {
 
           getNeighbors(d);
           getCharacteristics(d);
-
 
         })
 
@@ -478,12 +486,30 @@ function showCharacteristics(school_name, data) {
 
   arc.append("title")
     .text(function(d) {
-      var percent = d.data.val.toFixed(2).toString();
+      var percent = parseFloat(d.data.val).toFixed(2).toString();
       var label = d.data.label + ": " + percent + "%";
       return label;
     })
 
   var footer = $("#footer");
   footer.text("Hover over the charts to see more information.");
+
+}
+
+function search_for(search_val) {
+
+    var year = $("#year_label span").value;
+    var query = { search: search_val, year: school.year }
+
+    $.get('/search.json', query, function(res){
+      if(res.length != 0) {
+        showSearchResults(res);
+      }else {
+        alert("Sorry, your search yielded 0 results!");
+      }
+    })
+}
+
+function showSearchResults(result) {
 
 }

@@ -1,0 +1,141 @@
+
+  .main-content {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    zoom: 0.8;
+  }
+  #map_wrapper {
+    float: left;
+    margin-left: 0px;
+    border-style: solid;
+    height: 700px;
+  }
+  #chart {
+      margin-left: 0px;
+      margin-right: 20px;
+      height: 506px;
+      margin-bottom: 0px;
+  }
+  #mapdirections {
+    text-align: center;
+  }
+  text {
+      font: 11px sans-serif;
+  }
+  .dot {
+      stroke: #000;
+      stroke-width: 1;
+  }
+
+  .view {
+    fill: "none";
+    stroke: "none";
+  }
+  #control_wrapper {
+    justify-content: center;
+    border-style: solid;
+    margin-bottom: 10px;
+    height: 75px;
+  }
+  #buttons {
+      padding: 10px;
+      float: left;
+      text-decoration: none;
+      font-size: 10px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      margin-right: 20px
+  }
+  #sliderwrapper {
+    margin-top:25px;
+    text-align: center;
+    justify-content: right;
+    float: left;
+
+  }
+  #yearslider {
+    width: 400px;
+    float: left;
+  }
+
+  #yearlabel {
+    width: 10%;
+    color: black;
+    font-size: 25px;
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+  }
+  #currentyear {
+    color: gray;
+    font-size: 25px;
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+  }
+  #searchwrapper {
+    width: 30%;
+    float: right;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .btn-search {
+    background: #424242;
+    border-radius: 0;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1c1c1c;
+  }
+  .btn-search:link, .btn-search:visited {
+    color: #fff;
+  }
+  .btn-search:active, .btn-search:hover {
+    background: #1c1c1c;
+    color: #fff;
+  }
+
+
+
+  #info {
+      margin-top: 0px;
+      margin-left: 80px;
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-block;
+  }
+  #school_name {
+    height: 22px;
+  }
+  #graph_wrapper{
+      float: right;
+      justify-content: center;
+      width: 41%;
+      border-style: solid;
+      height: 340px;
+  }
+  #neighbors_title {
+      margin-left: 50px;
+  }
+  #chars_wrapper{
+      float: right;
+      justify-content: center;
+      margin-top: 15px;
+      width: 41%;
+      border-style: solid;
+      height: 340px;
+  }
+  #chars_title {
+    margin-left: 50px;
+  }
+  #neighbors_explanation {
+    font: 11px sans-serif;
+    margin-left: 285px;
+  }
+  #footer {
+    font: 11px sans-serif;
+    margin-left: 285px;
+  }
+

@@ -59,7 +59,7 @@ function getMapData(req, res){
 			console.log(error);
 		}
 		else{
-			console.log(result);
+			//console.log(result);
 			res.json(result);
 			console.log("Map data loaded to client!");
 		}
@@ -69,15 +69,16 @@ function getMapData(req, res){
 app.get('/neighbors.json', nearestNeighbors);
 
 function nearestNeighbors(req, res) {
-  	console.log(req);
+  	
+  	console.log("nearest neighbors data loading");
   	var school_id = req.query.id;
   	var year = req.query.y;
   	console.log(school_id);
   	console.log(year);
 
-	var query = "SELECT * FROM neighbors WHERE school_id=$1 and year=$2";
+	var query = "SELECT * FROM neighbors WHERE school_id = ? and year = ?";
 
-	conn.query(query, [school_id, year], function(error, result) {
+	con.query(query, [school_id, year], function(error, result) {
 		if (error != null){
 			console.log(error);
 		}
@@ -91,15 +92,16 @@ app.get('/neighbors_info.json', neighborsInfo);
 
 function neighborsInfo(req, res) {
 
-	console.log(req);
+	console.log("Neighbors info requested");
+	var n = req.query;
 
 	var query = "SELECT DISTINCT b.school_id, b.school, b.town, s.success, s.year \
 					FROM success s LEFT JOIN basic b \
 					ON s.school_id = b.school_id \
-					WHERE s.year = $1 AND (s.school_id = $2 OR s.school_id = $3 OR s.school_id = $4 OR s.school_id = $5 \
-					OR s.school_id = $6 OR s.school_id = $7 OR s.school_id = $8 \
-					OR s.school_id = $9 OR s.school_id = $10 OR s.school_id = $11 \
-					OR s.school_id = $12) \
+					WHERE s.year = ? AND (s.school_id = ? OR s.school_id = ? OR s.school_id = ? OR s.school_id = ? \
+					OR s.school_id = ? OR s.school_id = ? OR s.school_id = ? \
+					OR s.school_id = ? OR s.school_id = ? OR s.school_id = ? \
+					OR s.school_id = ?) \
 					ORDER BY s.success asc;"
 
 	con.query(query, [n.year, n.school_id, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9, n.n10, n.n11], function(error, result) {
@@ -113,8 +115,29 @@ function neighborsInfo(req, res) {
 	})
 }
 
-
 app.get('/school_chars.json', getCharacteristics);
+
+function getCharacteristics(req, res) {
+
+	console.log("School characteristics requested");
+	var n = req.query;
+
+	var query = "SELECT * FROM basic b INNER JOIN racegender r ON b.school_id=r.school_id \
+				 INNER JOIN teachers t ON b.school_id = t.school_id INNER JOIN selectedpopulation s \
+				 ON b.school_id = s.school_id \
+				 WHERE b.school_id = ? AND b.year = ? AND r.year = ? and \
+				 s.year = ? and t.year = ?;"
+
+	con.query(query, [n.id, n.y, n.y, n.y, n.y], function(error, result) {
+
+		if (error){
+			console.log(error);
+		}
+		else{
+			res.json(result);
+		}
+	})
+}
 
 app.get('/grab_data.json', grab_data);
 
@@ -134,13 +157,34 @@ function grab_data(req, res) {
 	});
 }
 
+app.get('/search.json', search_results);
+
+function search_results(req, res) {
+
+	var n = req.query;
+
+	var query = "SELECT DISTINCT m.school_id FROM mapdata m WHERE m.year = ? \
+				AND m.school LIKE '%?%' OR m.town LIKE '%?%';"
+
+	con.query(query, [n.year, n.search, n.search], function(error, result) {
+
+		if (error){
+			console.log(error);
+		}
+		else{
+			console.log(result);
+			//res.json(result);
+		}
+	})
+}
+
 // start up the server
-app.listen(8080, function () {
+app.listen(8080, function (error, response) {
     if (error != null){
 		console.log("Error: " + error);
 	}
 	else {
-		console.log('listening on http://localhost:8080/');
+		console.log('listening on http://localhost:8080');
 	}
 
 });
