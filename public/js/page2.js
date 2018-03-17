@@ -166,6 +166,7 @@ function loadMap(allData) {
         d3.select("#search_button")
           .on("click", function() {
             var search_val = $("#search_input")[0].value;
+            
             console.log("User searching for " + search_val);
             
             search_for(search_val);
@@ -498,8 +499,8 @@ function showCharacteristics(school_name, data) {
 
 function search_for(search_val) {
 
-    var year = $("#year_label span").value;
-    var query = { search: search_val, year: school.year }
+    var year = $("#yearslider")[0].value;
+    var query = { search: search_val, year: year }
 
     $.get('/search.json', query, function(res){
       if(res.length != 0) {
@@ -511,5 +512,7 @@ function search_for(search_val) {
 }
 
 function showSearchResults(result) {
+
+    console.log(result);
 
 }

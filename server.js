@@ -162,18 +162,21 @@ app.get('/search.json', search_results);
 function search_results(req, res) {
 
 	var n = req.query;
+	var search = '%' + n.search + '%';
 
 	var query = "SELECT DISTINCT m.school_id FROM mapdata m WHERE m.year = ? \
-				AND m.school LIKE '%?%' OR m.town LIKE '%?%';"
+				AND m.school LIKE ? OR m.town LIKE ?;"
 
-	con.query(query, [n.year, n.search, n.search], function(error, result) {
+	console.log("User searching for " + search + "in year " + n.year);
+
+	con.query(query, [n.year, search, search], function(error, result) {
 
 		if (error){
 			console.log(error);
 		}
 		else{
 			console.log(result);
-			//res.json(result);
+			res.json(result);
 		}
 	})
 }
