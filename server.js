@@ -9,6 +9,7 @@ var app = express();
 app.engine('html', engines.hogan);
 app.set('views', './views');
 app.set('view engine', 'html');
+app.use(express.static(path.join(__dirname, 'public')));
  
 // GET response for '/'
 app.get('/', function (req, res) {
@@ -38,12 +39,25 @@ var con = mysql.createConnection({
 
 con.connect(function(err) {
   if (err) throw err;
-  console.log("Connected!");
-  con.query("SELECT * FROM basic_info", function (err, result, fields) {
-    if (err) throw err;
-    console.log(result);
-  });
+  console.log("Connected to Database!");
 });
+
+app.get('/grab_data.json', grab_data);
+
+function grab_data(req, res) {
+
+	var query = "SELECT * FROM basic_info WHERE Home_room='Denver'";
+
+	con.query(query, function(error, result) {
+		if (error != null){
+			console.log(error);
+		}
+		else{
+			res.json(result);
+			console.log("Data sent to client!");
+		}
+	});
+}
 
 // start up the server
 app.listen(8080, function () {

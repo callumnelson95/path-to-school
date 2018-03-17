@@ -7,23 +7,46 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body, html {
+      height: 100%;
+    }
+    .navbar{
+       margin-bottom: 0!important;
+    }
+
+    .bg { 
+      /* The image used */
+      background-image: url("../css/skyline.jpeg");
+
+      /* Full height */
+      height: 95%; 
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">The Path to School Project</a>
       </div>
       <ul class="nav navbar-nav">
-        <li><a href="/page1.html">Page 1</a></li>
-        <li><a href="/page2.html">Page 2</a></li>
+        <li><a href="/page1.html">Data Viewer</a></li>
+        <li><a href="/page2.html">Maps</a></li>
       </ul>
     </div>
   </nav>
 
-  <button id="data_grabber" type="button" class="btn btn-primary btn-lg">Grab some data</button>
+  <div class="bg">
+  </div>
 
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="../js/index.js"></script>
 </body>
 </html>
