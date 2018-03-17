@@ -18,6 +18,8 @@ app.get('/', function (req, res) {
 
 });
 
+//Page requests
+
 app.get('/page1.html', function(request, response){
 	console.log('page1 requested');
 	response.render('page1.html');
@@ -37,24 +39,55 @@ var con = mysql.createConnection({
   database: "mydb"
 });
 
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected to Database!");
-});
+//Connect to database
+con.connect();
 
-app.get('/grab_data.json', grab_data);
 
-function grab_data(req, res) {
+//Data requests
+app.get('/mapData.json', getMapData);
 
-	var query = "SELECT * FROM basic_info WHERE Home_room='Denver'";
+function getMapData(req, res){
+
+	console.log("Request for map data received!");
+
+	var query = "SELECT * FROM basic \
+					INNER JOIN success \
+					ON basic.school_id = success.school_id\
+					AND basic.year = success.year\
+					INNER JOIN enrollments\
+					ON basic.school_id = enrollments.school_id\
+					AND basic.year = enrollments.year\
+					INNER JOIN neighbors\
+					ON basic.school_id = neighbors.school_id\
+					AND basic.year = neighbors.year;"
 
 	con.query(query, function(error, result) {
 		if (error != null){
 			console.log(error);
 		}
 		else{
+			console.log(result);
 			res.json(result);
-			console.log("Data sent to client!");
+			console.log("Map data loaded to client!");
+		}
+	});
+}
+
+
+app.get('/grab_data.json', grab_data);
+
+function grab_data(req, res) {
+
+	var query = "SELECT * FROM basic_info WHERE Home_room='Denver";
+
+	con.query(query, function(error, result) {
+		if (error != null){
+			console.log(error);
+		}
+		else{
+			console.log(result);
+			//res.json(result);
+			//console.log("Data sent to client!");
 		}
 	});
 }
