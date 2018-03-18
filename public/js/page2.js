@@ -202,7 +202,7 @@ function loadMap(allData) {
                       //Reset from last nearest neighbors
                       svg.selectAll('.dot').each( function(d) {
                         if (d.school_id == clicked_id){
-                            d3.select(this).attr('fill', 'Gold');
+                            d3.select(this).attr('fill', 'palegreen');
                           }
 
                         else if (id_list.indexOf(d.school_id) == -1){
@@ -297,7 +297,7 @@ function loadMap(allData) {
           //Reset from last nearest neighbors
           svg.selectAll('.dot').each( function(d) {
             if (d.school_id == clicked_id){
-                d3.select(this).attr('fill', 'Gold');
+                d3.select(this).attr('fill', 'palegreen');
               }
 
             else if (id_list.indexOf(d.school_id) == -1){
