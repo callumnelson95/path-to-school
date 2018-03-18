@@ -187,22 +187,29 @@ function loadMap(allData) {
 
                   dot.on("click", function(d){
 
-                    dot.attr("opacity", 1);
+                    $("#reset").trigger("click");
 
-                    console.log(d);
-                    var school_id = d.school_id;
-                    var id_list = [school_id, d.n1, d.n2, d.n3, d.n4, d.n5, d.n6, d.n7, d.n8, d.n9, d.n10];
-                    console.log("This is the list of neighbors!");
-                    console.log(id_list);
+                      dot.attr("opacity", 1);
 
-                    //Reset from last nearest neighbors
-                    svg.selectAll('.dot').each( function(d) {
+                      var clicked_id = d.school_id;
 
-                      if (id_list.indexOf(d.school_id) == -1){
-                          d3.select(this)
-                            .attr('opacity', 0.05)
-                            .attr('stroke', 'none');
-                      }
+                      //console.log(d);
+                      var school_id = d.school_id;
+                      var id_list = [school_id, d.n1, d.n2, d.n3, d.n4, d.n5, d.n6, d.n7, d.n8, d.n9, d.n10];
+                      console.log("This is the list of neighbors!");
+                      console.log(id_list);
+
+                      //Reset from last nearest neighbors
+                      svg.selectAll('.dot').each( function(d) {
+                        if (d.school_id == clicked_id){
+                            d3.select(this).attr('fill', 'Gold');
+                          }
+
+                        else if (id_list.indexOf(d.school_id) == -1){
+                            d3.select(this)
+                              .attr('opacity', 0.05)
+                              .attr('stroke', 'none');
+                        }
                     });
 
                     getNeighbors(d);
@@ -227,21 +234,11 @@ function loadMap(allData) {
                     return color(d);
                   })
             })*/
+        //Changing year slider is basically a reset
         d3.select("#yearslider")
           .on("click", function() {
-
             current_year = this.value;
             year_label.text(current_year);
-            /*data = allData.filter(function(d) {
-              return d.year == current_year;
-            });
-            data = data.sort(order);
-            dot.data(data)
-              .attr("fill", function(d) {
-                return color(d);
-            })
-              .call(position);*/
-            //Reset on any slider change
             $("#reset").trigger("click");
           })
 
@@ -254,7 +251,6 @@ function loadMap(allData) {
             search_for(search_val);
 
           })
-
 
         dot.append("title")
           .text(function(d) {
@@ -286,9 +282,13 @@ function loadMap(allData) {
 
         dot.on("click", function(d){
 
+          $("#reset").trigger("click");
+
           dot.attr("opacity", 1);
 
-          console.log(d);
+          var clicked_id = d.school_id;
+
+          //console.log(d);
           var school_id = d.school_id;
           var id_list = [school_id, d.n1, d.n2, d.n3, d.n4, d.n5, d.n6, d.n7, d.n8, d.n9, d.n10];
           console.log("This is the list of neighbors!");
@@ -296,8 +296,11 @@ function loadMap(allData) {
 
           //Reset from last nearest neighbors
           svg.selectAll('.dot').each( function(d) {
+            if (d.school_id == clicked_id){
+                d3.select(this).attr('fill', 'Gold');
+              }
 
-            if (id_list.indexOf(d.school_id) == -1){
+            else if (id_list.indexOf(d.school_id) == -1){
                 d3.select(this)
                   .attr('opacity', 0.05)
                   .attr('stroke', 'none');
