@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+}
+.navbar{
+   margin-bottom: 0;
+}
+.bg { 
+  /* The image used */
+  background-image: url("../css/skyline.jpeg");
+
+  /* Full height */
+  height: 93%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-content h1 {
+    top:30%;
+    left:42%;
+    position: absolute;
+    color: white;
+    font-size: 80;
+}
+
+.title-content h3 {
+    top: 40%;
+    left:30%;
+    position: absolute;
+    color: white;
+    font-size: 80;
+}
+
+.title-content h6 {
+    top: 90%;
+    left: 5%;
+    position: absolute;
+    color: white;
+    font-size: 80;
+}

@@ -139,24 +139,6 @@ function getCharacteristics(req, res) {
 	})
 }
 
-app.get('/grab_data.json', grab_data);
-
-function grab_data(req, res) {
-
-	var query = "SELECT * FROM basic_info WHERE Home_room='Denver'";
-
-	con.query(query, function(error, result) {
-		if (error != null){
-			console.log(error);
-		}
-		else{
-			console.log(result);
-			res.json(result);
-			console.log("Data sent to client!");
-		}
-	});
-}
-
 app.get('/search.json', search_results);
 
 function search_results(req, res) {
