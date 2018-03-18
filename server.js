@@ -123,10 +123,9 @@ function getCharacteristics(req, res) {
 	var n = req.query;
 
 	var query = "SELECT * FROM basic b INNER JOIN racegender r ON b.school_id=r.school_id \
-				 INNER JOIN teachers t ON b.school_id = t.school_id INNER JOIN selectedpopulation s \
-				 ON b.school_id = s.school_id \
+				 INNER JOIN selectedpopulation s ON b.school_id = s.school_id \
 				 WHERE b.school_id = ? AND b.year = ? AND r.year = ? and \
-				 s.year = ? and t.year = ?;"
+				 s.year = ?;"
 
 	con.query(query, [n.id, n.y, n.y, n.y, n.y], function(error, result) {
 

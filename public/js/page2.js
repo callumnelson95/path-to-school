@@ -38,7 +38,7 @@ function loadMap(allData) {
         school_name = d3.select("#school_name span"),
         year_label = d3.select("#yearlabel span");
 
-    var current_year = 2002,
+    var current_year = 2017,
         color_metric = "success";
 
         var data = allData.filter(function(d) {
@@ -218,8 +218,15 @@ function loadMap(allData) {
                   })
 
             });
-
-        /*d3.select("#math")
+        d3.select("#charter")
+            .on("click", function(d,i) {
+                dot.data(data)
+                  .attr("fill", function(d) {
+                    color_metric = "charter"
+                    return color(d);
+                  })
+            })
+        d3.select("#math")
             .on("click", function(d,i) {
                 dot.data(data)
                   .attr("fill", function(d) {
@@ -233,7 +240,7 @@ function loadMap(allData) {
                     color_metric = "english"
                     return color(d);
                   })
-            })*/
+            })
         //Changing year slider is basically a reset
         d3.select("#yearslider")
           .on("click", function() {
@@ -375,13 +382,13 @@ function loadMap(allData) {
         function color(d) {
 
             if(color_metric == "success") {
-              return colorScale(d.success);
+              return colorScale(+d.success);
             } else if (color_metric == "math") {
-              return colorScale(d.math_success);
+              return colorScale(+d.math_success);
             } else if (color_metric == "charter") {
-              return colorScale2(d.charter);
+              return colorScale2(+d.charter);
             } else {
-              return colorScale(d.ela_success);
+              return colorScale(+d.ela_success);
             }
         }
         function key(d) {

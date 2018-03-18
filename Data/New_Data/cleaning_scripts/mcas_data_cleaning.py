@@ -6,6 +6,15 @@ mcas_raw_data = "../NextGenMCAS17.csv"
 mcas_cleaned = "../mcas_cleaned.csv" 
 
 
+def scale(x):
+	A = 462.4
+	B = 522.4
+
+	y = 1 + ((x - A)*(10 - 1))/(B - A)
+
+	return y
+
+
 with open(mcas_raw_data, 'r', encoding='utf-8') as file:
 	csv_reader = csv.DictReader(file)
 
@@ -39,17 +48,15 @@ with open(mcas_raw_data, 'r', encoding='utf-8') as file:
 			sid = key 
 			year = 2017
 
-			math_success = float(math_dict[key])
+			math_success = scale(float(math_dict[key]))
 
 			try:
-				ela_success = float(ela_dict[key])
-				success = numpy.mean([ela_success, math_success])
+				ela_success = scale(float(ela_dict[key]))
+				success = float(numpy.mean([ela_success, math_success]))
 			except KeyError:
 				ela_success = None
 				success = math_success
 
-			
-			
 
 			new_row = [sid, year, success, ela_success, math_success]
 
@@ -57,7 +64,7 @@ with open(mcas_raw_data, 'r', encoding='utf-8') as file:
 
 			i+=1
 
-			print(i)
+		print(i)
 
 
 

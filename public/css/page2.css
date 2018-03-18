@@ -55,12 +55,12 @@
 
   }
   #yearslider {
-    width: 400px;
+    width: 350px;
     float: left;
   }
 
   #yearlabel {
-    width: 10%;
+    width: 5%;
     color: black;
     font-size: 25px;
     float: left;
