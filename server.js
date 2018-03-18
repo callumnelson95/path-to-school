@@ -165,7 +165,7 @@ function search_results(req, res) {
 	var search = '%' + n.search + '%';
 
 	var query = "SELECT DISTINCT m.school_id FROM mapdata m WHERE m.year = ? \
-				AND m.school LIKE ? OR m.town LIKE ?;"
+				AND (m.school LIKE ? OR m.town LIKE ?);"
 
 	console.log("User searching for " + search + "in year " + n.year);
 

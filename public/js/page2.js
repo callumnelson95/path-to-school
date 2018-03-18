@@ -41,7 +41,7 @@ function loadMap(allData) {
     var current_year = 2002,
         color_metric = "success";
 
-        data = allData.filter(function(d) {
+        var data = allData.filter(function(d) {
           // we're only using one year for now
           return d.year == current_year;
         })
@@ -50,13 +50,13 @@ function loadMap(allData) {
           return b.total - a.total;
         });
 
-
         var svg = d3.select("#chart").append("svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
           .append("g")
           .attr("transform", "translate(" + margin.left + "," + 10 + ")");
             
+        var i = 1;
         var dot = svg.append("g")
             .attr("class", "dots")
           .selectAll("class", "dot")
@@ -66,7 +66,7 @@ function loadMap(allData) {
             .attr("class", "dot")
             .call(position)
             .attr("fill", function(d) {
-             return color(d);
+              return color(d);
             });
 
         var zoom = d3.zoom()
@@ -123,14 +123,96 @@ function loadMap(allData) {
                 var title = $("#chars_title");
                 title.text("School Characteristics:");
 
+                //I think that schools are missing because they don't get added
+                //Every time a reset happens. I think that we need to delete
+                //all the dots and reset them each time? Is that too much work?
+
+                svg.selectAll(".dot").remove();
+
+                current_year = $("#yearslider")[0].value;
+                data = allData.filter(function(d) {
+                  return d.year == current_year;
+                });
+
+                data = data.sort(order);
+
+                var i = 1;
+                dot = svg.append("g")
+                  .attr("class", "dots")
+                .selectAll("class", "dot")
+                  .data(data)
+                .enter()
+                  .append("circle")
+                  .attr("class", "dot")
+                  .call(position)
+                  .attr("fill", function(d) {
+                    i++;
+                    return color(d);
+                  });
+                  console.log(i);
+
                 //Reset dot colors
-                dot.data(data)
+                /*dot.data(data)
                   .attr("opacity", 1)
                   .attr("fill", function(d) {
                     return color(d);
-                  })});
+                  })*/
+                  dot.append("title")
+                    .text(function(d) {
+                      return d.name;
+                    })
 
-        d3.select("#math")
+                  dot.on("mouseover", function(d) {
+                    level.text(d.level)
+                    town.text(d.town)
+                    charter_stat.text(function(){
+                      if (d.charter == 0){
+                        return "No";
+                      }else{
+                        return "Yes";
+                      }
+                    })
+                    school_name.text(d.school)
+                    d3.select(this).style('stroke', '#84c9ae')
+                  })
+
+                  dot.on("mouseout", function(d) {
+                    level.text("")
+                    town.text("")
+                    charter_stat.text("")
+                    school_name.text("")
+                    d3.select(this).style('stroke', '#000')
+                  })
+
+
+                  dot.on("click", function(d){
+
+                    dot.attr("opacity", 1);
+
+                    console.log(d);
+                    var school_id = d.school_id;
+                    var id_list = [school_id, d.n1, d.n2, d.n3, d.n4, d.n5, d.n6, d.n7, d.n8, d.n9, d.n10];
+                    console.log("This is the list of neighbors!");
+                    console.log(id_list);
+
+                    //Reset from last nearest neighbors
+                    svg.selectAll('.dot').each( function(d) {
+
+                      if (id_list.indexOf(d.school_id) == -1){
+                          d3.select(this)
+                            .attr('opacity', 0.05)
+                            .attr('stroke', 'none');
+                      }
+                    });
+
+                    getNeighbors(d);
+                    getCharacteristics(d);
+
+                  })
+
+            });
+
+        /*d3.select("#math")
             .on("click", function(d,i) {
                 dot.data(data)
                   .attr("fill", function(d) {
@@ -144,21 +226,21 @@ function loadMap(allData) {
                     color_metric = "english"
                     return color(d);
                   })
-            })
+            })*/
         d3.select("#yearslider")
           .on("click", function() {
-            current_year = this.value
+
+            current_year = this.value;
             year_label.text(current_year);
-            data = allData.filter(function(d) {
+            /*data = allData.filter(function(d) {
               return d.year == current_year;
             });
-            data = data.sort(order)
+            data = data.sort(order);
             dot.data(data)
               .attr("fill", function(d) {
-              return color(d);
+                return color(d);
             })
-              .call(position);
-
+              .call(position);*/
             //Reset on any slider change
             $("#reset").trigger("click");
           })
@@ -173,7 +255,6 @@ function loadMap(allData) {
 
           })
 
-        // Add a title.
 
         dot.append("title")
           .text(function(d) {
@@ -249,6 +330,7 @@ function loadMap(allData) {
             for (var i=0; i < result.length; i++){
               id_list.push(result[i].school_id);
             }
+            console.log(id_list);
 
             svg.selectAll('.dot').each( function(d) {
               d3.select(this).attr('opacity', 1);
@@ -307,8 +389,7 @@ function loadMap(allData) {
         d3.select("#chart").call(zoom);
 
         function position(dot) {
-          dot.attr("cx", function(d) {
-            return xScale(x(d)); })
+          dot.attr("cx", function(d) { return xScale(x(d)); })
               .attr("cy", function(d) { return yScale(y(d)); })
               .attr("r", function(d) { return radiusScale(radius(d)); });
         }
