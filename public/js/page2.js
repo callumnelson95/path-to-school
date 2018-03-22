@@ -15,7 +15,7 @@ function getMapData() {
 function loadMap(allData) {
 
   // Chart dimensions
-    var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5};
+    var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 3.5};
     var width = 960 - margin.right;
     var height = 500 - margin.top - margin.bottom;
     var startColor = '#ce473d';
