@@ -250,8 +250,13 @@ function loadMap(allData) {
         d3.select("#yearslider")
           .on("click", function() {
             current_year = this.value;
-            year_label.text(current_year);
-            $("#reset").trigger("click");
+            if (current_year == 2015 || current_year == 2016){
+              alert("Sorry! MCAS data is not available for 2015 or 2016. Please select a different year.")
+            }
+            else{
+              year_label.text(current_year);
+              $("#reset").trigger("click");
+            }
           })
 
         d3.select("#search_button")

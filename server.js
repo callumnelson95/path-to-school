@@ -20,14 +20,14 @@ app.get('/', function (req, res) {
 
 //Page requests
 
-app.get('/page1.html', function(request, response){
-	console.log('page1 requested');
-	response.render('page1.html');
+app.get('/about.html', function(request, response){
+	console.log('about page requested');
+	response.render('about.html');
 });
 
-app.get('/page2.html', function(request, response){
-	console.log('page2 requested');
-	response.render('page2.html');
+app.get('/map.html', function(request, response){
+	console.log('map page requested');
+	response.render('map.html');
 });
 
 var mysql = require('mysql');
