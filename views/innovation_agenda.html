@@ -7,7 +7,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="http://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://d3js.org/d3-queue.v2.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../css/agenda.css">
+  <script src="../data/cambridge_neighborhoods.json"></script>
+  <script src="../data/schools.json"></script>
 </head>
 <body>
 
@@ -19,10 +24,27 @@
     <ul class="nav navbar-nav">
       <li><a href="/about.html">About</a></li>
       <li><a href="/map.html">MA School Success</a></li>
-      <li class="active"><a href="/agenda.html">The Innovation Agenda</a></li>
+      <li class="active"><a href="/innovation_agenda.html">The Innovation Agenda</a></li>
     </ul>
   </div>
 </nav>
+
+<div class="container" id="main-content">
+  <div class="col-lg-7" id="leftpane">
+    <div id="label_wrapper">
+      <h3>Cambridge Schools</h3>
+      <h4></h4>
+    </div>
+    <div id="map_wrapper">
+      <p id="map"></p>
+    </div>
+  </div>
+  <div class="col-lg-5" id="rightpane">
+    <p>On March 15, 2011, the members of the Cambridge school committee voted 6-1 to end the city's use of K-8 schools and to approve the implementation of four middle schools (grades 6-8), a reform which was officially called the "Innovation Agenda." The primary reason for doing so was that the K-8 schools as they existed were highly inequitable. This inequity led to disparities in many student outcomes between different racial and economic demographic groups. While the plan for school restructuring aimed to correct these outcomes, it provoked controversy throughout the city.  My paper seeks to place Cambridge's decision to restructure its middle grades into both the larger educational discussion and historical context of such school reform. In doing so, it explores: the factors behind the Cambridge's restructuring from K-8 schools to middle schools; the degree to which the restructuring has been successful; how success is being measured in Cambridge; and how this instance of restructuring can help to inform the national conversation about the topic. The paper also works to uncover the process by which the middle schools were decided upon, as well as the effects that the new system has had on the Cambridge public middle grades education in the five years since its inception. For primary evidence, I interviewed middle grades teachers in Cambridge who have worked in both the K-8 and middle school systems. </p>
+  </div>
+  
+</div>
+
 
 
 <script type="text/javascript" src="../js/agenda.js"></script>

@@ -1,0 +1,36 @@
+#main-content {
+	margin-top: 20px;
+	padding: 0;
+}
+
+#leftpane {
+	border: solid;
+	height: 100%;
+}
+
+#label_wrapper h3{
+	float: left;
+}
+
+#label_wrapper h4{
+	float:right;
+}
+
+h4 {
+	height: 20px;
+}
+
+#rightpane {
+	border: solid;
+	height: 100%;
+	padding: 20px;
+}
+
+.neighborhoods {
+	stroke-linejoin: miter;
+	stroke: black;
+}
+
+.neighborhoods:hover {
+	fill: blue;
+}
