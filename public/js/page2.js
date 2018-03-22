@@ -54,7 +54,7 @@ function loadMap(allData) {
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
           .append("g")
-          .attr("transform", "translate(" + margin.left + "," + 10 + ")");
+          .attr("transform", "translate(" + margin.left + "," + 30 + ")");
             
         var i = 1;
         var dot = svg.append("g")
@@ -114,6 +114,7 @@ function loadMap(allData) {
 
                 //reset zoom
                 d3.select("#chart").call(zoom.transform, d3.zoomIdentity);
+                svg.attr("transform", "translate(" + margin.left + "," + 30 + ")");
 
                 //Reset neighbors graph and characteristics diagrams
                 var chars_selector = $(".chars");
@@ -191,7 +192,7 @@ function loadMap(allData) {
 
                   dot.on("click", function(d){
 
-                    $("#reset").trigger("click");
+                      $("#reset").trigger("click");
 
                       dot.attr("opacity", 1);
 
