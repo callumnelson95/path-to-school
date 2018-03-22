@@ -30,6 +30,11 @@ app.get('/map.html', function(request, response){
 	response.render('map.html');
 });
 
+app.get('/innovation_agenda.html', function(request, response){
+	console.log('innovation_agenda page requested');
+	response.render('innovation_agenda.html');
+});
+
 var mysql = require('mysql');
 
 var con = mysql.createConnection({

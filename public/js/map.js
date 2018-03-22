@@ -14,6 +14,9 @@ function getMapData() {
 
 function loadMap(allData) {
 
+    //Pseudo global variables
+    var previous_slider_year = $("#yearslider")[0].value;
+
   // Chart dimensions
     var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 3.5};
     var width = 960 - margin.right;
@@ -251,10 +254,12 @@ function loadMap(allData) {
           .on("click", function() {
             current_year = this.value;
             if (current_year == 2015 || current_year == 2016){
-              alert("Sorry! MCAS data is not available for 2015 or 2016. Please select a different year.")
+              alert("Sorry! MCAS data is not available for 2015 or 2016. Please select a different year.");
+              $("#yearslider")[0].value = previous_slider_year;
             }
             else{
               year_label.text(current_year);
+              previous_slider_year = current_year;
               $("#reset").trigger("click");
             }
           })
