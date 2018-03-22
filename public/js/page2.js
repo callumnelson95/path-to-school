@@ -111,6 +111,10 @@ function loadMap(allData) {
             })
         d3.select("#reset")
             .on("click", function(d,i) {
+
+                //reset zoom
+                d3.select("#chart").call(zoom.transform, d3.zoomIdentity);
+
                 //Reset neighbors graph and characteristics diagrams
                 var chars_selector = $(".chars");
                 chars_selector.empty();
@@ -362,9 +366,10 @@ function loadMap(allData) {
           xAxis.scale(d3.event.transform.rescaleX(xScale));
           yAxis.scale(d3.event.transform.rescaleY(yScale));
           svg.selectAll('.dot').each( function(d) {
-            d3.select(this).attr('r', radiusScale(d.total) / d3.event.transform.k);
+            d3.select(this).attr('r', radiusScale(d.total) / d3.event.transform.k)
+              .style('stroke-width', 1 / d3.event.transform.k);
           });
-          svg.selectAll('.dot').style('stroke-width', 1 / d3.event.transform.k);
+          //svg.selectAll('.dot').style('stroke-width', 1 / d3.event.transform.k);
         }
 
         function x(d) {
