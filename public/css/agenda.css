@@ -12,16 +12,17 @@
 	float: left;
 }
 
-#label_wrapper h4{
+#label_wrapper div{
+	height: 40px;
+	margin-top: 20px;
 	float:right;
-}
-
-h4 {
-	height: 20px;
+	align-content: right
 }
 
 #rightpane {
-	border: solid;
+	border-top: solid;
+	border-right: solid;
+	border-bottom: solid;
 	height: 100%;
 	padding: 20px;
 }

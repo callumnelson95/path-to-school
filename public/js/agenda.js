@@ -32,7 +32,7 @@ function drawBeforeMap(){
 	    .scale(mapScale)
 	    .rotate( [latitude,0] )
 	    .center( [0, longitude] )
-	    .translate( [width/2, height/1.9] );
+	    .translate( [width/2, height/1.85] );
 
 	// Create GeoPath function that uses built-in D3 functionality to turn
 	// lat/lon coordinates into screen coordinates
@@ -60,6 +60,7 @@ function drawBeforeMap(){
 
 	school.on("click", function(d){
 		d3.select("h4").text(d.properties.SITE_NAME);
+		d3.select("h5").text(d.properties.ADDRESS);
 		d3.select(this).attr("class","incident hover");
 	});
 
