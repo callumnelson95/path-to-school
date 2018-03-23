@@ -3,9 +3,17 @@
 	padding: 0;
 }
 
+#control_panel {
+	margin-bottom: 10px;
+}
+
 #leftpane {
 	border: solid;
 	height: 100%;
+}
+
+#rightpane {
+
 }
 
 #label_wrapper h3{

@@ -49,7 +49,6 @@ con.connect(function(err) {
   console.log("Connected to Database!");
 });
 
-
 //Data requests
 app.get('/mapData.json', getMapData);
 

@@ -12,6 +12,7 @@
   <script src="https://d3js.org/d3-queue.v2.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../css/agenda.css">
   <script src="../data/cambridge_neighborhoods.json"></script>
+  <script src="../data/buildings.json"></script>
   <script src="../data/schools.json"></script>
 </head>
 <body>
@@ -30,6 +31,14 @@
 </nav>
 
 <div class="container" id="main-content">
+  <div class="col-lg-5" id="control_panel">
+    <button id="before_button" type="button" class="btn btn-primary btn-block active">Before Innovation Agenda (Pre-2012)</button>
+  </div>
+  <div class="col-lg-2" id="control_panel">
+  </div>
+  <div class="col-lg-5" id="control_panel">
+    <button id="after_button" type="button" class="btn btn-info btn-block">After Innovation Agenda (Post-2012)</button>
+  </div>
   <div class="col-lg-7" id="leftpane">
     <div id="label_wrapper">
       <h3>Cambridge Schools</h3>
