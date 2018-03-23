@@ -43,3 +43,25 @@
 .neighborhoods:hover {
 	fill: blue;
 }
+
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 14px;
+  text-align: center;
+}
+
+#key {
+	border: solid;
+	border-width: 0.5px;
+	height: 40px;
+	width: 95%;
+	margin-left: 12px;
+	margin-bottom: 15px;
+	margin-top: 0px;
+}
+

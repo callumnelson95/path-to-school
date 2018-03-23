@@ -24,7 +24,7 @@ $( document ).ready(function() {
 function drawMap(current_data){
 
 	var width = 650;
-	var height = 500;
+	var height = 475;
 
 	// Create SVG
 	var svg = d3.select("#map")
@@ -37,6 +37,11 @@ function drawMap(current_data){
 		//.translateExtent([[-100, -100], [width + 90, height + 100]])
 		.on("zoom", zoomed);
 
+	//Add tooltip to hover over basically whatever I want
+	var tooltip = d3.select("#map")
+		.append("div")
+		.attr("class", "toolTip");
+
 	// Append empty placeholder g element to the SVG
 	// g will contain geometry elements
 	var g = svg.append("g");
@@ -45,7 +50,7 @@ function drawMap(current_data){
 	    .scale(mapScale)
 	    .rotate( [latitude,0] )
 	    .center( [0, longitude] )
-	    .translate( [width/2, height/1.85] );
+	    .translate( [width/2, height/1.75] );
 
 	// Create GeoPath function that uses built-in D3 functionality to turn
 	// lat/lon coordinates into screen coordinates
@@ -60,7 +65,7 @@ function drawMap(current_data){
 	    .attr( "stroke", "#333")
 	    .attr( "d", geoPath );
 
-	var buildings = svg.append( "g" );
+	/*var buildings = svg.append( "g" );
 
 	var building = buildings.selectAll( "path" )
 		.data(buildings_json.features)
@@ -69,7 +74,19 @@ function drawMap(current_data){
 		.attr( "fill", null)
 		.attr( "stroke", "#5D5D5D")
 		.attr( "d", geoPath)
-		.attr( "class", "building");
+		.attr( "class", "building");*/
+
+	var roads = svg.append( "g" );
+
+	var road = roads.selectAll( "path" )
+		.data(roads_json.features)
+			.enter()
+		.append( "path" )
+		.attr( "fill", null)
+		.attr( "stroke", "#D50087")//Violet-ish
+		.attr( "stroke-width", 2)
+		.attr( "d", geoPath)
+		.attr( "class", "road");
 
 	var schools = svg.append( "g" );
 
@@ -80,9 +97,17 @@ function drawMap(current_data){
 		.attr( "fill", function(d){
 			return colorScale(d.properties.level);
 		})
-		.attr( "stroke", "#999" )
+		.attr( "stroke", "black" )
 		.attr( "d", geoPath )
 		.attr( "class", "school");
+
+	//Adding a key
+
+	var key = d3.select("#key");
+
+	key.append( "circle" )
+		.attr( "r", 20 )
+		.attr( "fill", colorScale(0));
 
 	//Load other data
 
@@ -96,10 +121,17 @@ function drawMap(current_data){
 		d3.select(this).attr("class","incident hover");
 	});
 
-	/*school.on("mouseout", function(d){
-		d3.select("h4").text("");
-		d3.select(this).attr("class","incident");
-	});*/
+	road.on("mousemove", function(d){
+        tooltip
+          .style("left", d3.event.pageX - 125 + "px")
+          .style("top", d3.event.pageY - 180 + "px")
+          .style("display", "inline-block")
+          .html(d.properties.STREET);
+    });
+
+	road.on("mouseout", function(d){ 
+		tooltip.style("display", "none");
+	});
 
 	d3.select("#before_button")
 		.on("click", function() {
@@ -123,6 +155,6 @@ function drawMap(current_data){
 		svg.attr("transform", d3.event.transform);
 	}
 
-	d3.select("#map").call(zoom);
+	//d3.select("#map").call(zoom);
 
 }
