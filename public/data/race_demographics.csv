@@ -1,0 +1,894 @@
+﻿District Name,Year,school_id,Name,County,Grade,Total,pAA,AA,pAsian,Asian,pHispanic,Hispanic,pMulti,Multi,pNative,Native,pWhite,White
+Cambridge,2009,490005,Maria L. Baldwin,Middlesex,1,40,30,12,10,4,8,3,13,5,0,0,40,16
+Cambridge,2009,490005,Maria L. Baldwin,Middlesex,2,42,19,8,19,8,5,2,10,4,0,0,48,20
+Cambridge,2009,490005,Maria L. Baldwin,Middlesex,3,39,44,17,3,1,15,6,0,0,3,1,36,14
+Cambridge,2009,490005,Maria L. Baldwin,Middlesex,4,40,23,9,10,4,5,2,3,1,0,0,60,24
+Cambridge,2009,490005,Maria L. Baldwin,Middlesex,5,39,38,15,5,2,5,2,5,2,3,1,44,17
+Cambridge,2009,490005,Maria L. Baldwin,Middlesex,6,31,35,11,6,2,13,4,3,1,0,0,42,13
+Cambridge,2009,490005,Maria L. Baldwin,Middlesex,7,45,36,16,13,6,9,4,0,0,0,0,42,19
+Cambridge,2009,490005,Maria L. Baldwin,Middlesex,8,42,48,20,10,4,12,5,0,0,0,0,31,13
+Cambridge,2009,490005,Maria L. Baldwin,Middlesex,K,58,17,10,10,6,7,4,3,2,0,0,60,35
+Cambridge,2009,490006,Amigos School,Middlesex,1,39,5,2,3,1,59,23,5,2,0,0,28,11
+Cambridge,2009,490006,Amigos School,Middlesex,2,32,9,3,0,0,59,19,6,2,0,0,25,8
+Cambridge,2009,490006,Amigos School,Middlesex,3,29,7,2,3,1,48,14,0,0,0,0,41,12
+Cambridge,2009,490006,Amigos School,Middlesex,4,43,14,6,5,2,51,22,2,1,0,0,28,12
+Cambridge,2009,490006,Amigos School,Middlesex,5,29,3,1,3,1,62,18,0,0,3,1,28,8
+Cambridge,2009,490006,Amigos School,Middlesex,6,28,4,1,0,0,68,19,0,0,0,0,29,8
+Cambridge,2009,490006,Amigos School,Middlesex,7,25,4,1,0,0,72,18,0,0,0,0,24,6
+Cambridge,2009,490006,Amigos School,Middlesex,8,23,9,2,0,0,61,14,0,0,0,0,30,7
+Cambridge,2009,490006,Amigos School,Middlesex,K,51,6,3,2,1,43,22,12,6,0,0,37,19
+Cambridge,2009,490007,Cambridgeport,Middlesex,1,25,8,2,20,5,20,5,0,0,0,0,52,13
+Cambridge,2009,490007,Cambridgeport,Middlesex,2,31,23,7,6,2,10,3,10,3,0,0,52,16
+Cambridge,2009,490007,Cambridgeport,Middlesex,3,30,27,8,20,6,10,3,3,1,0,0,40,12
+Cambridge,2009,490007,Cambridgeport,Middlesex,4,32,25,8,22,7,9,3,3,1,3,1,38,12
+Cambridge,2009,490007,Cambridgeport,Middlesex,5,33,48,16,12,4,9,3,0,0,0,0,30,10
+Cambridge,2009,490007,Cambridgeport,Middlesex,6,28,39,11,0,0,11,3,0,0,0,0,50,14
+Cambridge,2009,490007,Cambridgeport,Middlesex,7,22,41,9,9,2,14,3,0,0,5,1,32,7
+Cambridge,2009,490007,Cambridgeport,Middlesex,8,43,42,18,9,4,9,4,7,3,2,1,30,13
+Cambridge,2009,490007,Cambridgeport,Middlesex,K,40,20,8,8,3,8,3,8,3,0,0,58,23
+Cambridge,2009,490020,Haggerty,Middlesex,1,59,25,15,15,9,2,1,7,4,2,1,49,29
+Cambridge,2009,490020,Haggerty,Middlesex,2,36,22,8,17,6,0,0,17,6,0,0,44,16
+Cambridge,2009,490020,Haggerty,Middlesex,3,36,31,11,14,5,3,1,3,1,0,0,50,18
+Cambridge,2009,490020,Haggerty,Middlesex,4,35,17,6,6,2,6,2,3,1,0,0,66,23
+Cambridge,2009,490020,Haggerty,Middlesex,5,39,26,10,21,8,5,2,3,1,0,0,46,18
+Cambridge,2009,490020,Haggerty,Middlesex,6,23,48,11,9,2,4,1,0,0,0,0,39,9
+Cambridge,2009,490020,Haggerty,Middlesex,K,57,26,15,18,10,2,1,9,5,2,1,44,25
+Cambridge,2009,490030,Martin Luther King Jr.,Middlesex,1,33,48,16,9,3,15,5,6,2,0,0,21,7
+Cambridge,2009,490030,Martin Luther King Jr.,Middlesex,2,19,63,12,11,2,5,1,5,1,0,0,16,3
+Cambridge,2009,490030,Martin Luther King Jr.,Middlesex,3,34,44,15,12,4,15,5,6,2,0,0,24,8
+Cambridge,2009,490030,Martin Luther King Jr.,Middlesex,4,19,68,13,16,3,0,0,0,0,0,0,16,3
+Cambridge,2009,490030,Martin Luther King Jr.,Middlesex,5,20,75,15,15,3,5,1,5,1,0,0,0,0
+Cambridge,2009,490030,Martin Luther King Jr.,Middlesex,6,16,69,11,13,2,13,2,0,0,0,0,6,1
+Cambridge,2009,490030,Martin Luther King Jr.,Middlesex,7,22,59,13,9,2,14,3,0,0,0,0,18,4
+Cambridge,2009,490030,Martin Luther King Jr.,Middlesex,8,23,61,14,13,3,13,3,4,1,0,0,9,2
+Cambridge,2009,490030,Martin Luther King Jr.,Middlesex,K,70,29,20,31,22,13,9,7,5,0,0,20,14
+Cambridge,2009,490035,King Open,Middlesex,1,60,27,16,3,2,15,9,3,2,0,0,50,30
+Cambridge,2009,490035,King Open,Middlesex,2,66,21,14,8,5,17,11,6,4,0,0,48,32
+Cambridge,2009,490035,King Open,Middlesex,3,50,28,14,8,4,12,6,4,2,2,1,46,23
+Cambridge,2009,490035,King Open,Middlesex,4,46,22,10,15,7,11,5,2,1,0,0,50,23
+Cambridge,2009,490035,King Open,Middlesex,5,49,37,18,0,0,2,1,4,2,0,0,57,28
+Cambridge,2009,490035,King Open,Middlesex,6,43,26,11,2,1,14,6,0,0,0,0,58,25
+Cambridge,2009,490035,King Open,Middlesex,7,49,33,16,12,6,10,5,2,1,0,0,43,21
+Cambridge,2009,490035,King Open,Middlesex,8,48,38,18,4,2,6,3,2,1,0,0,50,24
+Cambridge,2009,490035,King Open,Middlesex,K,102,21,21,11,11,16,16,10,10,2,2,41,42
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,1,36,47,17,3,1,22,8,0,0,0,0,28,10
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,2,20,45,9,15,3,20,4,0,0,0,0,20,4
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,3,32,25,8,16,5,16,5,3,1,0,0,41,13
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,4,20,50,10,5,1,20,4,0,0,0,0,25,5
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,5,22,50,11,9,2,18,4,0,0,0,0,18,4
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,6,49,37,18,10,5,16,8,0,0,0,0,37,18
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,7,36,39,14,14,5,14,5,0,0,3,1,31,11
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,8,61,33,20,3,2,16,10,2,1,0,0,46,28
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,K,88,34,30,7,6,17,15,6,5,1,1,35,31
+Cambridge,2009,490040,Kennedy-Longfellow,Middlesex,PK,14,29,4,7,1,14,2,7,1,0,0,43,6
+Cambridge,2009,490045,Morse,Middlesex,1,41,29,12,17,7,7,3,5,2,2,1,39,16
+Cambridge,2009,490045,Morse,Middlesex,2,41,37,15,7,3,17,7,0,0,0,0,39,16
+Cambridge,2009,490045,Morse,Middlesex,3,38,45,17,26,10,5,2,3,1,0,0,21,8
+Cambridge,2009,490045,Morse,Middlesex,4,43,21,9,21,9,9,4,5,2,0,0,42,18
+Cambridge,2009,490045,Morse,Middlesex,5,44,50,22,9,4,11,5,2,1,0,0,27,12
+Cambridge,2009,490045,Morse,Middlesex,6,35,46,16,9,3,11,4,3,1,0,0,31,11
+Cambridge,2009,490045,Morse,Middlesex,7,30,50,15,10,3,10,3,3,1,0,0,27,8
+Cambridge,2009,490045,Morse,Middlesex,8,22,55,12,14,3,9,2,5,1,0,0,18,4
+Cambridge,2009,490045,Morse,Middlesex,K,57,39,22,14,8,4,2,7,4,0,0,35,20
+Cambridge,2009,490045,Morse,Middlesex,PK,14,29,4,7,1,14,2,21,3,0,0,29,4
+Cambridge,2009,490050,Peabody,Middlesex,1,55,29,16,18,10,4,2,5,3,0,0,44,24
+Cambridge,2009,490050,Peabody,Middlesex,2,41,51,21,12,5,12,5,5,2,0,0,20,8
+Cambridge,2009,490050,Peabody,Middlesex,3,42,36,15,12,5,5,2,2,1,0,0,45,19
+Cambridge,2009,490050,Peabody,Middlesex,4,40,48,19,8,3,8,3,3,1,0,0,35,14
+Cambridge,2009,490050,Peabody,Middlesex,5,39,36,14,8,3,13,5,5,2,0,0,38,15
+Cambridge,2009,490050,Peabody,Middlesex,6,48,42,20,17,8,8,4,2,1,0,0,31,15
+Cambridge,2009,490050,Peabody,Middlesex,7,53,34,18,13,7,8,4,0,0,0,0,45,24
+Cambridge,2009,490050,Peabody,Middlesex,8,48,50,24,13,6,4,2,0,0,2,1,31,15
+Cambridge,2009,490050,Peabody,Middlesex,K,94,31,29,20,19,4,4,12,11,0,0,33,31
+Cambridge,2009,490050,Peabody,Middlesex,PK,18,22,4,11,2,11,2,0,0,0,0,56,10
+Cambridge,2009,490065,John M Tobin,Middlesex,1,26,31,8,38,10,19,5,0,0,4,1,8,2
+Cambridge,2009,490065,John M Tobin,Middlesex,2,24,29,7,17,4,25,6,4,1,0,0,25,6
+Cambridge,2009,490065,John M Tobin,Middlesex,3,25,52,13,20,5,8,2,0,0,0,0,20,5
+Cambridge,2009,490065,John M Tobin,Middlesex,4,25,48,12,20,5,12,3,0,0,0,0,20,5
+Cambridge,2009,490065,John M Tobin,Middlesex,5,23,52,12,17,4,13,3,0,0,4,1,13,3
+Cambridge,2009,490065,John M Tobin,Middlesex,6,27,48,13,19,5,11,3,0,0,4,1,19,5
+Cambridge,2009,490065,John M Tobin,Middlesex,7,36,47,17,31,11,11,4,3,1,0,0,8,3
+Cambridge,2009,490065,John M Tobin,Middlesex,8,26,50,13,23,6,12,3,0,0,0,0,15,4
+Cambridge,2009,490065,John M Tobin,Middlesex,K,85,24,20,26,22,8,7,8,7,2,2,32,27
+Cambridge,2009,490065,John M Tobin,Middlesex,PK,25,28,7,12,3,8,2,16,4,0,0,32,8
+Cambridge,2009,490080,Graham and Parks,Middlesex,1,44,18,8,11,5,11,5,2,1,0,0,57,25
+Cambridge,2009,490080,Graham and Parks,Middlesex,2,45,20,9,18,8,13,6,2,1,0,0,44,20
+Cambridge,2009,490080,Graham and Parks,Middlesex,3,50,26,13,28,14,10,5,4,2,0,0,32,16
+Cambridge,2009,490080,Graham and Parks,Middlesex,4,50,22,11,18,9,6,3,4,2,2,1,48,24
+Cambridge,2009,490080,Graham and Parks,Middlesex,5,50,26,13,14,7,8,4,0,0,0,0,52,26
+Cambridge,2009,490080,Graham and Parks,Middlesex,6,47,21,10,34,16,2,1,2,1,0,0,40,19
+Cambridge,2009,490080,Graham and Parks,Middlesex,7,40,40,16,8,3,10,4,3,1,3,1,38,15
+Cambridge,2009,490080,Graham and Parks,Middlesex,8,42,24,10,10,4,7,3,0,0,0,0,60,25
+Cambridge,2009,490080,Graham and Parks,Middlesex,K,60,23,14,13,8,10,6,10,6,0,0,43,26
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,1,39,59,23,5,2,5,2,5,2,3,1,21,8
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,2,28,61,17,4,1,25,7,0,0,0,0,11,3
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,3,18,61,11,6,1,28,5,6,1,0,0,0,0
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,4,18,61,11,0,0,33,6,0,0,0,0,6,1
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,5,20,50,10,5,1,30,6,5,1,0,0,10,2
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,6,26,65,17,4,1,15,4,0,0,0,0,15,4
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,7,18,50,9,6,1,33,6,0,0,0,0,11,2
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,8,13,69,9,0,0,23,3,0,0,0,0,8,1
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,K,46,52,24,7,3,17,8,7,3,0,0,15,7
+Cambridge,2009,490090,Fletcher/Maynard Academy,Middlesex,PK,18,28,5,17,3,39,7,6,1,0,0,11,2
+Cambridge,2009,490506,Cambridge Rindge and Latin,Middlesex,9,432,38,165,9,38,16,71,1,4,1,5,34,149
+Cambridge,2009,490506,Cambridge Rindge and Latin,Middlesex,10,374,39,145,7,28,14,52,2,9,0,1,37,139
+Cambridge,2009,490506,Cambridge Rindge and Latin,Middlesex,11,371,40,149,10,36,13,48,1,5,0,0,36,133
+Cambridge,2009,490506,Cambridge Rindge and Latin,Middlesex,12,352,38,134,11,38,13,46,1,5,1,2,36,127
+Cambridge,2009,490506,Cambridge Rindge and Latin,Middlesex,SP,9,33,3,0,0,44,4,0,0,0,0,22,2
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,1,41,20,8,10,4,10,4,5,2,0,0,56,23
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,2,40,33,13,8,3,8,3,13,5,0,0,40,16
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,3,44,23,10,16,7,7,3,11,5,0,0,43,19
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,4,43,47,20,2,1,14,6,0,0,5,2,33,14
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,5,42,21,9,10,4,10,4,2,1,0,0,57,24
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,6,32,31,10,3,1,6,2,6,2,3,1,50,16
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,7,40,23,9,8,3,8,3,5,2,0,0,58,23
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,8,44,32,14,14,6,11,5,0,0,0,0,43,19
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,K,41,20,8,20,8,0,0,7,3,0,0,51,21
+Cambridge,2010,490005,Maria L. Baldwin,Middlesex,PK,16,19,3,6,1,6,1,0,0,0,0,69,11
+Cambridge,2010,490006,Amigos School,Middlesex,1,41,10,4,5,2,34,14,7,3,0,0,44,18
+Cambridge,2010,490006,Amigos School,Middlesex,2,35,6,2,3,1,60,21,6,2,0,0,26,9
+Cambridge,2010,490006,Amigos School,Middlesex,3,36,8,3,0,0,69,25,3,1,0,0,19,7
+Cambridge,2010,490006,Amigos School,Middlesex,4,26,12,3,4,1,46,12,0,0,0,0,38,10
+Cambridge,2010,490006,Amigos School,Middlesex,5,36,8,3,3,1,56,20,6,2,0,0,28,10
+Cambridge,2010,490006,Amigos School,Middlesex,6,22,5,1,5,1,64,14,0,0,0,0,27,6
+Cambridge,2010,490006,Amigos School,Middlesex,7,24,4,1,0,0,63,15,0,0,0,0,33,8
+Cambridge,2010,490006,Amigos School,Middlesex,8,21,5,1,0,0,76,16,0,0,0,0,19,4
+Cambridge,2010,490006,Amigos School,Middlesex,K,36,3,1,6,2,50,18,14,5,0,0,28,10
+Cambridge,2010,490006,Amigos School,Middlesex,PK,18,17,3,6,1,33,6,17,3,0,0,28,5
+Cambridge,2010,490007,Cambridgeport,Middlesex,1,32,19,6,9,3,3,1,6,2,0,0,63,20
+Cambridge,2010,490007,Cambridgeport,Middlesex,2,28,18,5,18,5,11,3,0,0,0,0,54,15
+Cambridge,2010,490007,Cambridgeport,Middlesex,3,31,29,9,13,4,6,2,10,3,0,0,42,13
+Cambridge,2010,490007,Cambridgeport,Middlesex,4,33,30,10,27,9,6,2,3,1,0,0,33,11
+Cambridge,2010,490007,Cambridgeport,Middlesex,5,34,29,10,21,7,9,3,3,1,3,1,35,12
+Cambridge,2010,490007,Cambridgeport,Middlesex,6,33,52,17,12,4,9,3,0,0,0,0,27,9
+Cambridge,2010,490007,Cambridgeport,Middlesex,7,28,43,12,0,0,7,2,0,0,4,1,46,13
+Cambridge,2010,490007,Cambridgeport,Middlesex,8,22,45,10,14,3,9,2,5,1,0,0,27,6
+Cambridge,2010,490007,Cambridgeport,Middlesex,K,30,23,7,10,3,7,2,13,4,0,0,47,14
+Cambridge,2010,490007,Cambridgeport,Middlesex,PK,24,25,6,8,2,13,3,0,0,0,0,54,13
+Cambridge,2010,490020,Haggerty,Middlesex,1,42,21,9,14,6,5,2,12,5,2,1,45,19
+Cambridge,2010,490020,Haggerty,Middlesex,2,55,27,15,13,7,4,2,7,4,2,1,47,26
+Cambridge,2010,490020,Haggerty,Middlesex,3,42,24,10,21,9,5,2,14,6,0,0,36,15
+Cambridge,2010,490020,Haggerty,Middlesex,4,39,33,13,15,6,3,1,3,1,0,0,46,18
+Cambridge,2010,490020,Haggerty,Middlesex,5,35,14,5,11,4,9,3,3,1,0,0,60,21
+Cambridge,2010,490020,Haggerty,Middlesex,6,25,40,10,28,7,8,2,4,1,0,0,20,5
+Cambridge,2010,490020,Haggerty,Middlesex,K,39,28,11,13,5,8,3,3,1,0,0,49,19
+Cambridge,2010,490020,Haggerty,Middlesex,PK,19,37,7,5,1,0,0,16,3,0,0,37,7
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,1,39,28,11,31,12,8,3,13,5,0,0,21,8
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,2,30,50,15,10,3,13,4,3,1,0,0,23,7
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,3,20,65,13,15,3,5,1,0,0,0,0,15,3
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,4,28,57,16,14,4,18,5,0,0,0,0,11,3
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,5,19,58,11,21,4,5,1,5,1,0,0,11,2
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,6,20,70,14,5,1,5,1,10,2,0,0,10,2
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,7,17,65,11,12,2,12,2,0,0,0,0,6,1
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,8,22,68,15,5,1,14,3,0,0,0,0,14,3
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,K,39,46,18,23,9,13,5,0,0,0,0,15,6
+Cambridge,2010,490030,Martin Luther King Jr.,Middlesex,PK,29,38,11,28,8,10,3,7,2,0,0,17,5
+Cambridge,2010,490035,King Open,Middlesex,1,60,28,17,8,5,17,10,5,3,2,1,40,24
+Cambridge,2010,490035,King Open,Middlesex,2,56,21,12,4,2,16,9,4,2,0,0,54,30
+Cambridge,2010,490035,King Open,Middlesex,3,54,20,11,7,4,15,8,6,3,0,0,52,28
+Cambridge,2010,490035,King Open,Middlesex,4,50,24,12,10,5,12,6,4,2,2,1,48,24
+Cambridge,2010,490035,King Open,Middlesex,5,43,21,9,19,8,12,5,5,2,0,0,44,19
+Cambridge,2010,490035,King Open,Middlesex,6,48,35,17,0,0,2,1,4,2,2,1,56,27
+Cambridge,2010,490035,King Open,Middlesex,7,47,26,12,2,1,13,6,0,0,0,0,60,28
+Cambridge,2010,490035,King Open,Middlesex,8,46,26,12,11,5,11,5,2,1,0,0,50,23
+Cambridge,2010,490035,King Open,Middlesex,K,71,23,16,6,4,15,11,11,8,0,0,45,32
+Cambridge,2010,490035,King Open,Middlesex,PK,23,17,4,9,2,4,1,4,1,0,0,65,15
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,1,38,37,14,8,3,18,7,5,2,0,0,32,12
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,2,33,39,13,3,1,27,9,0,0,0,0,30,10
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,3,18,39,7,22,4,22,4,0,0,0,0,17,3
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,4,29,24,7,17,5,14,4,0,0,0,0,45,13
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,5,21,52,11,5,1,19,4,0,0,0,0,24,5
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,6,40,43,17,5,2,23,9,0,0,0,0,28,11
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,7,55,35,19,11,6,18,10,0,0,0,0,36,20
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,8,41,37,15,12,5,17,7,0,0,2,1,32,13
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,K,53,34,18,9,5,26,14,4,2,0,0,26,14
+Cambridge,2010,490040,Kennedy-Longfellow,Middlesex,PK,40,33,13,8,3,13,5,3,1,0,0,45,18
+Cambridge,2010,490045,Morse,Middlesex,1,41,49,20,12,5,0,0,5,2,0,0,32,13
+Cambridge,2010,490045,Morse,Middlesex,2,42,26,11,14,6,7,3,7,3,2,1,43,18
+Cambridge,2010,490045,Morse,Middlesex,3,44,34,15,9,4,16,7,2,1,0,0,39,17
+Cambridge,2010,490045,Morse,Middlesex,4,43,42,18,23,10,7,3,5,2,0,0,23,10
+Cambridge,2010,490045,Morse,Middlesex,5,43,21,9,19,8,14,6,5,2,0,0,40,17
+Cambridge,2010,490045,Morse,Middlesex,6,36,56,20,8,3,8,3,3,1,0,0,25,9
+Cambridge,2010,490045,Morse,Middlesex,7,43,51,22,9,4,14,6,2,1,0,0,23,10
+Cambridge,2010,490045,Morse,Middlesex,8,31,48,15,6,2,10,3,3,1,0,0,32,10
+Cambridge,2010,490045,Morse,Middlesex,K,42,17,7,24,10,14,6,7,3,2,1,36,15
+Cambridge,2010,490045,Morse,Middlesex,PK,54,30,16,13,7,17,9,11,6,0,0,30,16
+Cambridge,2010,490050,Peabody,Middlesex,1,54,44,24,15,8,11,6,7,4,0,0,22,12
+Cambridge,2010,490050,Peabody,Middlesex,2,54,31,17,15,8,2,1,6,3,0,0,46,25
+Cambridge,2010,490050,Peabody,Middlesex,3,45,51,23,7,3,16,7,2,1,0,0,24,11
+Cambridge,2010,490050,Peabody,Middlesex,4,42,31,13,10,4,5,2,5,2,0,0,50,21
+Cambridge,2010,490050,Peabody,Middlesex,5,42,52,22,12,5,2,1,0,0,0,0,33,14
+Cambridge,2010,490050,Peabody,Middlesex,6,60,35,21,10,6,8,5,3,2,0,0,43,26
+Cambridge,2010,490050,Peabody,Middlesex,7,58,48,28,12,7,9,5,3,2,0,0,28,16
+Cambridge,2010,490050,Peabody,Middlesex,8,58,34,20,14,8,9,5,0,0,0,0,43,25
+Cambridge,2010,490050,Peabody,Middlesex,K,64,31,20,14,9,6,4,6,4,0,0,41,26
+Cambridge,2010,490050,Peabody,Middlesex,PK,43,30,13,7,3,16,7,7,3,0,0,37,16
+Cambridge,2010,490065,John M Tobin,Middlesex,1,31,29,9,29,9,6,2,0,0,6,2,29,9
+Cambridge,2010,490065,John M Tobin,Middlesex,2,26,27,7,42,11,19,5,0,0,4,1,8,2
+Cambridge,2010,490065,John M Tobin,Middlesex,3,22,27,6,14,3,23,5,0,0,0,0,36,8
+Cambridge,2010,490065,John M Tobin,Middlesex,4,24,38,9,21,5,13,3,4,1,0,0,25,6
+Cambridge,2010,490065,John M Tobin,Middlesex,5,28,61,17,11,3,18,5,0,0,0,0,11,3
+Cambridge,2010,490065,John M Tobin,Middlesex,6,19,53,10,16,3,16,3,5,1,5,1,5,1
+Cambridge,2010,490065,John M Tobin,Middlesex,7,30,50,15,17,5,13,4,0,0,3,1,17,5
+Cambridge,2010,490065,John M Tobin,Middlesex,8,29,48,14,21,6,17,5,0,0,0,0,14,4
+Cambridge,2010,490065,John M Tobin,Middlesex,K,34,29,10,9,3,12,4,9,3,0,0,41,14
+Cambridge,2010,490065,John M Tobin,Middlesex,PK,120,27,32,21,25,5,6,11,13,0,0,37,44
+Cambridge,2010,490080,Graham and Parks,Middlesex,1,49,22,11,20,10,8,4,10,5,2,1,37,18
+Cambridge,2010,490080,Graham and Parks,Middlesex,2,46,22,10,9,4,15,7,4,2,0,0,50,23
+Cambridge,2010,490080,Graham and Parks,Middlesex,3,46,17,8,17,8,9,4,4,2,2,1,48,22
+Cambridge,2010,490080,Graham and Parks,Middlesex,4,49,33,16,22,11,6,3,4,2,0,0,35,17
+Cambridge,2010,490080,Graham and Parks,Middlesex,5,48,27,13,15,7,6,3,4,2,0,0,48,23
+Cambridge,2010,490080,Graham and Parks,Middlesex,6,39,18,7,8,3,10,4,0,0,0,0,64,25
+Cambridge,2010,490080,Graham and Parks,Middlesex,7,40,23,9,33,13,0,0,3,1,0,0,43,17
+Cambridge,2010,490080,Graham and Parks,Middlesex,8,42,38,16,12,5,10,4,2,1,2,1,36,15
+Cambridge,2010,490080,Graham and Parks,Middlesex,K,40,18,7,10,4,8,3,8,3,0,0,58,23
+Cambridge,2010,490080,Graham and Parks,Middlesex,PK,19,5,1,26,5,5,1,0,0,0,0,63,12
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,1,33,48,16,9,3,21,7,3,1,0,0,15,5
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,2,37,57,21,5,2,5,2,3,1,5,2,22,8
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,3,26,65,17,0,0,19,5,4,1,0,0,12,3
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,4,19,58,11,5,1,26,5,5,1,0,0,5,1
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,5,18,61,11,6,1,28,5,0,0,6,1,0,0
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,6,17,47,8,6,1,47,8,0,0,0,0,0,0
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,7,17,47,8,6,1,24,4,0,0,6,1,18,3
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,8,17,35,6,12,2,35,6,0,0,0,0,18,3
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,K,35,51,18,0,0,23,8,6,2,3,1,17,6
+Cambridge,2010,490090,Fletcher/Maynard Academy,Middlesex,PK,30,30,9,17,5,17,5,3,1,0,0,30,9
+Cambridge,2010,490506,Cambridge Rindge and Latin,Middlesex,9,441,40,176,9,41,14,61,1,4,0,2,36,157
+Cambridge,2010,490506,Cambridge Rindge and Latin,Middlesex,10,397,35,137,8,32,17,66,2,7,1,5,38,149
+Cambridge,2010,490506,Cambridge Rindge and Latin,Middlesex,11,382,40,151,8,31,15,56,2,8,1,3,35,133
+Cambridge,2010,490506,Cambridge Rindge and Latin,Middlesex,12,352,38,134,10,34,14,48,2,6,0,0,37,130
+Cambridge,2010,490506,Cambridge Rindge and Latin,Middlesex,SP,11,36,4,0,0,18,2,0,0,0,0,45,5
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,1,44,16,7,20,9,2,1,7,3,0,0,52,23
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,2,44,20,9,9,4,11,5,7,3,0,0,52,23
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,3,41,32,13,10,4,7,3,12,5,0,0,39,16
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,4,42,21,9,17,7,5,2,12,5,0,0,45,19
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,5,42,43,18,10,4,17,7,2,1,5,2,24,10
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,6,38,32,12,5,2,8,3,3,1,0,0,53,20
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,7,28,32,9,7,2,14,4,0,0,4,1,43,12
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,8,37,11,4,11,4,8,3,3,1,3,1,62,23
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,K,45,11,5,7,3,2,1,9,4,0,0,71,32
+Cambridge,2011,490005,Maria L. Baldwin,Middlesex,PK,13,23,3,8,1,15,2,8,1,0,0,46,6
+Cambridge,2011,490006,Amigos School,Middlesex,1,30,3,1,10,3,47,14,13,4,0,0,27,8
+Cambridge,2011,490006,Amigos School,Middlesex,2,39,10,4,3,1,38,15,13,5,0,0,36,14
+Cambridge,2011,490006,Amigos School,Middlesex,3,39,10,4,3,1,54,21,5,2,0,0,28,11
+Cambridge,2011,490006,Amigos School,Middlesex,4,35,9,3,3,1,66,23,3,1,0,0,20,7
+Cambridge,2011,490006,Amigos School,Middlesex,5,26,4,1,0,0,54,14,4,1,0,0,38,10
+Cambridge,2011,490006,Amigos School,Middlesex,6,27,4,1,4,1,56,15,4,1,0,0,33,9
+Cambridge,2011,490006,Amigos School,Middlesex,7,20,5,1,0,0,70,14,0,0,0,0,25,5
+Cambridge,2011,490006,Amigos School,Middlesex,8,23,4,1,0,0,61,14,0,0,0,0,35,8
+Cambridge,2011,490006,Amigos School,Middlesex,K,52,10,5,2,1,27,14,13,7,0,0,48,25
+Cambridge,2011,490006,Amigos School,Middlesex,PK,27,4,1,7,2,37,10,11,3,0,0,37,10
+Cambridge,2011,490007,Cambridgeport,Middlesex,1,31,42,13,6,2,13,4,6,2,0,0,32,10
+Cambridge,2011,490007,Cambridgeport,Middlesex,2,29,14,4,3,1,3,1,7,2,0,0,72,21
+Cambridge,2011,490007,Cambridgeport,Middlesex,3,29,21,6,10,3,10,3,0,0,0,0,59,17
+Cambridge,2011,490007,Cambridgeport,Middlesex,4,32,28,9,9,3,9,3,9,3,0,0,44,14
+Cambridge,2011,490007,Cambridgeport,Middlesex,5,30,37,11,17,5,7,2,10,3,0,0,30,9
+Cambridge,2011,490007,Cambridgeport,Middlesex,6,23,39,9,13,3,9,2,4,1,4,1,30,7
+Cambridge,2011,490007,Cambridgeport,Middlesex,7,23,52,12,13,3,9,2,0,0,0,0,26,6
+Cambridge,2011,490007,Cambridgeport,Middlesex,8,27,41,11,0,0,7,2,0,0,0,0,52,14
+Cambridge,2011,490007,Cambridgeport,Middlesex,K,34,18,6,9,3,9,3,3,1,0,0,62,21
+Cambridge,2011,490007,Cambridgeport,Middlesex,PK,23,9,2,9,2,13,3,0,0,0,0,70,16
+Cambridge,2011,490020,Haggerty,Middlesex,1,39,28,11,10,4,5,2,3,1,0,0,54,21
+Cambridge,2011,490020,Haggerty,Middlesex,2,35,29,10,11,4,3,1,11,4,0,0,46,16
+Cambridge,2011,490020,Haggerty,Middlesex,3,47,28,13,13,6,4,2,6,3,2,1,47,22
+Cambridge,2011,490020,Haggerty,Middlesex,4,37,27,10,11,4,8,3,16,6,0,0,38,14
+Cambridge,2011,490020,Haggerty,Middlesex,5,32,28,9,19,6,0,0,0,0,0,0,53,17
+Cambridge,2011,490020,Haggerty,Middlesex,6,20,20,4,5,1,25,5,5,1,0,0,45,9
+Cambridge,2011,490020,Haggerty,Middlesex,K,40,33,13,8,3,3,1,8,3,0,0,45,18
+Cambridge,2011,490020,Haggerty,Middlesex,PK,12,42,5,17,2,0,0,0,0,0,0,42,5
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,1,37,46,17,19,7,22,8,0,0,0,0,14,5
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,2,39,36,14,33,13,8,3,5,2,0,0,18,7
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,3,36,36,13,22,8,11,4,3,1,0,0,28,10
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,4,21,57,12,19,4,5,1,0,0,0,0,19,4
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,5,25,64,16,8,2,16,4,0,0,0,0,12,3
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,6,20,50,10,15,3,10,2,5,1,0,0,20,4
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,7,17,71,12,18,3,0,0,12,2,0,0,0,0
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,8,17,65,11,6,1,12,2,0,0,0,0,18,3
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,K,43,37,16,33,14,9,4,9,4,0,0,12,5
+Cambridge,2011,490030,Martin Luther King Jr.,Middlesex,PK,30,33,10,23,7,10,3,3,1,0,0,30,9
+Cambridge,2011,490035,King Open,Middlesex,1,55,25,14,5,3,13,7,13,7,0,0,44,24
+Cambridge,2011,490035,King Open,Middlesex,2,58,33,19,9,5,10,6,7,4,2,1,40,23
+Cambridge,2011,490035,King Open,Middlesex,3,52,21,11,4,2,19,10,4,2,0,0,50,26
+Cambridge,2011,490035,King Open,Middlesex,4,51,24,12,10,5,16,8,6,3,0,0,45,23
+Cambridge,2011,490035,King Open,Middlesex,5,46,24,11,9,4,11,5,2,1,2,1,52,24
+Cambridge,2011,490035,King Open,Middlesex,6,42,21,9,19,8,14,6,2,1,0,0,43,18
+Cambridge,2011,490035,King Open,Middlesex,7,50,34,17,0,0,2,1,4,2,2,1,58,29
+Cambridge,2011,490035,King Open,Middlesex,8,45,24,11,2,1,13,6,0,0,0,0,60,27
+Cambridge,2011,490035,King Open,Middlesex,K,61,25,15,16,10,8,5,8,5,0,0,43,26
+Cambridge,2011,490035,King Open,Middlesex,PK,33,15,5,12,4,15,5,9,3,0,0,48,16
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,1,46,35,16,7,3,24,11,4,2,0,0,30,14
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,2,34,38,13,6,2,12,4,6,2,0,0,38,13
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,3,35,34,12,3,1,31,11,0,0,0,0,31,11
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,4,20,35,7,20,4,15,3,0,0,0,0,25,5
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,5,38,32,12,24,9,16,6,0,0,0,0,29,11
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,6,40,40,16,13,5,18,7,3,1,0,0,25,10
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,7,42,48,20,5,2,17,7,5,2,0,0,24,10
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,8,47,36,17,15,7,13,6,0,0,0,0,36,17
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,K,62,32,20,10,6,18,11,5,3,0,0,35,22
+Cambridge,2011,490040,Kennedy-Longfellow,Middlesex,PK,38,16,6,11,4,13,5,5,2,0,0,55,21
+Cambridge,2011,490045,Morse,Middlesex,1,45,24,11,18,8,13,6,7,3,2,1,36,16
+Cambridge,2011,490045,Morse,Middlesex,2,40,48,19,5,2,0,0,8,3,0,0,38,15
+Cambridge,2011,490045,Morse,Middlesex,3,43,28,12,14,6,7,3,5,2,2,1,44,19
+Cambridge,2011,490045,Morse,Middlesex,4,41,34,14,7,3,12,5,2,1,0,0,44,18
+Cambridge,2011,490045,Morse,Middlesex,5,41,41,17,20,8,7,3,2,1,0,0,29,12
+Cambridge,2011,490045,Morse,Middlesex,6,38,26,10,16,6,13,5,5,2,0,0,37,14
+Cambridge,2011,490045,Morse,Middlesex,7,38,53,20,8,3,11,4,3,1,0,0,26,10
+Cambridge,2011,490045,Morse,Middlesex,8,42,45,19,12,5,19,8,2,1,0,0,21,9
+Cambridge,2011,490045,Morse,Middlesex,K,48,27,13,15,7,23,11,15,7,2,1,19,9
+Cambridge,2011,490045,Morse,Middlesex,PK,51,29,15,18,9,14,7,14,7,0,0,24,12
+Cambridge,2011,490050,Peabody,Middlesex,1,54,37,20,9,5,6,3,6,3,0,0,41,22
+Cambridge,2011,490050,Peabody,Middlesex,2,48,46,22,8,4,13,6,6,3,2,1,25,12
+Cambridge,2011,490050,Peabody,Middlesex,3,54,31,17,13,7,4,2,6,3,0,0,46,25
+Cambridge,2011,490050,Peabody,Middlesex,4,37,49,18,5,2,19,7,3,1,0,0,24,9
+Cambridge,2011,490050,Peabody,Middlesex,5,44,27,12,14,6,5,2,2,1,0,0,52,23
+Cambridge,2011,490050,Peabody,Middlesex,6,62,35,22,13,8,3,2,2,1,0,0,45,28
+Cambridge,2011,490050,Peabody,Middlesex,7,70,33,23,11,8,6,4,4,3,0,0,46,32
+Cambridge,2011,490050,Peabody,Middlesex,8,62,45,28,11,7,8,5,5,3,0,0,31,19
+Cambridge,2011,490050,Peabody,Middlesex,K,60,33,20,8,5,13,8,5,3,0,0,38,23
+Cambridge,2011,490050,Peabody,Middlesex,PK,45,16,7,22,10,7,3,11,5,0,0,44,20
+Cambridge,2011,490065,John M Tobin,Middlesex,1,39,26,10,13,5,15,6,5,2,0,0,41,16
+Cambridge,2011,490065,John M Tobin,Middlesex,2,36,25,9,28,10,6,2,3,1,6,2,33,12
+Cambridge,2011,490065,John M Tobin,Middlesex,3,31,29,9,29,9,19,6,0,0,3,1,19,6
+Cambridge,2011,490065,John M Tobin,Middlesex,4,24,33,8,17,4,21,5,0,0,0,0,29,7
+Cambridge,2011,490065,John M Tobin,Middlesex,5,27,48,13,19,5,15,4,4,1,0,0,15,4
+Cambridge,2011,490065,John M Tobin,Middlesex,6,26,69,18,0,0,15,4,0,0,0,0,15,4
+Cambridge,2011,490065,John M Tobin,Middlesex,7,23,48,11,22,5,17,4,0,0,4,1,9,2
+Cambridge,2011,490065,John M Tobin,Middlesex,8,32,56,18,13,4,9,3,0,0,3,1,19,6
+Cambridge,2011,490065,John M Tobin,Middlesex,K,53,26,14,28,15,11,6,6,3,0,0,28,15
+Cambridge,2011,490065,John M Tobin,Middlesex,PK,116,32,37,11,13,12,14,12,14,0,0,33,38
+Cambridge,2011,490080,Graham and Parks,Middlesex,1,50,26,13,16,8,6,3,10,5,0,0,42,21
+Cambridge,2011,490080,Graham and Parks,Middlesex,2,45,22,10,13,6,13,6,9,4,2,1,40,18
+Cambridge,2011,490080,Graham and Parks,Middlesex,3,43,23,10,7,3,12,5,5,2,0,0,53,23
+Cambridge,2011,490080,Graham and Parks,Middlesex,4,52,23,12,17,9,8,4,6,3,2,1,42,22
+Cambridge,2011,490080,Graham and Parks,Middlesex,5,44,25,11,25,11,9,4,5,2,0,0,36,16
+Cambridge,2011,490080,Graham and Parks,Middlesex,6,45,33,15,11,5,4,2,4,2,0,0,47,21
+Cambridge,2011,490080,Graham and Parks,Middlesex,7,38,18,7,5,2,11,4,0,0,0,0,66,25
+Cambridge,2011,490080,Graham and Parks,Middlesex,8,40,30,12,30,12,0,0,3,1,0,0,38,15
+Cambridge,2011,490080,Graham and Parks,Middlesex,K,42,12,5,12,5,7,3,2,1,0,0,67,28
+Cambridge,2011,490080,Graham and Parks,Middlesex,PK,16,19,3,6,1,0,0,0,0,0,0,75,12
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,1,31,55,17,3,1,23,7,3,1,3,1,13,4
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,2,31,45,14,10,3,23,7,3,1,0,0,16,5
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,3,32,63,20,0,0,3,1,3,1,6,2,22,7
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,4,20,70,14,0,0,20,4,5,1,0,0,5,1
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,5,15,53,8,0,0,33,5,7,1,0,0,7,1
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,6,16,56,9,0,0,25,4,0,0,6,1,13,2
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,7,15,53,8,7,1,40,6,0,0,0,0,0,0
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,8,15,53,8,7,1,20,3,0,0,7,1,13,2
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,K,33,42,14,3,1,24,8,12,4,0,0,15,5
+Cambridge,2011,490090,Fletcher/Maynard Academy,Middlesex,PK,31,35,11,16,5,10,3,6,2,0,0,32,10
+Cambridge,2011,490506,Cambridge Rindge and Latin,Middlesex,9,400,35,140,11,43,18,70,2,6,1,3,35,138
+Cambridge,2011,490506,Cambridge Rindge and Latin,Middlesex,10,408,40,163,9,38,12,50,1,5,1,3,37,149
+Cambridge,2011,490506,Cambridge Rindge and Latin,Middlesex,11,419,37,153,9,39,14,60,2,9,1,5,37,153
+Cambridge,2011,490506,Cambridge Rindge and Latin,Middlesex,12,344,40,136,8,28,16,54,2,8,1,2,34,116
+Cambridge,2011,490506,Cambridge Rindge and Latin,Middlesex,SP,9,33,3,0,0,11,1,0,0,0,0,56,5
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,1,41,15,6,5,2,5,2,10,4,0,0,66,27
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,2,43,16,7,19,8,5,2,7,3,0,0,51,22
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,3,42,21,9,7,3,12,5,5,2,0,0,55,23
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,4,44,30,13,9,4,9,4,11,5,0,0,41,18
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,5,40,20,8,15,6,10,4,8,3,0,0,48,19
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,6,38,42,16,8,3,13,5,5,2,5,2,26,10
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,7,37,35,13,3,1,5,2,3,1,0,0,54,20
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,8,27,33,9,11,3,11,3,0,0,0,0,44,12
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,K,29,17,5,10,3,7,2,3,1,0,0,62,18
+Cambridge,2012,490005,Maria L. Baldwin,Middlesex,PK,23,22,5,13,3,4,1,13,3,0,0,48,11
+Cambridge,2012,490006,Amigos School,Middlesex,1,46,11,5,2,1,26,12,13,6,0,0,48,22
+Cambridge,2012,490006,Amigos School,Middlesex,2,31,6,2,10,3,42,13,13,4,0,0,29,9
+Cambridge,2012,490006,Amigos School,Middlesex,3,40,15,6,5,2,35,14,8,3,0,0,38,15
+Cambridge,2012,490006,Amigos School,Middlesex,4,39,10,4,3,1,46,18,5,2,0,0,36,14
+Cambridge,2012,490006,Amigos School,Middlesex,5,29,7,2,3,1,62,18,3,1,0,0,24,7
+Cambridge,2012,490006,Amigos School,Middlesex,6,27,7,2,0,0,52,14,4,1,0,0,37,10
+Cambridge,2012,490006,Amigos School,Middlesex,7,27,4,1,4,1,48,13,7,2,0,0,37,10
+Cambridge,2012,490006,Amigos School,Middlesex,8,20,5,1,0,0,65,13,0,0,0,0,30,6
+Cambridge,2012,490006,Amigos School,Middlesex,K,43,5,2,5,2,40,17,7,3,0,0,42,18
+Cambridge,2012,490006,Amigos School,Middlesex,PK,32,3,1,3,1,44,14,3,1,0,0,47,15
+Cambridge,2012,490007,Cambridgeport,Middlesex,1,32,19,6,13,4,13,4,3,1,0,0,53,17
+Cambridge,2012,490007,Cambridgeport,Middlesex,2,30,47,14,7,2,13,4,7,2,0,0,27,8
+Cambridge,2012,490007,Cambridgeport,Middlesex,3,33,9,3,3,1,9,3,15,5,0,0,64,21
+Cambridge,2012,490007,Cambridgeport,Middlesex,4,26,19,5,12,3,19,5,4,1,0,0,46,12
+Cambridge,2012,490007,Cambridgeport,Middlesex,5,32,31,10,9,3,6,2,9,3,0,0,44,14
+Cambridge,2012,490007,Cambridgeport,Middlesex,6,28,50,14,14,4,7,2,4,1,0,0,25,7
+Cambridge,2012,490007,Cambridgeport,Middlesex,7,15,33,5,7,1,13,2,7,1,7,1,33,5
+Cambridge,2012,490007,Cambridgeport,Middlesex,8,16,56,9,13,2,6,1,6,1,0,0,19,3
+Cambridge,2012,490007,Cambridgeport,Middlesex,K,34,12,4,6,2,12,4,3,1,0,0,68,23
+Cambridge,2012,490007,Cambridgeport,Middlesex,PK,17,24,4,24,4,6,1,6,1,0,0,41,7
+Cambridge,2012,490020,Haggerty,Middlesex,1,38,39,15,8,3,0,0,8,3,0,0,42,16
+Cambridge,2012,490020,Haggerty,Middlesex,2,41,29,12,12,5,5,2,2,1,0,0,51,21
+Cambridge,2012,490020,Haggerty,Middlesex,3,34,26,9,12,4,6,2,12,4,0,0,44,15
+Cambridge,2012,490020,Haggerty,Middlesex,4,45,24,11,16,7,4,2,7,3,2,1,47,21
+Cambridge,2012,490020,Haggerty,Middlesex,5,36,28,10,11,4,8,3,17,6,0,0,36,13
+Cambridge,2012,490020,Haggerty,Middlesex,6,31,26,8,26,8,0,0,0,0,0,0,48,15
+Cambridge,2012,490020,Haggerty,Middlesex,K,45,18,8,13,6,11,5,4,2,0,0,53,24
+Cambridge,2012,490020,Haggerty,Middlesex,PK,20,15,3,25,5,0,0,15,3,0,0,45,9
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,1,40,40,16,18,7,13,5,13,5,0,0,15,6
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,2,34,53,18,12,4,18,6,0,0,0,0,18,6
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,3,35,43,15,23,8,9,3,9,3,0,0,17,6
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,4,26,42,11,12,3,15,4,0,0,0,0,31,8
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,5,24,63,15,13,3,25,6,0,0,0,0,0,0
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,6,27,59,16,7,2,19,5,0,0,0,0,15,4
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,7,11,73,8,0,0,18,2,0,0,0,0,9,1
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,8,20,65,13,10,2,5,1,10,2,0,0,10,2
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,K,52,27,14,25,13,6,3,2,1,0,0,40,21
+Cambridge,2012,490030,Martin Luther King Jr.,Middlesex,PK,25,32,8,28,7,8,2,4,1,0,0,28,7
+Cambridge,2012,490035,King Open,Middlesex,1,50,28,14,12,6,4,2,6,3,0,0,50,25
+Cambridge,2012,490035,King Open,Middlesex,2,51,24,12,6,3,16,8,12,6,0,0,43,22
+Cambridge,2012,490035,King Open,Middlesex,3,50,28,14,8,4,10,5,6,3,2,1,46,23
+Cambridge,2012,490035,King Open,Middlesex,4,52,25,13,4,2,15,8,4,2,2,1,48,25
+Cambridge,2012,490035,King Open,Middlesex,5,48,23,11,10,5,15,7,4,2,0,0,48,23
+Cambridge,2012,490035,King Open,Middlesex,6,43,23,10,9,4,12,5,5,2,2,1,49,21
+Cambridge,2012,490035,King Open,Middlesex,7,45,20,9,20,9,18,8,2,1,2,1,38,17
+Cambridge,2012,490035,King Open,Middlesex,8,51,35,18,0,0,6,3,4,2,2,1,53,27
+Cambridge,2012,490035,King Open,Middlesex,K,61,13,8,8,5,11,7,10,6,0,0,57,35
+Cambridge,2012,490035,King Open,Middlesex,PK,34,15,5,6,2,6,2,9,3,0,0,65,22
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,1,53,38,20,9,5,15,8,4,2,0,0,34,18
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,2,40,33,13,10,4,28,11,5,2,0,0,25,10
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,3,39,38,15,5,2,13,5,5,2,0,0,38,15
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,4,32,38,12,6,2,25,8,0,0,0,0,31,10
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,5,18,28,5,22,4,28,5,0,0,0,0,22,4
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,6,40,25,10,20,8,15,6,0,0,0,0,40,16
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,7,39,33,13,13,5,23,9,3,1,0,0,28,11
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,8,43,44,19,5,2,21,9,5,2,2,1,21,9
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,K,54,19,10,11,6,13,7,4,2,0,0,54,29
+Cambridge,2012,490040,Kennedy-Longfellow,Middlesex,PK,48,21,10,8,4,13,6,2,1,0,0,56,27
+Cambridge,2012,490045,Morse,Middlesex,1,45,27,12,11,5,24,11,16,7,2,1,20,9
+Cambridge,2012,490045,Morse,Middlesex,2,43,26,11,19,8,12,5,5,2,2,1,37,16
+Cambridge,2012,490045,Morse,Middlesex,3,33,42,14,9,3,0,0,6,2,0,0,39,13
+Cambridge,2012,490045,Morse,Middlesex,4,41,29,12,12,5,7,3,7,3,2,1,41,17
+Cambridge,2012,490045,Morse,Middlesex,5,41,34,14,10,4,15,6,0,0,0,0,41,17
+Cambridge,2012,490045,Morse,Middlesex,6,32,50,16,13,4,6,2,3,1,0,0,28,9
+Cambridge,2012,490045,Morse,Middlesex,7,39,28,11,23,9,8,3,5,2,0,0,33,13
+Cambridge,2012,490045,Morse,Middlesex,8,32,53,17,13,4,13,4,0,0,0,0,22,7
+Cambridge,2012,490045,Morse,Middlesex,K,41,34,14,12,5,10,4,15,6,0,0,29,12
+Cambridge,2012,490045,Morse,Middlesex,PK,54,24,13,7,4,11,6,4,2,0,0,52,28
+Cambridge,2012,490050,Peabody,Middlesex,1,51,33,17,6,3,14,7,4,2,0,0,41,21
+Cambridge,2012,490050,Peabody,Middlesex,2,50,38,19,6,3,4,2,6,3,0,0,44,22
+Cambridge,2012,490050,Peabody,Middlesex,3,47,47,22,9,4,13,6,4,2,2,1,26,12
+Cambridge,2012,490050,Peabody,Middlesex,4,50,30,15,14,7,4,2,6,3,0,0,46,23
+Cambridge,2012,490050,Peabody,Middlesex,5,38,45,17,11,4,18,7,3,1,0,0,24,9
+Cambridge,2012,490050,Peabody,Middlesex,6,48,23,11,13,6,6,3,4,2,0,0,54,26
+Cambridge,2012,490050,Peabody,Middlesex,7,68,29,20,10,7,6,4,3,2,0,0,50,34
+Cambridge,2012,490050,Peabody,Middlesex,8,65,29,19,11,7,6,4,5,3,0,0,49,32
+Cambridge,2012,490050,Peabody,Middlesex,K,43,19,8,19,8,7,3,14,6,0,0,42,18
+Cambridge,2012,490050,Peabody,Middlesex,PK,41,32,13,7,3,5,2,7,3,0,0,49,20
+Cambridge,2012,490065,John M Tobin,Middlesex,1,45,33,15,24,11,9,4,9,4,0,0,24,11
+Cambridge,2012,490065,John M Tobin,Middlesex,2,40,23,9,20,8,8,3,8,3,0,0,43,17
+Cambridge,2012,490065,John M Tobin,Middlesex,3,34,24,8,24,8,9,3,3,1,6,2,35,12
+Cambridge,2012,490065,John M Tobin,Middlesex,4,29,34,10,31,9,21,6,0,0,3,1,10,3
+Cambridge,2012,490065,John M Tobin,Middlesex,5,27,37,10,11,3,19,5,0,0,0,0,33,9
+Cambridge,2012,490065,John M Tobin,Middlesex,6,33,73,24,15,5,3,1,3,1,0,0,6,2
+Cambridge,2012,490065,John M Tobin,Middlesex,7,21,81,17,14,3,5,1,0,0,0,0,0,0
+Cambridge,2012,490065,John M Tobin,Middlesex,8,29,59,17,21,6,10,3,0,0,3,1,7,2
+Cambridge,2012,490065,John M Tobin,Middlesex,K,17,12,2,41,7,6,1,12,2,0,0,29,5
+Cambridge,2012,490065,John M Tobin,Middlesex,PK,143,27,39,14,20,8,12,8,11,0,0,42,60
+Cambridge,2012,490080,Graham and Parks,Middlesex,1,41,15,6,12,5,7,3,0,0,0,0,66,27
+Cambridge,2012,490080,Graham and Parks,Middlesex,2,46,28,13,11,5,7,3,11,5,0,0,43,20
+Cambridge,2012,490080,Graham and Parks,Middlesex,3,40,20,8,10,4,15,6,10,4,3,1,43,17
+Cambridge,2012,490080,Graham and Parks,Middlesex,4,46,26,12,11,5,13,6,4,2,0,0,46,21
+Cambridge,2012,490080,Graham and Parks,Middlesex,5,50,20,10,16,8,8,4,4,2,2,1,48,24
+Cambridge,2012,490080,Graham and Parks,Middlesex,6,45,29,13,20,9,9,4,4,2,0,0,38,17
+Cambridge,2012,490080,Graham and Parks,Middlesex,7,42,24,10,12,5,2,1,2,1,0,0,60,25
+Cambridge,2012,490080,Graham and Parks,Middlesex,8,42,24,10,7,3,10,4,0,0,0,0,60,25
+Cambridge,2012,490080,Graham and Parks,Middlesex,K,36,17,6,6,2,11,4,3,1,0,0,64,23
+Cambridge,2012,490080,Graham and Parks,Middlesex,PK,21,10,2,19,4,0,0,24,5,0,0,48,10
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,1,39,33,13,8,3,28,11,5,2,0,0,23,9
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,2,36,47,17,3,1,28,10,6,2,3,1,14,5
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,3,25,40,10,8,2,20,5,4,1,0,0,24,6
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,4,30,57,17,0,0,7,2,3,1,7,2,23,7
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,5,20,70,14,0,0,20,4,5,1,0,0,5,1
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,6,15,67,10,0,0,20,3,7,1,0,0,7,1
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,7,15,53,8,7,1,27,4,0,0,7,1,7,1
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,8,18,56,10,6,1,33,6,0,0,0,0,6,1
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,K,33,36,12,12,4,15,5,9,3,3,1,24,8
+Cambridge,2012,490090,Fletcher/Maynard Academy,Middlesex,PK,40,28,11,8,3,8,3,5,2,0,0,50,20
+Cambridge,2012,490506,Cambridge Rindge and Latin,Middlesex,9,411,34,141,11,46,13,52,2,8,1,3,39,161
+Cambridge,2012,490506,Cambridge Rindge and Latin,Middlesex,10,395,37,147,11,45,16,62,2,8,0,1,33,132
+Cambridge,2012,490506,Cambridge Rindge and Latin,Middlesex,11,413,40,167,10,42,13,52,1,5,1,4,35,143
+Cambridge,2012,490506,Cambridge Rindge and Latin,Middlesex,12,394,36,143,10,41,14,56,2,7,1,4,36,143
+Cambridge,2013,490005,Maria L. Baldwin,Middlesex,Gr.1,29,24,7,10,3,14,4,0,0,0,0,52,15
+Cambridge,2013,490005,Maria L. Baldwin,Middlesex,Gr.2,42,26,11,5,2,5,2,10,4,0,0,55,23
+Cambridge,2013,490005,Maria L. Baldwin,Middlesex,Gr.3,43,16,7,21,9,5,2,9,4,0,0,47,20
+Cambridge,2013,490005,Maria L. Baldwin,Middlesex,Gr.4,39,26,10,8,3,8,3,5,2,0,0,54,21
+Cambridge,2013,490005,Maria L. Baldwin,Middlesex,Gr.5,47,28,13,9,4,13,6,13,6,0,0,38,18
+Cambridge,2013,490005,Maria L. Baldwin,Middlesex,K,52,21,11,13,7,12,6,12,6,0,0,42,22
+Cambridge,2013,490005,Maria L. Baldwin,Middlesex,PK,52,10,5,13,7,13,7,10,5,0,0,54,28
+Cambridge,2013,490006,Amigos School,Middlesex,Gr.1,41,5,2,2,1,39,16,7,3,0,0,44,18
+Cambridge,2013,490006,Amigos School,Middlesex,Gr.2,41,5,2,2,1,29,12,15,6,0,0,49,20
+Cambridge,2013,490006,Amigos School,Middlesex,Gr.3,35,3,1,9,3,46,16,17,6,0,0,26,9
+Cambridge,2013,490006,Amigos School,Middlesex,Gr.4,33,9,3,3,1,39,13,9,3,0,0,39,13
+Cambridge,2013,490006,Amigos School,Middlesex,Gr.5,35,11,4,3,1,43,15,6,2,0,0,37,13
+Cambridge,2013,490006,Amigos School,Middlesex,Gr.6,24,8,2,4,1,54,13,4,1,0,0,29,7
+Cambridge,2013,490006,Amigos School,Middlesex,Gr.7,25,8,2,0,0,48,12,4,1,0,0,40,10
+Cambridge,2013,490006,Amigos School,Middlesex,Gr.8,25,4,1,4,1,48,12,4,1,0,0,40,10
+Cambridge,2013,490006,Amigos School,Middlesex,K,54,0,0,2,1,50,27,7,4,0,0,41,22
+Cambridge,2013,490006,Amigos School,Middlesex,PK,25,4,1,0,0,44,11,4,1,0,0,48,12
+Cambridge,2013,490007,Cambridgeport,Middlesex,Gr.1,36,17,6,3,1,19,7,8,3,0,0,53,19
+Cambridge,2013,490007,Cambridgeport,Middlesex,Gr.2,39,18,7,21,8,10,4,3,1,0,0,49,19
+Cambridge,2013,490007,Cambridgeport,Middlesex,Gr.3,32,38,12,13,4,13,4,9,3,0,0,28,9
+Cambridge,2013,490007,Cambridgeport,Middlesex,Gr.4,33,12,4,3,1,12,4,12,4,0,0,61,20
+Cambridge,2013,490007,Cambridgeport,Middlesex,Gr.5,31,19,6,16,5,13,4,6,2,0,0,45,14
+Cambridge,2013,490007,Cambridgeport,Middlesex,K,37,14,5,16,6,5,2,8,3,0,0,57,21
+Cambridge,2013,490007,Cambridgeport,Middlesex,PK,50,16,8,8,4,12,6,8,4,0,0,56,28
+Cambridge,2013,490020,Haggerty,Middlesex,Gr.1,43,21,9,16,7,7,3,7,3,0,0,49,21
+Cambridge,2013,490020,Haggerty,Middlesex,Gr.2,39,38,15,8,3,3,1,8,3,0,0,41,16
+Cambridge,2013,490020,Haggerty,Middlesex,Gr.3,35,31,11,14,5,3,1,3,1,0,0,49,17
+Cambridge,2013,490020,Haggerty,Middlesex,Gr.4,30,27,8,10,3,0,0,17,5,0,0,47,14
+Cambridge,2013,490020,Haggerty,Middlesex,Gr.5,42,21,9,17,7,2,1,7,3,2,1,50,21
+Cambridge,2013,490020,Haggerty,Middlesex,K,52,25,13,21,11,10,5,6,3,0,0,38,20
+Cambridge,2013,490020,Haggerty,Middlesex,PK,11,18,2,36,4,9,1,0,0,0,0,36,4
+Cambridge,2013,490030,Martin Luther King Jr.,Middlesex,Gr.1,44,27,12,27,12,9,4,5,2,0,0,32,14
+Cambridge,2013,490030,Martin Luther King Jr.,Middlesex,Gr.2,35,49,17,11,4,14,5,11,4,0,0,14,5
+Cambridge,2013,490030,Martin Luther King Jr.,Middlesex,Gr.3,30,47,14,13,4,10,3,10,3,0,0,20,6
+Cambridge,2013,490030,Martin Luther King Jr.,Middlesex,Gr.4,30,47,14,23,7,13,4,0,0,0,0,17,5
+Cambridge,2013,490030,Martin Luther King Jr.,Middlesex,Gr.5,18,50,9,11,2,17,3,0,0,0,0,22,4
+Cambridge,2013,490030,Martin Luther King Jr.,Middlesex,K,58,33,19,26,15,7,4,7,4,0,0,28,16
+Cambridge,2013,490030,Martin Luther King Jr.,Middlesex,PK,35,23,8,29,10,9,3,14,5,0,0,26,9
+Cambridge,2013,490035,King Open,Middlesex,Gr.1,50,10,5,6,3,14,7,14,7,0,0,56,28
+Cambridge,2013,490035,King Open,Middlesex,Gr.2,43,28,12,5,2,7,3,9,4,0,0,51,22
+Cambridge,2013,490035,King Open,Middlesex,Gr.3,54,19,10,6,3,20,11,7,4,0,0,48,26
+Cambridge,2013,490035,King Open,Middlesex,Gr.4,50,26,13,8,4,12,6,6,3,2,1,46,23
+Cambridge,2013,490035,King Open,Middlesex,Gr.5,53,30,16,0,0,15,8,4,2,2,1,47,25
+Cambridge,2013,490035,King Open,Middlesex,K,61,11,7,7,4,7,4,10,6,0,0,66,40
+Cambridge,2013,490035,King Open,Middlesex,PK,34,21,7,12,4,15,5,6,2,3,1,44,15
+Cambridge,2013,490040,Kennedy-Longfellow,Middlesex,Gr.1,37,27,10,14,5,16,6,0,0,0,0,43,16
+Cambridge,2013,490040,Kennedy-Longfellow,Middlesex,Gr.2,50,34,17,10,5,14,7,2,1,0,0,40,20
+Cambridge,2013,490040,Kennedy-Longfellow,Middlesex,Gr.3,41,37,15,10,4,27,11,2,1,0,0,24,10
+Cambridge,2013,490040,Kennedy-Longfellow,Middlesex,Gr.4,40,35,14,15,6,10,4,5,2,0,0,33,13
+Cambridge,2013,490040,Kennedy-Longfellow,Middlesex,Gr.5,35,40,14,9,3,23,8,0,0,0,0,29,10
+Cambridge,2013,490040,Kennedy-Longfellow,Middlesex,K,51,25,13,20,10,14,7,4,2,0,0,37,19
+Cambridge,2013,490040,Kennedy-Longfellow,Middlesex,PK,41,27,11,10,4,17,7,7,3,0,0,39,16
+Cambridge,2013,490045,Morse,Middlesex,Gr.1,39,31,12,10,4,10,4,15,6,0,0,33,13
+Cambridge,2013,490045,Morse,Middlesex,Gr.2,43,37,16,7,3,21,9,16,7,2,1,16,7
+Cambridge,2013,490045,Morse,Middlesex,Gr.3,40,28,11,18,7,10,4,8,3,3,1,35,14
+Cambridge,2013,490045,Morse,Middlesex,Gr.4,34,47,16,12,4,0,0,9,3,0,0,32,11
+Cambridge,2013,490045,Morse,Middlesex,Gr.5,44,30,13,11,5,11,5,7,3,2,1,39,17
+Cambridge,2013,490045,Morse,Middlesex,K,64,34,22,17,11,3,2,2,1,0,0,42,27
+Cambridge,2013,490045,Morse,Middlesex,PK,35,23,8,23,8,11,4,17,6,0,0,26,9
+Cambridge,2013,490050,Peabody,Middlesex,Gr.1,42,19,8,14,6,7,3,17,7,0,0,43,18
+Cambridge,2013,490050,Peabody,Middlesex,Gr.2,48,33,16,6,3,13,6,4,2,0,0,42,20
+Cambridge,2013,490050,Peabody,Middlesex,Gr.3,46,37,17,7,3,4,2,4,2,0,0,46,21
+Cambridge,2013,490050,Peabody,Middlesex,Gr.4,38,47,18,8,3,13,5,5,2,3,1,24,9
+Cambridge,2013,490050,Peabody,Middlesex,Gr.5,45,31,14,16,7,4,2,7,3,0,0,42,19
+Cambridge,2013,490050,Peabody,Middlesex,K,48,31,15,8,4,8,4,6,3,0,0,46,22
+Cambridge,2013,490050,Peabody,Middlesex,PK,40,25,10,5,2,10,4,8,3,0,0,53,21
+Cambridge,2013,490065,John M Tobin,Middlesex,Gr.1,36,25,9,11,4,8,3,11,4,0,0,44,16
+Cambridge,2013,490065,John M Tobin,Middlesex,Gr.2,36,28,10,25,9,8,3,11,4,0,0,28,10
+Cambridge,2013,490065,John M Tobin,Middlesex,Gr.3,28,25,7,14,4,11,3,7,2,0,0,43,12
+Cambridge,2013,490065,John M Tobin,Middlesex,Gr.4,28,21,6,21,6,7,2,4,1,7,2,39,11
+Cambridge,2013,490065,John M Tobin,Middlesex,Gr.5,20,30,6,35,7,25,5,0,0,0,0,10,2
+Cambridge,2013,490065,John M Tobin,Middlesex,K,40,38,15,10,4,8,3,13,5,0,0,33,13
+Cambridge,2013,490065,John M Tobin,Middlesex,PK,86,24,21,12,10,8,7,13,11,0,0,43,37
+Cambridge,2013,490080,Graham and Parks,Middlesex,Gr.1,50,16,8,16,8,18,9,2,1,0,0,48,24
+Cambridge,2013,490080,Graham and Parks,Middlesex,Gr.2,56,14,8,20,11,14,8,0,0,0,0,52,29
+Cambridge,2013,490080,Graham and Parks,Middlesex,Gr.3,52,33,17,15,8,6,3,8,4,0,0,38,20
+Cambridge,2013,490080,Graham and Parks,Middlesex,Gr.4,49,20,10,14,7,14,7,6,3,2,1,43,21
+Cambridge,2013,490080,Graham and Parks,Middlesex,Gr.5,54,26,14,9,5,13,7,4,2,0,0,46,25
+Cambridge,2013,490080,Graham and Parks,Middlesex,K,64,13,8,27,17,5,3,8,5,0,0,48,31
+Cambridge,2013,490080,Graham and Parks,Middlesex,PK,28,21,6,36,10,14,4,0,0,0,0,29,8
+Cambridge,2013,490090,Fletcher/Maynard Academy,Middlesex,Gr.1,27,48,13,4,1,22,6,11,3,0,0,15,4
+Cambridge,2013,490090,Fletcher/Maynard Academy,Middlesex,Gr.2,36,31,11,8,3,25,9,6,2,0,0,28,10
+Cambridge,2013,490090,Fletcher/Maynard Academy,Middlesex,Gr.3,34,47,16,9,3,26,9,6,2,3,1,9,3
+Cambridge,2013,490090,Fletcher/Maynard Academy,Middlesex,Gr.4,20,40,8,5,1,15,3,5,1,0,0,30,6
+Cambridge,2013,490090,Fletcher/Maynard Academy,Middlesex,Gr.5,30,57,17,0,0,10,3,3,1,7,2,20,6
+Cambridge,2013,490090,Fletcher/Maynard Academy,Middlesex,K,52,31,16,8,4,15,8,8,4,2,1,37,19
+Cambridge,2013,490090,Fletcher/Maynard Academy,Middlesex,PK,24,25,6,8,2,21,5,17,4,4,1,25,6
+Cambridge,2013,490305,Cambridge Street Upper School,Middlesex,Gr.6,96,34,33,8,8,13,12,6,6,0,0,39,37
+Cambridge,2013,490305,Cambridge Street Upper School,Middlesex,Gr.7,82,38,31,10,8,12,10,5,4,1,1,34,28
+Cambridge,2013,490305,Cambridge Street Upper School,Middlesex,Gr.8,76,37,28,12,9,17,13,0,0,3,2,30,23
+Cambridge,2013,490310,Putnam Avenue Upper School,Middlesex,Gr.6,75,43,32,13,10,12,9,1,1,0,0,31,23
+Cambridge,2013,490310,Putnam Avenue Upper School,Middlesex,Gr.7,83,43,36,17,14,11,9,1,1,0,0,28,23
+Cambridge,2013,490310,Putnam Avenue Upper School,Middlesex,Gr.8,83,34,28,16,13,14,12,6,5,0,0,29,24
+Cambridge,2013,490315,Rindge Avenue Upper School,Middlesex,Gr.6,79,32,25,11,9,15,12,4,3,0,0,38,30
+Cambridge,2013,490315,Rindge Avenue Upper School,Middlesex,Gr.7,80,30,24,13,10,10,8,5,4,3,2,40,32
+Cambridge,2013,490315,Rindge Avenue Upper School,Middlesex,Gr.8,93,29,27,9,8,6,6,2,2,0,0,54,50
+Cambridge,2013,490320,Vassal Lane Upper School,Middlesex,Gr.6,105,28,29,15,16,12,13,8,8,1,1,35,37
+Cambridge,2013,490320,Vassal Lane Upper School,Middlesex,Gr.7,108,45,49,18,19,6,6,4,4,0,0,28,30
+Cambridge,2013,490320,Vassal Lane Upper School,Middlesex,Gr.8,80,36,29,13,10,11,9,3,2,0,0,38,30
+Cambridge,2013,490506,Cambridge Rindge and Latin,Middlesex,Gr.9,450,36,162,8,36,14,64,4,16,1,3,38,169
+Cambridge,2013,490506,Cambridge Rindge and Latin,Middlesex,Gr.10,428,34,147,12,53,12,51,2,9,1,3,39,165
+Cambridge,2013,490506,Cambridge Rindge and Latin,Middlesex,Gr.11,404,34,136,14,56,16,63,2,8,0,2,34,139
+Cambridge,2013,490506,Cambridge Rindge and Latin,Middlesex,Gr.12,396,38,150,10,39,13,50,2,8,1,2,37,147
+Cambridge,2013,490506,Cambridge Rindge and Latin,Middlesex,SPED_Beyond_Grade_12,6,50,3,0,0,33,2,0,0,0,0,17,1
+Cambridge,2014,490005,Maria L. Baldwin,Middlesex,K,49,6,3,12,6,12,6,4,2,2,1,63,31
+Cambridge,2014,490005,Maria L. Baldwin,Middlesex,PK,58,26,15,7,4,10,6,19,11,0,0,38,22
+Cambridge,2014,490005,Maria L. Baldwin,Middlesex,Gr.1,46,22,10,15,7,13,6,9,4,0,0,41,19
+Cambridge,2014,490005,Maria L. Baldwin,Middlesex,Gr.2,42,24,10,17,7,10,4,2,1,2,1,45,19
+Cambridge,2014,490005,Maria L. Baldwin,Middlesex,Gr.3,44,23,10,5,2,7,3,9,4,0,0,57,25
+Cambridge,2014,490005,Maria L. Baldwin,Middlesex,Gr.4,43,19,8,21,9,5,2,12,5,0,0,44,19
+Cambridge,2014,490005,Maria L. Baldwin,Middlesex,Gr.5,41,22,9,15,6,12,5,2,1,2,1,46,19
+Cambridge,2014,490006,Amigos School,Middlesex,K,51,8,4,4,2,35,18,12,6,0,0,41,21
+Cambridge,2014,490006,Amigos School,Middlesex,PK,27,4,1,4,1,52,14,7,2,0,0,33,9
+Cambridge,2014,490006,Amigos School,Middlesex,Gr.1,49,0,0,0,0,53,26,6,3,0,0,41,20
+Cambridge,2014,490006,Amigos School,Middlesex,Gr.2,40,5,2,3,1,40,16,5,2,0,0,45,18
+Cambridge,2014,490006,Amigos School,Middlesex,Gr.3,41,5,2,2,1,29,12,17,7,0,0,46,19
+Cambridge,2014,490006,Amigos School,Middlesex,Gr.4,29,3,1,3,1,48,14,17,5,0,0,28,8
+Cambridge,2014,490006,Amigos School,Middlesex,Gr.5,27,7,2,0,0,41,11,15,4,0,0,37,10
+Cambridge,2014,490006,Amigos School,Middlesex,Gr.6,33,9,3,3,1,39,13,9,3,0,0,39,13
+Cambridge,2014,490006,Amigos School,Middlesex,Gr.7,22,9,2,5,1,50,11,5,1,0,0,32,7
+Cambridge,2014,490006,Amigos School,Middlesex,Gr.8,24,8,2,0,0,46,11,4,1,0,0,42,10
+Cambridge,2014,490007,Cambridgeport,Middlesex,K,42,19,8,10,4,5,2,10,4,0,0,57,24
+Cambridge,2014,490007,Cambridgeport,Middlesex,PK,53,19,10,9,5,9,5,9,5,2,1,51,27
+Cambridge,2014,490007,Cambridgeport,Middlesex,Gr.1,45,18,8,9,4,9,4,9,4,0,0,56,25
+Cambridge,2014,490007,Cambridgeport,Middlesex,Gr.2,35,14,5,9,3,20,7,9,3,0,0,49,17
+Cambridge,2014,490007,Cambridgeport,Middlesex,Gr.3,41,20,8,15,6,12,5,2,1,0,0,51,21
+Cambridge,2014,490007,Cambridgeport,Middlesex,Gr.4,32,44,14,9,3,13,4,9,3,0,0,22,7
+Cambridge,2014,490007,Cambridgeport,Middlesex,Gr.5,32,13,4,6,2,9,3,9,3,0,0,63,20
+Cambridge,2014,490020,Haggerty,Middlesex,K,47,23,11,15,7,4,2,6,3,0,0,51,24
+Cambridge,2014,490020,Haggerty,Middlesex,PK,22,27,6,23,5,0,0,9,2,0,0,41,9
+Cambridge,2014,490020,Haggerty,Middlesex,Gr.1,45,24,11,16,7,11,5,16,7,0,0,33,15
+Cambridge,2014,490020,Haggerty,Middlesex,Gr.2,36,22,8,14,5,6,2,11,4,0,0,47,17
+Cambridge,2014,490020,Haggerty,Middlesex,Gr.3,36,36,13,6,2,6,2,6,2,0,0,44,16
+Cambridge,2014,490020,Haggerty,Middlesex,Gr.4,33,36,12,9,3,3,1,3,1,0,0,48,16
+Cambridge,2014,490020,Haggerty,Middlesex,Gr.5,29,34,10,10,3,3,1,17,5,0,0,34,10
+Cambridge,2014,490030,Martin Luther King Jr.,Middlesex,K,55,24,13,20,11,11,6,16,9,0,0,29,16
+Cambridge,2014,490030,Martin Luther King Jr.,Middlesex,PK,25,16,4,36,9,4,1,12,3,0,0,32,8
+Cambridge,2014,490030,Martin Luther King Jr.,Middlesex,Gr.1,59,36,21,25,15,7,4,10,6,0,0,22,13
+Cambridge,2014,490030,Martin Luther King Jr.,Middlesex,Gr.2,39,23,9,33,13,8,3,8,3,0,0,28,11
+Cambridge,2014,490030,Martin Luther King Jr.,Middlesex,Gr.3,32,31,10,19,6,16,5,19,6,0,0,16,5
+Cambridge,2014,490030,Martin Luther King Jr.,Middlesex,Gr.4,28,50,14,14,4,14,4,7,2,0,0,14,4
+Cambridge,2014,490030,Martin Luther King Jr.,Middlesex,Gr.5,29,52,15,24,7,14,4,0,0,0,0,10,3
+Cambridge,2014,490035,King Open,Middlesex,K,62,15,9,11,7,18,11,6,4,0,0,50,31
+Cambridge,2014,490035,King Open,Middlesex,PK,29,28,8,10,3,10,3,7,2,0,0,45,13
+Cambridge,2014,490035,King Open,Middlesex,Gr.1,59,8,5,12,7,14,8,10,6,0,0,56,33
+Cambridge,2014,490035,King Open,Middlesex,Gr.2,47,13,6,6,3,13,6,15,7,0,0,53,25
+Cambridge,2014,490035,King Open,Middlesex,Gr.3,45,29,13,4,2,13,6,9,4,0,0,44,20
+Cambridge,2014,490035,King Open,Middlesex,Gr.4,50,20,10,6,3,22,11,6,3,0,0,46,23
+Cambridge,2014,490035,King Open,Middlesex,Gr.5,42,29,12,5,2,14,6,7,3,2,1,43,18
+Cambridge,2014,490040,Kennedy-Longfellow,Middlesex,K,52,13,7,21,11,25,13,8,4,0,0,33,17
+Cambridge,2014,490040,Kennedy-Longfellow,Middlesex,PK,36,19,7,19,7,19,7,6,2,0,0,36,13
+Cambridge,2014,490040,Kennedy-Longfellow,Middlesex,Gr.1,39,26,10,15,6,23,9,5,2,0,0,28,11
+Cambridge,2014,490040,Kennedy-Longfellow,Middlesex,Gr.2,23,26,6,13,3,9,2,0,0,0,0,52,12
+Cambridge,2014,490040,Kennedy-Longfellow,Middlesex,Gr.3,37,41,15,8,3,8,3,3,1,0,0,41,15
+Cambridge,2014,490040,Kennedy-Longfellow,Middlesex,Gr.4,33,27,9,15,5,30,10,3,1,0,0,24,8
+Cambridge,2014,490040,Kennedy-Longfellow,Middlesex,Gr.5,35,37,13,14,5,11,4,6,2,0,0,29,10
+Cambridge,2014,490045,Morse,Middlesex,K,46,24,11,24,11,9,4,11,5,0,0,33,15
+Cambridge,2014,490045,Morse,Middlesex,PK,37,22,8,16,6,5,2,16,6,0,0,41,15
+Cambridge,2014,490045,Morse,Middlesex,Gr.1,50,38,19,16,8,4,2,2,1,0,0,38,19
+Cambridge,2014,490045,Morse,Middlesex,Gr.2,36,36,13,8,3,11,4,17,6,0,0,28,10
+Cambridge,2014,490045,Morse,Middlesex,Gr.3,42,36,15,7,3,21,9,19,8,2,1,14,6
+Cambridge,2014,490045,Morse,Middlesex,Gr.4,39,41,16,15,6,10,4,5,2,3,1,23,9
+Cambridge,2014,490045,Morse,Middlesex,Gr.5,31,48,15,10,3,0,0,6,2,0,0,35,11
+Cambridge,2014,490050,Peabody,Middlesex,K,48,17,8,8,4,15,7,6,3,0,0,54,26
+Cambridge,2014,490050,Peabody,Middlesex,PK,45,40,18,18,8,2,1,2,1,0,0,38,17
+Cambridge,2014,490050,Peabody,Middlesex,Gr.1,44,34,15,2,1,7,3,7,3,0,0,50,22
+Cambridge,2014,490050,Peabody,Middlesex,Gr.2,44,18,8,11,5,9,4,18,8,0,0,43,19
+Cambridge,2014,490050,Peabody,Middlesex,Gr.3,45,33,15,7,3,11,5,4,2,0,0,42,19
+Cambridge,2014,490050,Peabody,Middlesex,Gr.4,43,37,16,7,3,2,1,7,3,0,0,47,20
+Cambridge,2014,490050,Peabody,Middlesex,Gr.5,42,45,19,10,4,14,6,7,3,0,0,24,10
+Cambridge,2014,490065,John M Tobin,Middlesex,K,38,29,11,5,2,0,0,8,3,0,0,58,22
+Cambridge,2014,490065,John M Tobin,Middlesex,PK,86,23,20,17,15,14,12,14,12,1,1,30,26
+Cambridge,2014,490065,John M Tobin,Middlesex,Gr.1,37,35,13,8,3,5,2,11,4,0,0,41,15
+Cambridge,2014,490065,John M Tobin,Middlesex,Gr.2,32,22,7,13,4,9,3,9,3,0,0,47,15
+Cambridge,2014,490065,John M Tobin,Middlesex,Gr.3,31,23,7,29,9,10,3,10,3,0,0,29,9
+Cambridge,2014,490065,John M Tobin,Middlesex,Gr.4,32,28,9,9,3,9,3,9,3,0,0,44,14
+Cambridge,2014,490065,John M Tobin,Middlesex,Gr.5,31,13,4,19,6,6,2,3,1,6,2,52,16
+Cambridge,2014,490080,Graham and Parks,Middlesex,K,51,18,9,25,13,8,4,8,4,0,0,41,21
+Cambridge,2014,490080,Graham and Parks,Middlesex,PK,30,47,14,17,5,7,2,3,1,0,0,27,8
+Cambridge,2014,490080,Graham and Parks,Middlesex,Gr.1,68,13,9,22,15,7,5,9,6,0,0,49,33
+Cambridge,2014,490080,Graham and Parks,Middlesex,Gr.2,54,15,8,15,8,22,12,2,1,0,0,46,25
+Cambridge,2014,490080,Graham and Parks,Middlesex,Gr.3,51,18,9,18,9,12,6,0,0,0,0,53,27
+Cambridge,2014,490080,Graham and Parks,Middlesex,Gr.4,53,32,17,19,10,4,2,8,4,0,0,38,20
+Cambridge,2014,490080,Graham and Parks,Middlesex,Gr.5,52,23,12,17,9,13,7,6,3,2,1,38,20
+Cambridge,2014,490090,Fletcher/Maynard Academy,Middlesex,K,47,47,22,6,3,17,8,9,4,0,0,21,10
+Cambridge,2014,490090,Fletcher/Maynard Academy,Middlesex,PK,36,28,10,17,6,17,6,6,2,0,0,33,12
+Cambridge,2014,490090,Fletcher/Maynard Academy,Middlesex,Gr.1,46,41,19,4,2,15,7,7,3,2,1,30,14
+Cambridge,2014,490090,Fletcher/Maynard Academy,Middlesex,Gr.2,26,50,13,4,1,19,5,12,3,0,0,15,4
+Cambridge,2014,490090,Fletcher/Maynard Academy,Middlesex,Gr.3,31,26,8,6,2,29,9,6,2,0,0,29,9
+Cambridge,2014,490090,Fletcher/Maynard Academy,Middlesex,Gr.4,31,48,15,10,3,19,6,6,2,3,1,13,4
+Cambridge,2014,490090,Fletcher/Maynard Academy,Middlesex,Gr.5,18,44,8,6,1,17,3,6,1,0,0,22,4
+Cambridge,2014,490305,Cambridge Street Upper School,Middlesex,Gr.6,97,35,34,3,3,13,13,5,5,3,3,38,37
+Cambridge,2014,490305,Cambridge Street Upper School,Middlesex,Gr.7,79,33,26,10,8,14,11,6,5,0,0,37,29
+Cambridge,2014,490305,Cambridge Street Upper School,Middlesex,Gr.8,91,35,32,14,13,13,12,4,4,1,1,32,29
+Cambridge,2014,490310,Putnam Avenue Upper School,Middlesex,Gr.6,92,39,36,8,7,17,16,5,5,1,1,29,27
+Cambridge,2014,490310,Putnam Avenue Upper School,Middlesex,Gr.7,73,40,29,14,10,18,13,1,1,0,0,27,20
+Cambridge,2014,490310,Putnam Avenue Upper School,Middlesex,Gr.8,81,42,34,15,12,10,8,4,3,0,0,30,24
+Cambridge,2014,490315,Rindge Avenue Upper School,Middlesex,Gr.6,101,27,27,14,14,14,14,6,6,0,0,40,40
+Cambridge,2014,490315,Rindge Avenue Upper School,Middlesex,Gr.7,85,35,30,15,13,16,14,2,2,0,0,31,26
+Cambridge,2014,490315,Rindge Avenue Upper School,Middlesex,Gr.8,96,31,30,14,13,11,11,4,4,2,2,38,36
+Cambridge,2014,490320,Vassal Lane Upper School,Middlesex,Gr.6,101,30,30,17,17,9,9,5,5,1,1,39,39
+Cambridge,2014,490320,Vassal Lane Upper School,Middlesex,Gr.7,98,33,32,13,13,8,8,7,7,1,1,37,36
+Cambridge,2014,490320,Vassal Lane Upper School,Middlesex,Gr.8,103,47,48,16,16,5,5,3,3,0,0,30,31
+Cambridge,2014,490506,Cambridge Rindge and Latin,Middlesex,Gr.9,451,31,140,11,50,14,61,3,13,0,2,41,183
+Cambridge,2014,490506,Cambridge Rindge and Latin,Middlesex,Gr.10,450,36,161,9,40,14,62,4,16,1,3,37,168
+Cambridge,2014,490506,Cambridge Rindge and Latin,Middlesex,Gr.11,451,34,154,12,55,12,56,3,12,1,3,38,171
+Cambridge,2014,490506,Cambridge Rindge and Latin,Middlesex,Gr.12,386,32,123,15,58,16,61,3,11,1,2,34,131
+Cambridge,2015,490005,Maria L. Baldwin,Middlesex,K,67,18,12,7,5,10,7,13,9,0,0,51,34
+Cambridge,2015,490005,Maria L. Baldwin,Middlesex,PK,54,30,16,13,7,7,4,6,3,0,0,44,24
+Cambridge,2015,490005,Maria L. Baldwin,Middlesex,Gr.1,43,14,6,12,5,14,6,2,1,2,1,56,24
+Cambridge,2015,490005,Maria L. Baldwin,Middlesex,Gr.2,47,26,12,15,7,9,4,11,5,0,0,40,19
+Cambridge,2015,490005,Maria L. Baldwin,Middlesex,Gr.3,44,32,14,14,6,11,5,2,1,2,1,39,17
+Cambridge,2015,490005,Maria L. Baldwin,Middlesex,Gr.4,46,24,11,4,2,7,3,9,4,0,0,57,26
+Cambridge,2015,490005,Maria L. Baldwin,Middlesex,Gr.5,42,21,9,21,9,5,2,14,6,0,0,38,16
+Cambridge,2015,490006,Amigos School,Middlesex,K,52,4,2,2,1,50,26,8,4,0,0,37,19
+Cambridge,2015,490006,Amigos School,Middlesex,PK,28,7,2,14,4,36,10,4,1,0,0,39,11
+Cambridge,2015,490006,Amigos School,Middlesex,Gr.1,47,9,4,4,2,36,17,13,6,0,0,38,18
+Cambridge,2015,490006,Amigos School,Middlesex,Gr.2,48,0,0,0,0,50,24,6,3,0,0,44,21
+Cambridge,2015,490006,Amigos School,Middlesex,Gr.3,40,0,0,3,1,48,19,5,2,0,0,43,17
+Cambridge,2015,490006,Amigos School,Middlesex,Gr.4,39,5,2,3,1,31,12,18,7,0,0,44,17
+Cambridge,2015,490006,Amigos School,Middlesex,Gr.5,27,4,1,4,1,44,12,19,5,0,0,30,8
+Cambridge,2015,490006,Amigos School,Middlesex,Gr.6,25,8,2,0,0,36,9,16,4,0,0,40,10
+Cambridge,2015,490006,Amigos School,Middlesex,Gr.7,30,10,3,3,1,40,12,10,3,0,0,37,11
+Cambridge,2015,490006,Amigos School,Middlesex,Gr.8,24,8,2,0,0,54,13,4,1,0,0,33,8
+Cambridge,2015,490007,Cambridgeport,Middlesex,K,47,9,4,4,2,9,4,4,2,2,1,72,34
+Cambridge,2015,490007,Cambridgeport,Middlesex,PK,54,28,15,9,5,9,5,4,2,0,0,50,27
+Cambridge,2015,490007,Cambridgeport,Middlesex,Gr.1,43,21,9,9,4,2,1,9,4,0,0,58,25
+Cambridge,2015,490007,Cambridgeport,Middlesex,Gr.2,40,18,7,5,2,15,6,10,4,0,0,53,21
+Cambridge,2015,490007,Cambridgeport,Middlesex,Gr.3,36,14,5,14,5,17,6,6,2,0,0,50,18
+Cambridge,2015,490007,Cambridgeport,Middlesex,Gr.4,38,24,9,11,4,11,4,3,1,0,0,53,20
+Cambridge,2015,490007,Cambridgeport,Middlesex,Gr.5,28,43,12,14,4,14,4,7,2,0,0,18,5
+Cambridge,2015,490020,Haggerty,Middlesex,K,50,22,11,18,9,2,1,8,4,0,0,50,25
+Cambridge,2015,490020,Haggerty,Middlesex,PK,28,32,9,7,2,7,2,4,1,0,0,50,14
+Cambridge,2015,490020,Haggerty,Middlesex,Gr.1,39,18,7,13,5,5,2,10,4,0,0,54,21
+Cambridge,2015,490020,Haggerty,Middlesex,Gr.2,44,23,10,16,7,7,3,18,8,0,0,36,16
+Cambridge,2015,490020,Haggerty,Middlesex,Gr.3,35,26,9,14,5,3,1,11,4,0,0,46,16
+Cambridge,2015,490020,Haggerty,Middlesex,Gr.4,36,36,13,6,2,3,1,8,3,0,0,44,16
+Cambridge,2015,490020,Haggerty,Middlesex,Gr.5,37,32,12,11,4,0,0,8,3,0,0,49,18
+Cambridge,2015,490030,Martin Luther King Jr.,Middlesex,K,53,25,13,28,15,9,5,15,8,0,0,23,12
+Cambridge,2015,490030,Martin Luther King Jr.,Middlesex,PK,39,21,8,28,11,13,5,13,5,0,0,26,10
+Cambridge,2015,490030,Martin Luther King Jr.,Middlesex,Gr.1,46,22,10,22,10,15,7,17,8,0,0,24,11
+Cambridge,2015,490030,Martin Luther King Jr.,Middlesex,Gr.2,45,33,15,24,11,4,2,9,4,0,0,29,13
+Cambridge,2015,490030,Martin Luther King Jr.,Middlesex,Gr.3,32,28,9,25,8,9,3,6,2,0,0,31,10
+Cambridge,2015,490030,Martin Luther King Jr.,Middlesex,Gr.4,26,38,10,19,5,15,4,8,2,0,0,19,5
+Cambridge,2015,490030,Martin Luther King Jr.,Middlesex,Gr.5,27,56,15,11,3,15,4,7,2,0,0,11,3
+Cambridge,2015,490035,King Open,Middlesex,K,61,20,12,3,2,11,7,13,8,0,0,52,32
+Cambridge,2015,490035,King Open,Middlesex,PK,29,14,4,21,6,14,4,3,1,3,1,45,13
+Cambridge,2015,490035,King Open,Middlesex,Gr.1,47,15,7,11,5,15,7,6,3,0,0,53,25
+Cambridge,2015,490035,King Open,Middlesex,Gr.2,51,8,4,14,7,12,6,10,5,0,0,57,29
+Cambridge,2015,490035,King Open,Middlesex,Gr.3,46,17,8,0,0,17,8,15,7,0,0,50,23
+Cambridge,2015,490035,King Open,Middlesex,Gr.4,39,26,10,5,2,13,5,5,2,0,0,51,20
+Cambridge,2015,490035,King Open,Middlesex,Gr.5,43,21,9,7,3,21,9,5,2,2,1,44,19
+Cambridge,2015,490040,Kennedy-Longfellow,Middlesex,K,55,18,10,27,15,20,11,9,5,0,0,25,14
+Cambridge,2015,490040,Kennedy-Longfellow,Middlesex,PK,39,13,5,15,6,23,9,5,2,0,0,44,17
+Cambridge,2015,490040,Kennedy-Longfellow,Middlesex,Gr.1,46,17,8,26,12,24,11,9,4,0,0,24,11
+Cambridge,2015,490040,Kennedy-Longfellow,Middlesex,Gr.2,32,25,8,22,7,22,7,3,1,0,0,28,9
+Cambridge,2015,490040,Kennedy-Longfellow,Middlesex,Gr.3,21,29,6,10,2,19,4,0,0,0,0,43,9
+Cambridge,2015,490040,Kennedy-Longfellow,Middlesex,Gr.4,34,35,12,6,2,9,3,3,1,0,0,47,16
+Cambridge,2015,490040,Kennedy-Longfellow,Middlesex,Gr.5,31,32,10,10,3,29,9,6,2,0,0,23,7
+Cambridge,2015,490045,Morse,Middlesex,K,49,18,9,22,11,10,5,14,7,0,0,35,17
+Cambridge,2015,490045,Morse,Middlesex,PK,52,19,10,12,6,10,5,8,4,0,0,52,27
+Cambridge,2015,490045,Morse,Middlesex,Gr.1,38,29,11,16,6,8,3,13,5,0,0,34,13
+Cambridge,2015,490045,Morse,Middlesex,Gr.2,45,38,17,13,6,2,1,2,1,0,0,42,19
+Cambridge,2015,490045,Morse,Middlesex,Gr.3,38,32,12,13,5,11,4,16,6,0,0,29,11
+Cambridge,2015,490045,Morse,Middlesex,Gr.4,42,38,16,7,3,19,8,21,9,0,0,14,6
+Cambridge,2015,490045,Morse,Middlesex,Gr.5,38,39,15,16,6,13,5,5,2,3,1,21,8
+Cambridge,2015,490050,Peabody,Middlesex,K,50,34,17,14,7,6,3,2,1,0,0,44,22
+Cambridge,2015,490050,Peabody,Middlesex,PK,46,26,12,24,11,2,1,4,2,0,0,43,20
+Cambridge,2015,490050,Peabody,Middlesex,Gr.1,46,17,8,7,3,17,8,7,3,0,0,52,24
+Cambridge,2015,490050,Peabody,Middlesex,Gr.2,43,40,17,2,1,7,3,5,2,0,0,47,20
+Cambridge,2015,490050,Peabody,Middlesex,Gr.3,45,20,9,13,6,9,4,16,7,0,0,42,19
+Cambridge,2015,490050,Peabody,Middlesex,Gr.4,45,31,14,7,3,11,5,7,3,0,0,42,19
+Cambridge,2015,490050,Peabody,Middlesex,Gr.5,45,36,16,11,5,2,1,4,2,0,0,47,21
+Cambridge,2015,490065,John M Tobin,Middlesex,K,38,24,9,21,8,13,5,18,7,0,0,24,9
+Cambridge,2015,490065,John M Tobin,Middlesex,PK,85,25,21,15,13,12,10,14,12,1,1,33,28
+Cambridge,2015,490065,John M Tobin,Middlesex,Gr.1,40,30,12,5,2,0,0,8,3,0,0,58,23
+Cambridge,2015,490065,John M Tobin,Middlesex,Gr.2,39,36,14,8,3,3,1,13,5,0,0,41,16
+Cambridge,2015,490065,John M Tobin,Middlesex,Gr.3,29,21,6,14,4,10,3,10,3,0,0,45,13
+Cambridge,2015,490065,John M Tobin,Middlesex,Gr.4,29,21,6,24,7,10,3,10,3,0,0,34,10
+Cambridge,2015,490065,John M Tobin,Middlesex,Gr.5,32,25,8,9,3,13,4,9,3,0,0,44,14
+Cambridge,2015,490080,Graham and Parks,Middlesex,K,52,25,13,21,11,2,1,2,1,0,0,50,26
+Cambridge,2015,490080,Graham and Parks,Middlesex,PK,35,20,7,31,11,3,1,11,4,0,0,34,12
+Cambridge,2015,490080,Graham and Parks,Middlesex,Gr.1,65,18,12,29,19,12,8,5,3,0,0,35,23
+Cambridge,2015,490080,Graham and Parks,Middlesex,Gr.2,69,17,12,26,18,6,4,6,4,0,0,45,31
+Cambridge,2015,490080,Graham and Parks,Middlesex,Gr.3,60,17,10,22,13,12,7,5,3,0,0,45,27
+Cambridge,2015,490080,Graham and Parks,Middlesex,Gr.4,65,17,11,28,18,11,7,0,0,0,0,45,29
+Cambridge,2015,490080,Graham and Parks,Middlesex,Gr.5,46,28,13,15,7,9,4,7,3,0,0,41,19
+Cambridge,2015,490090,Fletcher/Maynard Academy,Middlesex,K,42,31,13,17,7,17,7,5,2,0,0,31,13
+Cambridge,2015,490090,Fletcher/Maynard Academy,Middlesex,PK,54,59,32,11,6,13,7,2,1,0,0,15,8
+Cambridge,2015,490090,Fletcher/Maynard Academy,Middlesex,Gr.1,40,48,19,0,0,23,9,8,3,0,0,23,9
+Cambridge,2015,490090,Fletcher/Maynard Academy,Middlesex,Gr.2,45,40,18,4,2,18,8,4,2,2,1,31,14
+Cambridge,2015,490090,Fletcher/Maynard Academy,Middlesex,Gr.3,22,50,11,5,1,23,5,9,2,0,0,14,3
+Cambridge,2015,490090,Fletcher/Maynard Academy,Middlesex,Gr.4,30,30,9,10,3,30,9,3,1,0,0,23,7
+Cambridge,2015,490090,Fletcher/Maynard Academy,Middlesex,Gr.5,30,50,15,10,3,23,7,10,3,3,1,3,1
+Cambridge,2015,490305,Cambridge Street Upper School,Middlesex,Gr.6,88,27,24,7,6,16,14,5,4,0,0,44,39
+Cambridge,2015,490305,Cambridge Street Upper School,Middlesex,Gr.7,92,35,32,4,4,14,13,4,4,2,2,38,35
+Cambridge,2015,490305,Cambridge Street Upper School,Middlesex,Gr.8,79,32,25,13,10,14,11,5,4,0,0,37,29
+Cambridge,2015,490310,Putnam Avenue Upper School,Middlesex,Gr.6,82,44,36,10,8,10,8,5,4,1,1,29,24
+Cambridge,2015,490310,Putnam Avenue Upper School,Middlesex,Gr.7,79,44,35,9,7,14,11,6,5,1,1,25,20
+Cambridge,2015,490310,Putnam Avenue Upper School,Middlesex,Gr.8,65,38,25,15,10,17,11,0,0,0,0,29,19
+Cambridge,2015,490315,Rindge Avenue Upper School,Middlesex,Gr.6,79,29,23,11,9,18,14,6,5,0,0,35,28
+Cambridge,2015,490315,Rindge Avenue Upper School,Middlesex,Gr.7,95,25,24,13,12,13,12,6,6,0,0,43,41
+Cambridge,2015,490315,Rindge Avenue Upper School,Middlesex,Gr.8,89,34,30,15,13,12,11,4,4,0,0,35,31
+Cambridge,2015,490320,Vassal Lane Upper School,Middlesex,Gr.6,92,25,23,17,16,5,5,9,8,2,2,41,38
+Cambridge,2015,490320,Vassal Lane Upper School,Middlesex,Gr.7,100,28,28,14,14,11,11,6,6,1,1,40,40
+Cambridge,2015,490320,Vassal Lane Upper School,Middlesex,Gr.8,94,35,33,14,13,10,9,7,7,1,1,32,30
+Cambridge,2015,490506,Cambridge Rindge and Latin,Middlesex,Gr.9,499,34,172,11,56,13,64,4,18,1,4,37,185
+Cambridge,2015,490506,Cambridge Rindge and Latin,Middlesex,Gr.10,471,30,139,12,56,14,64,3,15,0,2,41,193
+Cambridge,2015,490506,Cambridge Rindge and Latin,Middlesex,Gr.11,439,36,157,9,41,12,53,4,16,1,3,38,169
+Cambridge,2015,490506,Cambridge Rindge and Latin,Middlesex,Gr.12,423,34,145,13,54,12,49,2,9,1,3,39,163
+Cambridge,2016,490005,Maria L. Baldwin,Middlesex,K,66,23,15,12,8,9,6,12,8,0,0,44,29
+Cambridge,2016,490005,Maria L. Baldwin,Middlesex,PK,54,15,8,15,8,9,5,4,2,0,0,57,31
+Cambridge,2016,490005,Maria L. Baldwin,Middlesex,Gr.1,60,15,9,8,5,12,7,8,5,0,0,57,34
+Cambridge,2016,490005,Maria L. Baldwin,Middlesex,Gr.2,43,14,6,12,5,16,7,7,3,2,1,49,21
+Cambridge,2016,490005,Maria L. Baldwin,Middlesex,Gr.3,44,25,11,16,7,14,6,9,4,0,0,36,16
+Cambridge,2016,490005,Maria L. Baldwin,Middlesex,Gr.4,35,40,14,11,4,11,4,3,1,0,0,34,12
+Cambridge,2016,490005,Maria L. Baldwin,Middlesex,Gr.5,45,27,12,4,2,7,3,9,4,0,0,53,24
+Cambridge,2016,490006,Amigos School,Middlesex,K,48,6,3,13,6,40,19,6,3,0,0,35,17
+Cambridge,2016,490006,Amigos School,Middlesex,PK,26,8,2,0,0,35,9,4,1,0,0,54,14
+Cambridge,2016,490006,Amigos School,Middlesex,Gr.1,48,4,2,2,1,48,23,8,4,0,0,38,18
+Cambridge,2016,490006,Amigos School,Middlesex,Gr.2,45,9,4,4,2,36,16,11,5,0,0,40,18
+Cambridge,2016,490006,Amigos School,Middlesex,Gr.3,47,0,0,0,0,45,21,9,4,0,0,47,22
+Cambridge,2016,490006,Amigos School,Middlesex,Gr.4,38,0,0,3,1,50,19,5,2,0,0,39,15
+Cambridge,2016,490006,Amigos School,Middlesex,Gr.5,38,5,2,3,1,37,14,16,6,0,0,39,15
+Cambridge,2016,490006,Amigos School,Middlesex,Gr.6,25,4,1,4,1,44,11,16,4,0,0,32,8
+Cambridge,2016,490006,Amigos School,Middlesex,Gr.7,24,4,1,0,0,46,11,13,3,0,0,38,9
+Cambridge,2016,490006,Amigos School,Middlesex,Gr.8,31,10,3,3,1,42,13,10,3,0,0,35,11
+Cambridge,2016,490007,Cambridgeport,Middlesex,K,49,18,9,4,2,8,4,4,2,0,0,65,32
+Cambridge,2016,490007,Cambridgeport,Middlesex,PK,47,21,10,6,3,15,7,9,4,0,0,49,23
+Cambridge,2016,490007,Cambridgeport,Middlesex,Gr.1,45,11,5,7,3,9,4,4,2,0,0,69,31
+Cambridge,2016,490007,Cambridgeport,Middlesex,Gr.2,43,23,10,7,3,2,1,9,4,0,0,58,25
+Cambridge,2016,490007,Cambridgeport,Middlesex,Gr.3,40,20,8,3,1,15,6,13,5,0,0,50,20
+Cambridge,2016,490007,Cambridgeport,Middlesex,Gr.4,35,20,7,6,2,20,7,6,2,0,0,49,17
+Cambridge,2016,490007,Cambridgeport,Middlesex,Gr.5,39,23,9,8,3,13,5,5,2,0,0,51,20
+Cambridge,2016,490020,Haggerty,Middlesex,K,46,20,9,11,5,7,3,9,4,0,0,54,25
+Cambridge,2016,490020,Haggerty,Middlesex,PK,25,16,4,20,5,4,1,20,5,0,0,40,10
+Cambridge,2016,490020,Haggerty,Middlesex,Gr.1,46,26,12,22,10,2,1,9,4,0,0,41,19
+Cambridge,2016,490020,Haggerty,Middlesex,Gr.2,41,17,7,10,4,5,2,12,5,0,0,56,23
+Cambridge,2016,490020,Haggerty,Middlesex,Gr.3,39,21,8,13,5,8,3,21,8,0,0,38,15
+Cambridge,2016,490020,Haggerty,Middlesex,Gr.4,30,27,8,13,4,3,1,13,4,0,0,43,13
+Cambridge,2016,490020,Haggerty,Middlesex,Gr.5,31,42,13,6,2,3,1,13,4,0,0,32,10
+Cambridge,2016,490030,Martin Luther King Jr.,Middlesex,K,64,22,14,23,15,14,9,16,10,0,0,25,16
+Cambridge,2016,490030,Martin Luther King Jr.,Middlesex,PK,31,19,6,23,7,13,4,16,5,0,0,29,9
+Cambridge,2016,490030,Martin Luther King Jr.,Middlesex,Gr.1,52,23,12,25,13,0,0,21,11,0,0,31,16
+Cambridge,2016,490030,Martin Luther King Jr.,Middlesex,Gr.2,53,25,13,23,12,8,4,11,6,0,0,34,18
+Cambridge,2016,490030,Martin Luther King Jr.,Middlesex,Gr.3,44,36,16,25,11,5,2,5,2,0,0,30,13
+Cambridge,2016,490030,Martin Luther King Jr.,Middlesex,Gr.4,36,28,10,25,9,14,5,3,1,0,0,31,11
+Cambridge,2016,490030,Martin Luther King Jr.,Middlesex,Gr.5,29,28,8,21,6,14,4,10,3,0,0,28,8
+Cambridge,2016,490035,King Open,Middlesex,K,65,8,5,17,11,15,10,6,4,0,0,54,35
+Cambridge,2016,490035,King Open,Middlesex,PK,26,19,5,27,7,8,2,4,1,0,0,42,11
+Cambridge,2016,490035,King Open,Middlesex,Gr.1,61,25,15,5,3,11,7,13,8,0,0,46,28
+Cambridge,2016,490035,King Open,Middlesex,Gr.2,46,20,9,11,5,15,7,7,3,2,1,46,21
+Cambridge,2016,490035,King Open,Middlesex,Gr.3,46,9,4,11,5,15,7,11,5,0,0,54,25
+Cambridge,2016,490035,King Open,Middlesex,Gr.4,43,16,7,0,0,14,6,16,7,0,0,53,23
+Cambridge,2016,490035,King Open,Middlesex,Gr.5,33,27,9,9,3,15,5,3,1,0,0,45,15
+Cambridge,2016,490040,Kennedy-Longfellow,Middlesex,K,55,9,5,33,18,11,6,13,7,0,0,35,19
+Cambridge,2016,490040,Kennedy-Longfellow,Middlesex,PK,39,18,7,26,10,15,6,3,1,0,0,38,15
+Cambridge,2016,490040,Kennedy-Longfellow,Middlesex,Gr.1,50,20,10,10,5,22,11,10,5,0,0,38,19
+Cambridge,2016,490040,Kennedy-Longfellow,Middlesex,Gr.2,39,15,6,26,10,23,9,10,4,0,0,26,10
+Cambridge,2016,490040,Kennedy-Longfellow,Middlesex,Gr.3,32,19,6,31,10,25,8,6,2,0,0,19,6
+Cambridge,2016,490040,Kennedy-Longfellow,Middlesex,Gr.4,22,27,6,9,2,18,4,5,1,0,0,41,9
+Cambridge,2016,490040,Kennedy-Longfellow,Middlesex,Gr.5,33,30,10,12,4,9,3,3,1,0,0,45,15
+Cambridge,2016,490045,Morse,Middlesex,K,51,16,8,12,6,18,9,8,4,0,0,47,24
+Cambridge,2016,490045,Morse,Middlesex,PK,49,16,8,27,13,8,4,6,3,0,0,43,21
+Cambridge,2016,490045,Morse,Middlesex,Gr.1,41,20,8,17,7,15,6,10,4,0,0,39,16
+Cambridge,2016,490045,Morse,Middlesex,Gr.2,42,21,9,17,7,12,5,14,6,0,0,36,15
+Cambridge,2016,490045,Morse,Middlesex,Gr.3,46,37,17,13,6,2,1,2,1,0,0,43,20
+Cambridge,2016,490045,Morse,Middlesex,Gr.4,38,37,14,11,4,13,5,13,5,0,0,26,10
+Cambridge,2016,490045,Morse,Middlesex,Gr.5,41,41,17,7,3,20,8,20,8,0,0,12,5
+Cambridge,2016,490050,Peabody,Middlesex,K,50,18,9,18,9,2,1,6,3,0,0,56,28
+Cambridge,2016,490050,Peabody,Middlesex,PK,48,29,14,21,10,2,1,6,3,0,0,42,20
+Cambridge,2016,490050,Peabody,Middlesex,Gr.1,44,36,16,16,7,2,1,5,2,0,0,41,18
+Cambridge,2016,490050,Peabody,Middlesex,Gr.2,47,19,9,6,3,17,8,6,3,0,0,51,24
+Cambridge,2016,490050,Peabody,Middlesex,Gr.3,42,40,17,2,1,7,3,5,2,0,0,45,19
+Cambridge,2016,490050,Peabody,Middlesex,Gr.4,47,21,10,11,5,11,5,15,7,0,0,43,20
+Cambridge,2016,490050,Peabody,Middlesex,Gr.5,43,33,14,7,3,12,5,5,2,0,0,42,18
+Cambridge,2016,490065,John M Tobin,Middlesex,K,38,18,7,11,4,16,6,8,3,3,1,45,17
+Cambridge,2016,490065,John M Tobin,Middlesex,PK,91,26,24,13,12,10,9,9,8,0,0,42,38
+Cambridge,2016,490065,John M Tobin,Middlesex,Gr.1,38,26,10,26,10,16,6,13,5,0,0,18,7
+Cambridge,2016,490065,John M Tobin,Middlesex,Gr.2,31,26,8,3,1,0,0,6,2,0,0,65,20
+Cambridge,2016,490065,John M Tobin,Middlesex,Gr.3,34,35,12,9,3,9,3,12,4,0,0,35,12
+Cambridge,2016,490065,John M Tobin,Middlesex,Gr.4,23,17,4,17,4,13,3,9,2,0,0,43,10
+Cambridge,2016,490065,John M Tobin,Middlesex,Gr.5,26,15,4,27,7,8,2,8,2,0,0,42,11
+Cambridge,2016,490080,Graham and Parks,Middlesex,K,50,16,8,26,13,4,2,4,2,0,0,50,25
+Cambridge,2016,490080,Graham and Parks,Middlesex,PK,31,19,6,16,5,3,1,10,3,0,0,52,16
+Cambridge,2016,490080,Graham and Parks,Middlesex,Gr.1,54,24,13,24,13,9,5,2,1,0,0,41,22
+Cambridge,2016,490080,Graham and Parks,Middlesex,Gr.2,60,25,15,32,19,5,3,5,3,0,0,33,20
+Cambridge,2016,490080,Graham and Parks,Middlesex,Gr.3,67,13,9,28,19,9,6,4,3,0,0,45,30
+Cambridge,2016,490080,Graham and Parks,Middlesex,Gr.4,48,19,9,17,8,15,7,8,4,0,0,42,20
+Cambridge,2016,490080,Graham and Parks,Middlesex,Gr.5,53,19,10,21,11,4,2,0,0,0,0,57,30
+Cambridge,2016,490090,Fletcher/Maynard Academy,Middlesex,K,46,57,26,9,4,13,6,4,2,2,1,15,7
+Cambridge,2016,490090,Fletcher/Maynard Academy,Middlesex,PK,50,44,22,18,9,12,6,4,2,0,0,22,11
+Cambridge,2016,490090,Fletcher/Maynard Academy,Middlesex,Gr.1,40,30,12,15,6,20,8,5,2,0,0,30,12
+Cambridge,2016,490090,Fletcher/Maynard Academy,Middlesex,Gr.2,35,49,17,0,0,20,7,6,2,0,0,26,9
+Cambridge,2016,490090,Fletcher/Maynard Academy,Middlesex,Gr.3,38,47,18,3,1,13,5,8,3,3,1,26,10
+Cambridge,2016,490090,Fletcher/Maynard Academy,Middlesex,Gr.4,20,50,10,5,1,25,5,5,1,0,0,15,3
+Cambridge,2016,490090,Fletcher/Maynard Academy,Middlesex,Gr.5,29,28,8,10,3,31,9,3,1,0,0,24,7
+Cambridge,2016,490305,Cambridge Street Upper School,Middlesex,Gr.6,80,34,27,9,7,24,19,9,7,1,1,23,18
+Cambridge,2016,490305,Cambridge Street Upper School,Middlesex,Gr.7,85,32,27,11,9,13,11,2,2,1,1,40,34
+Cambridge,2016,490305,Cambridge Street Upper School,Middlesex,Gr.8,87,39,34,3,3,15,13,5,4,2,2,33,29
+Cambridge,2016,490310,Putnam Avenue Upper School,Middlesex,Gr.6,88,39,34,9,8,19,17,7,6,1,1,24,21
+Cambridge,2016,490310,Putnam Avenue Upper School,Middlesex,Gr.7,80,36,29,14,11,14,11,5,4,1,1,29,23
+Cambridge,2016,490310,Putnam Avenue Upper School,Middlesex,Gr.8,81,40,32,7,6,14,11,6,5,1,1,32,26
+Cambridge,2016,490315,Rindge Avenue Upper School,Middlesex,Gr.6,91,26,24,14,13,7,6,9,8,2,2,42,38
+Cambridge,2016,490315,Rindge Avenue Upper School,Middlesex,Gr.7,87,32,28,11,10,16,14,6,5,0,0,34,30
+Cambridge,2016,490315,Rindge Avenue Upper School,Middlesex,Gr.8,91,29,26,10,9,14,13,7,6,0,0,41,37
+Cambridge,2016,490320,Vassal Lane Upper School,Middlesex,Gr.6,96,30,29,11,11,7,7,7,7,0,0,44,42
+Cambridge,2016,490320,Vassal Lane Upper School,Middlesex,Gr.7,79,28,22,13,10,8,6,10,8,3,2,39,31
+Cambridge,2016,490320,Vassal Lane Upper School,Middlesex,Gr.8,95,25,24,15,14,11,10,6,6,1,1,42,40

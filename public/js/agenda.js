@@ -17,8 +17,6 @@ $( document ).ready(function() {
    drawMap(current_data);
 });
 
-
-
 // Width and Height of the whole visualization
 
 function drawMap(current_data){
@@ -84,7 +82,7 @@ function drawMap(current_data){
 		.append( "path" )
 		.attr( "fill", null)
 		.attr( "stroke", "#D50087")//Violet-ish
-		.attr( "stroke-width", 2)
+		.attr( "stroke-width", 1)
 		.attr( "d", geoPath)
 		.attr( "class", "road");
 
@@ -150,6 +148,10 @@ function drawMap(current_data){
 		.text("KEY");*/
 
 	//Load other data
+	d3.request('/IAschooldemogs.json', function(result){
+		console.log(result.response);
+	})
+
 
 	school.each(function(d) {
 	

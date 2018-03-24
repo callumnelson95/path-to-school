@@ -166,6 +166,26 @@ function search_results(req, res) {
 	})
 }
 
+app.get('/IAschooldemogs.json', demographics);
+
+function demographics(req, res) {
+
+	var query = "SELECT * FROM IA_race_final;"
+
+	con.query(query, function(error, result) {
+
+		if (error){
+			console.log(error);
+		}
+		else{
+			console.log(result);
+			res.json(result);
+		}
+	})
+
+
+}
+
 // start up the server
 app.listen(8080, function (error, response) {
     if (error != null){
