@@ -102,12 +102,52 @@ function drawMap(current_data){
 		.attr( "class", "school");
 
 	//Adding a key
+	var radius = 10;
 
-	var key = d3.select("#key");
+	var key_svg = d3.select("#key")
+		.append("svg")
+		.attr("width", 500);
 
-	key.append( "circle" )
-		.attr( "r", 20 )
-		.attr( "fill", colorScale(0));
+	var key_data = [{"code": 0, "level": "K-5"}, 
+					{"code": 1, "level": "K-8"}, 
+					{"code": 2, "level": "6-8"},
+					{"code": 3, "level": "High School"}];
+
+	var keys = key_svg.append( "g" );
+
+	var key = keys.selectAll( "circle" )
+		.data(key_data)
+			.enter()
+		.append( "circle" )
+		.attr( "r", radius )
+		.attr( "fill", function(d){
+			return colorScale(d.code);
+		})
+		.attr("cy", 20)
+		.attr("cx", function(d, i){
+			return i*80 + 140;
+		})
+		.attr("stroke", "black");
+
+	var key_labels = key_svg.selectAll( "text" )
+		.data(key_data)
+			.enter()
+		.append("text")
+		.attr("x", function(d,i){
+			return i*80 + 155;
+		})
+		.attr("y", 19)
+		.attr("text-anchor", "start")
+      	.attr("dy", ".35em")
+		.text(function(d){
+			return "= " + d.level;
+		});
+
+	/*key_svg.append( "text" )
+		.attr("x", 10)
+		.attr("y", 20)
+		.attr("font-weight", "bold")
+		.text("KEY");*/
 
 	//Load other data
 
@@ -136,6 +176,7 @@ function drawMap(current_data){
 	d3.select("#before_button")
 		.on("click", function() {
 			$("#map").empty();
+			$("#key").empty();
 			current_data = before_data;
 			$(this).addClass("active");
 			$("#after_button").removeClass("active");
@@ -145,6 +186,7 @@ function drawMap(current_data){
 	d3.select("#after_button")
 		.on("click", function() {
 			$("#map").empty();
+			$("#key").empty();
 			current_data = after_data;
 			$(this).addClass("active");
 			$("#before_button").removeClass("active");

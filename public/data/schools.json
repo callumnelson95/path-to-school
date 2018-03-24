@@ -2,7 +2,7 @@ var schools_json = {
 "type": "FeatureCollection",
                                                                                 
 "before_features": [
-{ "type": "Feature", "id": 0, "properties": { "SITE_NAME": "Cambridge Rindge and Latin", "ADDRESS": "459 Broadway", "PHONE": "617-349-6630", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 4618.0, "EditDate": "", "level": 2}, "geometry": { "type": "Point", "coordinates": [ -71.111886517599814, 42.374397727502306 ] } }
+{ "type": "Feature", "id": 0, "properties": { "SITE_NAME": "Cambridge Rindge and Latin", "ADDRESS": "459 Broadway", "PHONE": "617-349-6630", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 4618.0, "EditDate": "", "level": 3}, "geometry": { "type": "Point", "coordinates": [ -71.111886517599814, 42.374397727502306 ] } }
 ,
 { "type": "Feature", "id": 1, "properties": { "SITE_NAME": "Cambridgeport School", "ADDRESS": "89 Elm St", "PHONE": "617-349-6587", "SHELTER": "", "SHEL_FOOD": "", "SHEL_CAP": 0.0, "EditDate": "", "level": 1}, "geometry": { "type": "Point", "coordinates": [ -71.097883755350267, 42.369295344080754 ] } }
 ,
@@ -33,7 +33,7 @@ var schools_json = {
 "after_features": [
 
 {"type": "Feature", "id": 0, "properties": {"SITE_NAME": "Amigos School", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 0}, "geometry": {"type": "Point", "coordinates": [-71.1082255, 42.3629904]}},
-{"type": "Feature", "id": 1, "properties": {"SITE_NAME": "Cambridge Street Upper School", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 1}, "geometry": {"type": "Point", "coordinates": [-71.0875278, 42.3695056]}}, 
+{"type": "Feature", "id": 1, "properties": {"SITE_NAME": "Cambridge Street Upper School", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 2}, "geometry": {"type": "Point", "coordinates": [-71.0875278, 42.3695056]}}, 
 {"type": "Feature", "id": 2, "properties": {"SITE_NAME": "Cambridgeport", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 0}, "geometry": {"type": "Point", "coordinates": [-71.0978276, 42.3693603]}}, 
 {"type": "Feature", "id": 3, "properties": {"SITE_NAME": "Fletcher/Maynard Academy", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 0}, "geometry": {"type": "Point", "coordinates": [-71.0959243, 42.3668461]}}, 
 {"type": "Feature", "id": 4, "properties": {"SITE_NAME": "Graham and Parks", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 0}, "geometry": {"type": "Point", "coordinates": [-71.1236381, 42.3828869]}}, 
@@ -45,9 +45,9 @@ var schools_json = {
 {"type": "Feature", "id": 10, "properties": {"SITE_NAME": "Martin Luther King Jr.", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 0}, "geometry": {"type": "Point", "coordinates": [-71.1124252, 42.3670495]}}, 
 {"type": "Feature", "id": 11, "properties": {"SITE_NAME": "Morse", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 0}, "geometry": {"type": "Point", "coordinates": [-71.1127756, 42.3558719]}}, 
 {"type": "Feature", "id": 12, "properties": {"SITE_NAME": "Peabody", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 0}, "geometry": {"type": "Point", "coordinates": [-71.1282134, 42.3922447]}}, 
-{"type": "Feature", "id": 13, "properties": {"SITE_NAME": "Putnam Avenue Upper School", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 1}, "geometry": {"type": "Point", "coordinates": [-71.1133073, 42.3670478]}},
-{"type": "Feature", "id": 14, "properties": {"SITE_NAME": "Rindge Avenue Upper School", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 1}, "geometry": {"type": "Point", "coordinates": [-71.1282134, 42.3922447]}}, 
-{"type": "Feature", "id": 15, "properties": {"SITE_NAME": "Vassal Lane Upper School", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 1}, "geometry": {"type": "Point", "coordinates": [-71.1397456, 42.3844033]}}, 
-{"type": "Feature", "id": 16, "properties": { "SITE_NAME": "Cambridge Rindge and Latin", "ADDRESS": "459 Broadway", "PHONE": "617-349-6630", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 4618.0, "EditDate": "", "level": 2}, "geometry": { "type": "Point", "coordinates": [ -71.111886517599814, 42.374397727502306 ] } }
+{"type": "Feature", "id": 13, "properties": {"SITE_NAME": "Putnam Avenue Upper School", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 2}, "geometry": {"type": "Point", "coordinates": [-71.1133073, 42.3670478]}},
+{"type": "Feature", "id": 14, "properties": {"SITE_NAME": "Rindge Avenue Upper School", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 2}, "geometry": {"type": "Point", "coordinates": [-71.1282134, 42.3922447]}}, 
+{"type": "Feature", "id": 15, "properties": {"SITE_NAME": "Vassal Lane Upper School", "ADDRESS": "", "PHONE": "", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 0, "EditDate": "", "level": 2}, "geometry": {"type": "Point", "coordinates": [-71.1397456, 42.3844033]}}, 
+{"type": "Feature", "id": 16, "properties": { "SITE_NAME": "Cambridge Rindge and Latin", "ADDRESS": "459 Broadway", "PHONE": "617-349-6630", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 4618.0, "EditDate": "", "level": 3}, "geometry": { "type": "Point", "coordinates": [ -71.111886517599814, 42.374397727502306 ] } }
 ]
 }
