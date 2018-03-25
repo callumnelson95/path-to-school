@@ -172,7 +172,7 @@ function demographics(req, res) {
 
 	console.log("demographic data requested by client");
 
-	var query = "SELECT * FROM IA_race_final where year = 2012 or year = 2013;";
+	var query = "select race.Name, race.school_id, race.year, aa, asian, hispanic, native, white, ELL, disabilities, low_income from IA_race_final as race join IA_income_final as income on (race.school_id = income.school_id and race.year = income.year);"
 
 	con.query(query, function(error, result) {
 
@@ -180,12 +180,10 @@ function demographics(req, res) {
 			console.log(error);
 		}
 		else{
-			//console.log(result);
+			console.log(result);
 			res.json(result);
 		}
-	})
-
-
+	});
 }
 
 // start up the server

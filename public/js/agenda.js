@@ -32,6 +32,9 @@ $( document ).ready(function() {
 						key.hispanic = +row.hispanic;
 						key.white = +row.white;
 						key.native = +row.native;
+						key.ELL = +row.ELL;
+						key.disabilities = +row.disabilities;
+						key.low_income = +row.low_income;
 					}
 				}
 			}else{
@@ -44,6 +47,9 @@ $( document ).ready(function() {
 						key.hispanic = +row.hispanic;
 						key.white = +row.white;
 						key.native = +row.native;
+						key.ELL = +row.ELL;
+						key.disabilities = +row.disabilities;
+						key.low_income = +row.low_income;
 					}
 				}
 			}
@@ -214,7 +220,7 @@ function drawMap(current_data){
 	school.on("mouseover", function(d){
 		schoolTooltip
 			.style("left", d3.event.pageX - 125 + "px")
-          	.style("top", d3.event.pageY - 230 + "px")
+          	.style("top", d3.event.pageY - 250 + "px")
           	.style("display", "inline-block")
           	.html("<h4>"+d.properties.SITE_NAME+"</h4>" +
 				"<table>" +
@@ -224,6 +230,10 @@ function drawMap(current_data){
 				"<tr><td>Hispanic</td><td>"+d.hispanic.toFixed(2)+"</td></tr>"+
 				"<tr><td>Native</td><td>"+d.native.toFixed(2)+"</td></tr>"+
 				"<tr><td>White</td><td>"+d.white.toFixed(2)+"</td></tr>"+
+				"<tr><th>Selected Population</th><th>%</th></tr>"+
+				"<tr><td>ELLs</td><td>"+d.ELL.toFixed(2)+"</td></tr>"+
+				"<tr><td>With Disabilities</td><td>"+d.disabilities.toFixed(2)+"</td></tr>" +
+				"<tr><td>Low Income</td><td>"+d.low_income.toFixed(2)+"</td></tr>"+
 				"</table>");
           	/*.html("<h4>"+d.properties.SITE_NAME+"</h4>" +
           			"<h6> Enrollment by Race (%)</h6>" +

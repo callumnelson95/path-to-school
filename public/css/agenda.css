@@ -17,15 +17,21 @@
 
 }
 
-#label_wrapper h3{
-	text-align: center;
+#label_wrapper h5 {
+	position: absolute;
+	top: 15px;
+	right: 85px;
 }
 
-#label_wrapper div{
-	height: 40px;
-	margin-top: 20px;
-	float:right;
-	align-content: right
+#label_wrapper table {
+	position: absolute;
+	top: 45px;
+	right: 10px;
+	font-size: 12px;
+}
+#label_wrapper th {
+	border-bottom: 1px dotted black;
+	border-top: 1px dotted black;
 }
 
 #rightpane {
@@ -54,10 +60,14 @@
 }
 
 .schoolToolTip table, th, td {
-    border: 1px solid black;
     padding-left: 3px;
 	padding-right: 3px;
 	width: auto;
+}
+
+.schoolToolTip th {
+	border-bottom: 1px dotted black;
+	border-top: 1px dotted black;
 }
 
 .schoolToolTip {
