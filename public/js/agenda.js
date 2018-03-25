@@ -97,14 +97,25 @@ function drawMap(current_data){
 	var geoPath = d3.geoPath()
 	    .projection(albersProjection);
 
-	var neighborhood = g.selectAll("path")
+	var city_boundary = g.selectAll("path")
+	    .data(boundary_json.features)
+	    	.enter()
+	    .append( "path" )
+	    .attr( "fill", "#E3E3E3")
+	    .attr( "stroke", "#333")
+	    .attr( "d", geoPath )
+	    .attr( "class", "boundary");
+
+	/*var neighborhoods = svg.append( "g" );
+
+	var neighborhood = neighborhoods.selectAll("path")
 	    .data(neighborhoods_json.features)
 	    	.enter()
 	    .append( "path" )
 	    .attr( "fill", "#E3E3E3")
 	    .attr( "stroke", "#333")
 	    .attr( "d", geoPath )
-	    .attr( "class", "neighborhood");
+	    .attr( "class", "neighborhood");*/
 
 	/*var buildings = svg.append( "g" );
 
@@ -206,12 +217,21 @@ function drawMap(current_data){
           	.style("top", d3.event.pageY - 230 + "px")
           	.style("display", "inline-block")
           	.html("<h4>"+d.properties.SITE_NAME+"</h4>" +
+				"<table>" +
+				"<tr><th>Race</th><th>%</th></tr>"+
+				"<tr><td>African American</td><td>"+d.aa.toFixed(2)+"</td></tr>"+
+				"<tr><td>Asian</td><td>"+d.asian.toFixed(2)+"</td></tr>"+
+				"<tr><td>Hispanic</td><td>"+d.hispanic.toFixed(2)+"</td></tr>"+
+				"<tr><td>Native</td><td>"+d.native.toFixed(2)+"</td></tr>"+
+				"<tr><td>White</td><td>"+d.white.toFixed(2)+"</td></tr>"+
+				"</table>");
+          	/*.html("<h4>"+d.properties.SITE_NAME+"</h4>" +
           			"<h6> Enrollment by Race (%)</h6>" +
           			"<p>African American: " + d.aa.toFixed(2) + "</p>" +
           			"<p>Asian: " + d.asian.toFixed(2) + "</p>" +
           			"<p>Hispanic: " + d.hispanic.toFixed(2) + "</p>" +
           			"<p>Native: " + d.native.toFixed(2) + "</p>" +
-          			"<p>White: " + d.white.toFixed(2) + "</p>");
+          			"<p>White: " + d.white.toFixed(2) + "</p>");*/
 	});
 
 	school.on("mouseout", function(d){ 
