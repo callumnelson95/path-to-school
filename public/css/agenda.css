@@ -17,7 +17,7 @@
 }
 
 #label_wrapper h3{
-	float: left;
+	text-align: center;
 }
 
 #label_wrapper div{
@@ -35,13 +35,9 @@
 	padding: 20px;
 }
 
-.neighborhoods {
+.neighborhood {
 	stroke-linejoin: miter;
 	stroke: black;
-}
-
-.neighborhoods:hover {
-	fill: blue;
 }
 
 .toolTip {
@@ -53,6 +49,36 @@
   border: 1px solid #6F257F;
   padding: 14px;
   text-align: center;
+  box-shadow: 5px 5px 2.5px grey;
+}
+
+.schoolToolTip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 5px;
+  text-align: left;
+  box-shadow: 10px 10px 5px grey;
+}
+.schoolToolTip h4 {
+	font-weight: bold;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 16px;
+	text-decoration: underline;
+}
+.schoolToolTip h6 {
+	font-weight: bold;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.schoolToolTip p {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 12px;
 }
 
 #key {

@@ -170,7 +170,9 @@ app.get('/IAschooldemogs.json', demographics);
 
 function demographics(req, res) {
 
-	var query = "SELECT * FROM IA_race_final;"
+	console.log("demographic data requested by client");
+
+	var query = "SELECT * FROM IA_race_final where year = 2012 or year = 2013;";
 
 	con.query(query, function(error, result) {
 
@@ -178,7 +180,7 @@ function demographics(req, res) {
 			console.log(error);
 		}
 		else{
-			console.log(result);
+			//console.log(result);
 			res.json(result);
 		}
 	})

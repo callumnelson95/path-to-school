@@ -14,12 +14,50 @@ var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
 
 $( document ).ready(function() {
-   drawMap(current_data);
+
+	$.get('/IAschooldemogs.json', function(result){
+		var allData = result;
+		//console.log(allData);
+		var i,j,k;
+		for(i = 0; i < allData.length; i++){
+			var row = allData[i];
+			var school_id = row.school_id;
+			if(row.year == 2012){
+				for(j = 0; j < before_data.length; j++){
+					var key = before_data[j];
+					var id = key.id;
+					if(id == school_id){
+						key.aa = +row.aa;
+						key.asian = +row.asian;
+						key.hispanic = +row.hispanic;
+						key.white = +row.white;
+						key.native = +row.native;
+					}
+				}
+			}else{
+				for(k = 0; k < after_data.length; k++){
+					var key = after_data[k];
+					var id = key.id;
+					if(id == school_id){
+						key.aa = +row.aa;
+						key.asian = +row.asian;
+						key.hispanic = +row.hispanic;
+						key.white = +row.white;
+						key.native = +row.native;
+					}
+				}
+			}
+		}
+	});
+   	drawMap(current_data);
 });
 
 // Width and Height of the whole visualization
 
 function drawMap(current_data){
+
+	//console.log(before_data);
+	//console.log(after_data);
 
 	var width = 650;
 	var height = 475;
@@ -36,9 +74,13 @@ function drawMap(current_data){
 		.on("zoom", zoomed);
 
 	//Add tooltip to hover over basically whatever I want
-	var tooltip = d3.select("#map")
+	var toolTip = d3.select("#map")
 		.append("div")
 		.attr("class", "toolTip");
+
+	var schoolTooltip = d3.select("#map")
+		.append("div")
+		.attr("class", "schoolToolTip");
 
 	// Append empty placeholder g element to the SVG
 	// g will contain geometry elements
@@ -59,9 +101,10 @@ function drawMap(current_data){
 	    .data(neighborhoods_json.features)
 	    	.enter()
 	    .append( "path" )
-	    .attr( "fill", "#ccc")
+	    .attr( "fill", "#E3E3E3")
 	    .attr( "stroke", "#333")
-	    .attr( "d", geoPath );
+	    .attr( "d", geoPath )
+	    .attr( "class", "neighborhood");
 
 	/*var buildings = svg.append( "g" );
 
@@ -74,14 +117,24 @@ function drawMap(current_data){
 		.attr( "d", geoPath)
 		.attr( "class", "building");*/
 
+	var water_bodies = svg.append( "g" );
+
+	var water = water_bodies.selectAll( "path" )
+		.data(water_json.features)
+			.enter()
+		.append( "path" )
+		.attr( "fill", "#9DE1FF")
+		.attr( "stroke", "#5D5D5D")
+		.attr( "d", geoPath)
+		.attr( "class", "water");
+
 	var roads = svg.append( "g" );
 
 	var road = roads.selectAll( "path" )
 		.data(roads_json.features)
 			.enter()
 		.append( "path" )
-		.attr( "fill", null)
-		.attr( "stroke", "#D50087")//Violet-ish
+		.attr( "stroke", "black")
 		.attr( "stroke-width", 1)
 		.attr( "d", geoPath)
 		.attr( "class", "road");
@@ -147,32 +200,50 @@ function drawMap(current_data){
 		.attr("font-weight", "bold")
 		.text("KEY");*/
 
-	//Load other data
-	d3.request('/IAschooldemogs.json', function(result){
-		console.log(result.response);
-	})
-
-
-	school.each(function(d) {
-	
+	school.on("mouseover", function(d){
+		schoolTooltip
+			.style("left", d3.event.pageX - 125 + "px")
+          	.style("top", d3.event.pageY - 230 + "px")
+          	.style("display", "inline-block")
+          	.html("<h4>"+d.properties.SITE_NAME+"</h4>" +
+          			"<h6> Enrollment by Race (%)</h6>" +
+          			"<p>African American: " + d.aa.toFixed(2) + "</p>" +
+          			"<p>Asian: " + d.asian.toFixed(2) + "</p>" +
+          			"<p>Hispanic: " + d.hispanic.toFixed(2) + "</p>" +
+          			"<p>Native: " + d.native.toFixed(2) + "</p>" +
+          			"<p>White: " + d.white.toFixed(2) + "</p>");
 	});
 
-	school.on("click", function(d){
-		d3.select("h4").text(d.properties.SITE_NAME);
-		d3.select("h5").text(d.properties.ADDRESS);
-		d3.select(this).attr("class","incident hover");
+	school.on("mouseout", function(d){ 
+		schoolTooltip.style("display", "none");
 	});
 
 	road.on("mousemove", function(d){
-        tooltip
-          .style("left", d3.event.pageX - 125 + "px")
+        toolTip
+          .style("left", d3.event.pageX - 175 + "px")
           .style("top", d3.event.pageY - 180 + "px")
           .style("display", "inline-block")
           .html(d.properties.STREET);
     });
 
 	road.on("mouseout", function(d){ 
-		tooltip.style("display", "none");
+		toolTip.style("display", "none");
+	});
+
+	water.on("mousemove", function(d){
+		if (d.properties.NAME==undefined){
+			toolTip.style("display", "none");
+		}else{
+			toolTip
+				.style("left", d3.event.pageX - 175 + "px")
+				.style("top", d3.event.pageY - 180 + "px")
+				.style("display", "inline-block")
+				.html(d.properties.NAME);
+		}
+    });
+
+    water.on("mouseout", function(d){ 
+		toolTip.style("display", "none");
 	});
 
 	d3.select("#before_button")
