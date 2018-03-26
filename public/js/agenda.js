@@ -1,4 +1,3 @@
-
 var mapScale = 500000,
 	latitude = 71.1097,
 	longitude = 42.3736;
@@ -10,10 +9,14 @@ var before_data = schools_json.before_features,
 	after_data = schools_json.after_features,
 	current_data = before_data;
 
+var math_data,
+	ela_data; 
+
 var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
 var current_subject = $("#subject_form")[0].value,
-	current_filter = $("#filter_form")[0].value;
+	current_factor = $("#filter_form")[0].value,
+	current_grade = $("#grade_form")[0].value;
 
 
 $( document ).ready(function() {
@@ -63,7 +66,7 @@ $( document ).ready(function() {
 	d3.queue(2)
 		.defer(d3.request, '/IAmathmcas.json')
 		.defer(d3.request, '/IAelamcas.json')
-		.awaitAll(drawGraph);
+		.awaitAll(start);
 
 });
 
@@ -313,10 +316,27 @@ function drawMap(current_data){
 
 }
 
-function drawGraph(error, results) {
+function start(error, results) {
 
-	var math_data = JSON.parse(results[0].response);
-	var ela_data = JSON.parse(results[1].response);
+	math_data = JSON.parse(results[0].response);
+	ela_data = JSON.parse(results[1].response);
+
+	var selected_data;
+
+	if(current_subject == "Math"){
+		selected_data = interpolate(math_data, current_grade, current_factor);
+	}else{
+		selected_data = interpolate(ela_data, current_grade, current_factor);
+	}
+	
+	drawGraph(selected_data);
+}
+
+function drawGraph(data) {
+
+	var subject,
+		grade,
+		factor;
 
 	var width = 425;
 	var height = 475;
@@ -324,7 +344,7 @@ function drawGraph(error, results) {
 	var margin = {top: 50, right: 50, bottom: 50, left: 50};
 
 	var xScale = d3.scaleTime()
-		.domain([new Date(2008, 0, 0), new Date(2016, 0, 0)])
+		.domain([new Date(2007, 0, 0), new Date(2016, 0, 0)])
 		.range([0, width]);
 
 	var xAxis = d3.axisBottom(xScale)
@@ -335,6 +355,12 @@ function drawGraph(error, results) {
 	    .domain([0, 100])
 	    .range([height, 0]);
 
+	var yAxis = d3.axisLeft(yScale);
+
+	var graphToolTip = d3.select("#graph")
+		.append("div")
+		.attr("class", "graphToolTip");
+
 	// Create SVG
 	var svg = d3.select("#graph").append("svg")
 	    .attr("width", width + margin.left + margin.right)
@@ -342,12 +368,80 @@ function drawGraph(error, results) {
 	  		.append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	var xAxis = svg.append("g")
-	    .attr("class", "x axis")
+	svg.append("g")
+	    .attr("class", "x-axis")
 	    .attr("transform", "translate(0," + height + ")")
 	    .call(xAxis);
 
+	var x_label =  svg.append("text")             
+		.attr("transform",
+		    "translate(" + (width/2) + " ," + 
+		                   (height + margin.top - 10) + ")")
+		.style("text-anchor", "middle")
+		.text("Year");
+
+	svg.append("g")
+	    .attr("class", "y-axis")
+	    .call(yAxis);
+
+	var y_label = svg.append("text")
+		.attr("transform", "rotate(-90)")
+		.attr("y", 0 - margin.left)
+		.attr("x",0 - (height / 2))
+		.attr("dy", "1em")
+		.style("text-anchor", "middle")
+		.text("Percent Advanced or Proficient");
+
+
+	var points = svg.selectAll("dot")
+		.data(data)
+			.enter()
+		.append("circle")
+			.attr("r", 5)
+			.attr("cx", function(d) { 
+				return xScale(new Date(d.adminyear, 0, 0)); 
+			})
+			.attr("cy", function(d) { 
+				return yScale(d.pro_adv_per); 
+			});
+
+	points.on("mouseover", function(d){
+        graphToolTip
+          .style("left", d3.event.pageX - 800 + "px")
+          .style("top", d3.event.pageY - 160 + "px")
+          .style("display", "inline-block")
+          .html("<p>" + d.student_group + "</p>" +
+          		"<p>Grade: " + d.grade + "</p>" +
+          		"<p>" + d.pro_adv_per.toFixed(2) + " %</p>");
+    });
+
+    points.on("mouseout", function(d){
+    	graphToolTip.style("display", "none");
+    })
+	//Function to draw different lines depending on what the 
+	//parameters are that have been requested
 }
 
+function interpolate(data, grade, factor) {
+	//Function that selects all the data depending on the parameters
+	var interpolated = [];
+	var grade = +grade;
+
+	//{pro_adv_per: 49.8575, adminyear: 2008, grade: 6, student_group: "All Students"}
+
+	var i;
+	for(i = 0; i < data.length; i++){
+		var row = data[i];
+		if(row.grade == grade && row.student_group == factor){
+			interpolated.push(row);
+		}
+	}
+
+	//If factor is race you have to check for all races
+	//If factor is income you have to check for all incomes
+	//If ALL, only THEN you don't have to check
+
+	return interpolated;
+}
 
 

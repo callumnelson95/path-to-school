@@ -9,7 +9,7 @@
 }
 
 .form-group, .custom-select {
-	width: 150px;
+	width: 100px;
 	float: left;
 	margin-right: 10px;
 }
@@ -96,6 +96,18 @@
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 12px;
+}
+
+.graphToolTip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 5px;
+  text-align: left;
+  /*box-shadow: 10px 10px 5px #002332;*/
 }
 
 #key {
