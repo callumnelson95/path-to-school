@@ -12,6 +12,9 @@ var before_data = schools_json.before_features,
 
 var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
+var current_subject = $("#subject_form")[0].value,
+	current_filter = $("#filter_form")[0].value;
+
 
 $( document ).ready(function() {
 
@@ -54,8 +57,14 @@ $( document ).ready(function() {
 				}
 			}
 		}
+		drawMap(current_data);
 	});
-   	drawMap(current_data);
+
+	d3.queue(2)
+		.defer(d3.request, '/IAmathmcas.json')
+		.defer(d3.request, '/IAelamcas.json')
+		.awaitAll(drawGraph);
+
 });
 
 // Width and Height of the whole visualization
@@ -303,3 +312,42 @@ function drawMap(current_data){
 	//d3.select("#map").call(zoom);
 
 }
+
+function drawGraph(error, results) {
+
+	var math_data = JSON.parse(results[0].response);
+	var ela_data = JSON.parse(results[1].response);
+
+	var width = 425;
+	var height = 475;
+
+	var margin = {top: 50, right: 50, bottom: 50, left: 50};
+
+	var xScale = d3.scaleTime()
+		.domain([new Date(2008, 0, 0), new Date(2016, 0, 0)])
+		.range([0, width]);
+
+	var xAxis = d3.axisBottom(xScale)
+		.tickFormat(d3.timeFormat("%Y"))
+		.tickSizeOuter(0);
+
+	var yScale = d3.scaleLinear()
+	    .domain([0, 100])
+	    .range([height, 0]);
+
+	// Create SVG
+	var svg = d3.select("#graph").append("svg")
+	    .attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
+	  		.append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	var xAxis = svg.append("g")
+	    .attr("class", "x axis")
+	    .attr("transform", "translate(0," + height + ")")
+	    .call(xAxis);
+
+}
+
+
+

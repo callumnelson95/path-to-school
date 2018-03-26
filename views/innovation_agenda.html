@@ -35,13 +35,29 @@
 </nav>
 
 <div class="container" id="main-content">
-  <div class="col-lg-5" id="control_panel">
-    <button id="before_button" type="button" class="btn btn-primary btn-block active">Before Innovation Agenda (Pre-2012)</button>
-  </div>
-  <div class="col-lg-2" id="control_panel">
-  </div>
-  <div class="col-lg-5" id="control_panel">
-    <button id="after_button" type="button" class="btn btn-info btn-block">After Innovation Agenda (Post-2012)</button>
+  <div id="control_panel">
+    <div class="col-lg-3">
+      <button id="before_button" type="button" class="btn btn-primary active">Before Innovation Agenda (Pre-2012)</button>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-lg-3">
+      <button id="after_button" type="button" class="btn btn-info">After Innovation Agenda (Post-2012)</button>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <select class="form-control" id="filter_form">
+          <option selected value="Race">Race</option>
+          <option value="Income">Income</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="form-control" id="subject_form">
+          <option selected value="ELA">ELA</option>
+          <option value="Math">Math</option>
+        </select>
+      </div>
+    </div>
   </div>
   <div class="col-lg-7" id="leftpane">
     <div id="label_wrapper">
@@ -109,7 +125,15 @@
     </div>
   </div>
   <div class="col-lg-5" id="rightpane">
-    <p>On March 15, 2011, the members of the Cambridge school committee voted 6-1 to end the city's use of K-8 schools and to approve the implementation of four middle schools (grades 6-8), a reform which was officially called the "Innovation Agenda." The primary reason for doing so was that the K-8 schools as they existed were highly inequitable. This inequity led to disparities in many student outcomes between different racial and economic demographic groups. While the plan for school restructuring aimed to correct these outcomes, it provoked controversy throughout the city.  My paper seeks to place Cambridge's decision to restructure its middle grades into both the larger educational discussion and historical context of such school reform. In doing so, it explores: the factors behind the Cambridge's restructuring from K-8 schools to middle schools; the degree to which the restructuring has been successful; how success is being measured in Cambridge; and how this instance of restructuring can help to inform the national conversation about the topic. The paper also works to uncover the process by which the middle schools were decided upon, as well as the effects that the new system has had on the Cambridge public middle grades education in the five years since its inception. For primary evidence, I interviewed middle grades teachers in Cambridge who have worked in both the K-8 and middle school systems. </p>
+    <div id="graph_label_wrapper">
+
+    </div>
+    <div id="graph_wrapper">
+      <p id="graph"></p>
+    </div>
+    <div id="graph_key">
+      
+    </div>
   </div>
   
 </div>

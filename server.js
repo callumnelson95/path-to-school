@@ -186,6 +186,46 @@ function demographics(req, res) {
 	});
 }
 
+app.get('/IAmathmcas.json', math_mcas);
+
+function math_mcas(req, res) {
+
+	console.log("Math mcas data requested by client");
+
+	var query = "select * from IA_math_stats;"
+
+	con.query(query, function(error, result) {
+
+		if (error){
+			console.log(error);
+		}
+		else{
+			console.log(result);
+			res.json(result);
+		}
+	});
+}
+
+app.get('/IAelamcas.json', ela_mcas);
+
+function ela_mcas(req, res) {
+
+	console.log("ELA mcas data requested by client");
+
+	var query = "select * from IA_ela_stats;"
+	
+	con.query(query, function(error, result) {
+
+		if (error){
+			console.log(error);
+		}
+		else{
+			console.log(result);
+			res.json(result);
+		}
+	});
+}
+
 // start up the server
 app.listen(8080, function (error, response) {
     if (error != null){

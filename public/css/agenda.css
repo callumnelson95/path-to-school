@@ -5,16 +5,18 @@
 }
 
 #control_panel {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.form-group, .custom-select {
+	width: 150px;
+	float: left;
+	margin-right: 10px;
 }
 
 #leftpane {
-	border: solid;
+	border-right: solid;
 	height: 100%;
-}
-
-#rightpane {
-
 }
 
 #label_wrapper h5 {
@@ -35,9 +37,6 @@
 }
 
 #rightpane {
-	border-top: solid;
-	border-right: solid;
-	border-bottom: solid;
 	height: 100%;
 	padding: 20px;
 }
