@@ -110,6 +110,19 @@
   /*box-shadow: 10px 10px 5px #002332;*/
 }
 
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 2px;
+}
+
+.divider-line {
+	fill: none;
+	stroke: red;
+	stroke-width: 2px;
+	stroke-dasharray: 10,2;
+}
+
 #key {
 	border: solid;
 	border-width: 0.5px;

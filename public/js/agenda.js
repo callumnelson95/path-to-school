@@ -10,12 +10,15 @@ var before_data = schools_json.before_features,
 	current_data = before_data;
 
 var math_data,
-	ela_data; 
+	ela_data,
+	ela_averages,
+	math_averages; 
 
-var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+var colorScaleMap = d3.scaleOrdinal(d3.schemeCategory10)
+	colorScaleGraph = d3.scaleOrdinal(d3.schemeCategory20b);
 
 var current_subject = $("#subject_form")[0].value,
-	current_factor = $("#filter_form")[0].value,
+	current_factor = $("#factor_form")[0].value,
 	current_grade = $("#grade_form")[0].value;
 
 
@@ -63,19 +66,36 @@ $( document ).ready(function() {
 		drawMap(current_data);
 	});
 
-	d3.queue(2)
+	d3.queue(4)
 		.defer(d3.request, '/IAmathmcas.json')
 		.defer(d3.request, '/IAelamcas.json')
+		.defer(d3.request, '/IAMATHaverages.json')
+		.defer(d3.request, '/IAELAaverages.json')
 		.awaitAll(start);
 
 });
 
+function start(error, results) {
+
+	math_data = JSON.parse(results[0].response);
+	ela_data = JSON.parse(results[1].response);
+	math_averages = JSON.parse(results[2].response);
+	ela_averages = JSON.parse(results[3].response);
+
+	var selected_data;
+
+	if(current_subject == "Math"){
+		selected_data = interpolate(math_data, current_grade, current_factor);
+	}else{
+		selected_data = interpolate(ela_data, current_grade, current_factor);
+	}
+	
+	drawGraph(selected_data);
+}
+
 // Width and Height of the whole visualization
 
 function drawMap(current_data){
-
-	//console.log(before_data);
-	//console.log(after_data);
 
 	var width = 650;
 	var height = 475;
@@ -175,7 +195,7 @@ function drawMap(current_data){
 			.enter()
 		.append( "path" )
 		.attr( "fill", function(d){
-			return colorScale(d.properties.level);
+			return colorScaleMap(d.properties.level);
 		})
 		.attr( "stroke", "black" )
 		.attr( "d", geoPath )
@@ -201,7 +221,7 @@ function drawMap(current_data){
 		.append( "circle" )
 		.attr( "r", radius )
 		.attr( "fill", function(d){
-			return colorScale(d.code);
+			return colorScaleMap(d.code);
 		})
 		.attr("cy", 20)
 		.attr("cx", function(d, i){
@@ -316,22 +336,6 @@ function drawMap(current_data){
 
 }
 
-function start(error, results) {
-
-	math_data = JSON.parse(results[0].response);
-	ela_data = JSON.parse(results[1].response);
-
-	var selected_data;
-
-	if(current_subject == "Math"){
-		selected_data = interpolate(math_data, current_grade, current_factor);
-	}else{
-		selected_data = interpolate(ela_data, current_grade, current_factor);
-	}
-	
-	drawGraph(selected_data);
-}
-
 function drawGraph(data) {
 
 	var subject,
@@ -393,6 +397,46 @@ function drawGraph(data) {
 		.text("Percent Advanced or Proficient");
 
 
+	//Draw average lines before making scatter plot
+    var valueline = d3.line()
+	    .x(function(d) { 
+	    	return xScale(new Date(d.adminyear, 0, 0)); 
+	    })
+	    .y(function(d) { 
+	    	return yScale(d.average); 
+	    });
+    
+    var	current_average_data;
+
+    if(current_grade == "ALL" && current_subject == "Math"){
+
+    	current_average_data = averages_interpolate(math_averages);
+
+	    svg.append("path")
+			.data([current_average_data.lineOne])
+			.attr("class", "line")
+			.attr("d", valueline);
+
+		svg.append("path")
+			.data([current_average_data.lineTwo])
+			.attr("class", "line")
+			.attr("d", valueline);
+
+    }else{
+
+    	current_average_data = averages_interpolate(ela_averages);
+
+	    svg.append("path")
+			.data([current_average_data.lineOne])
+			.attr("class", "line")
+			.attr("d", valueline);
+
+		svg.append("path")
+			.data([current_average_data.lineTwo])
+			.attr("class", "line")
+			.attr("d", valueline);
+    }
+
 	var points = svg.selectAll("dot")
 		.data(data)
 			.enter()
@@ -403,12 +447,17 @@ function drawGraph(data) {
 			})
 			.attr("cy", function(d) { 
 				return yScale(d.pro_adv_per); 
-			});
+			})
+			.attr("fill", function(d){
+				return color(d);
+			})
+			.attr("class", "point")
+			.attr("stroke", "black");
 
 	points.on("mouseover", function(d){
         graphToolTip
-          .style("left", d3.event.pageX - 800 + "px")
-          .style("top", d3.event.pageY - 160 + "px")
+          .style("left", d3.event.pageX - 775 + "px")
+          .style("top", d3.event.pageY - 150 + "px")
           .style("display", "inline-block")
           .html("<p>" + d.student_group + "</p>" +
           		"<p>Grade: " + d.grade + "</p>" +
@@ -417,29 +466,127 @@ function drawGraph(data) {
 
     points.on("mouseout", function(d){
     	graphToolTip.style("display", "none");
-    })
-	//Function to draw different lines depending on what the 
-	//parameters are that have been requested
+    });
+
+    //Draw red vertical line to show when IA passed
+    var divider_data = [{"adminyear": 2012, "average": 0},
+    					{"adminyear": 2012, "average": 100}];
+
+   	var divider_line = d3.line()
+	    .x(function(d) { 
+	    	return xScale(new Date(d.adminyear, 6, 0)); 
+	    })
+	    .y(function(d) { 
+	    	return yScale(d.average); 
+	    });
+
+	var divider = svg.append("path")
+			.data([divider_data])
+			.attr("class", "divider-line")
+			.attr("d", divider_line);
+
+	divider.on("mouseover", function(d){
+		graphToolTip
+          .style("left", d3.event.pageX - 775 + "px")
+          .style("top", d3.event.pageY - 200 + "px")
+          .style("display", "inline-block")
+          .html("The Innovation Agenda was implemented in the 2012-2013 school year. \
+          		Data to the left of this line are from K-8 schools. Data to the right \
+          		are from the middle schools that the Innovation Agenda created.");
+	});
+
+	divider.on("mouseout", function(d){
+		graphToolTip.style("display", "none");
+	});
+
+
+	d3.select("#filter_form").on("change", function(d){
+
+	})
+
+}
+
+function color(d){
+
+	if(current_factor == "Race"){
+		if(d.student_group == "Black"){
+			return colorScaleMap(16);
+		}else{
+			return colorScaleMap(18);
+		}
+	}else{
+		if(d.student_group == "Low Income"){
+			return colorScaleMap(8);
+		}else{
+			return colorScaleMap(12);
+		}
+	}
+	
 }
 
 function interpolate(data, grade, factor) {
 	//Function that selects all the data depending on the parameters
 	var interpolated = [];
-	var grade = +grade;
 
-	//{pro_adv_per: 49.8575, adminyear: 2008, grade: 6, student_group: "All Students"}
+	if (grade !== "ALL"){
+		grade = +grade;
+	}
 
 	var i;
 	for(i = 0; i < data.length; i++){
 		var row = data[i];
-		if(row.grade == grade && row.student_group == factor){
-			interpolated.push(row);
+		if(factor=="Race"){
+			if(grade == "ALL"){
+				if(row.student_group == "Black" || row.student_group == "White"){
+					interpolated.push(row);
+				}
+			}else{
+				if(row.grade == grade && (row.student_group == "Black" || row.student_group == "White")){
+					interpolated.push(row);
+				}
+			}
+		}else if (factor == "Income"){
+			if(grade == "ALL"){
+				if(row.student_group == "Low Income" || row.student_group == "Non-Low Income"){
+					interpolated.push(row);
+				}
+			}else{
+				if(row.grade == grade && (row.student_group == "Low Income" || row.student_group == "Non-Low Income")){
+					interpolated.push(row);
+				}
+			}
+		}
+		
+	}
+
+	return interpolated;
+}
+
+function averages_interpolate(data){
+	var lineOne = [];
+	var lineTwo = [];
+	var interpolated = {};
+
+	var i;
+	for(i = 0; i < data.length; i++){
+		var row = data[i];
+		if(current_factor == "Race"){
+			if(row.student_group == "Black"){
+				lineOne.push(row);
+			}else if (row.student_group == "White"){
+				lineTwo.push(row);
+			}
+		}else{
+			if(row.student_group == "Low Income"){
+				lineOne.push(row);
+			}else if (row.student_group == "Non-Low Income"){
+				lineTwo.push(row);
+			}
 		}
 	}
 
-	//If factor is race you have to check for all races
-	//If factor is income you have to check for all incomes
-	//If ALL, only THEN you don't have to check
+	interpolated.lineOne = lineOne;
+	interpolated.lineTwo = lineTwo;
 
 	return interpolated;
 }

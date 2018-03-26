@@ -213,7 +213,7 @@ function ela_mcas(req, res) {
 	console.log("ELA mcas data requested by client");
 
 	var query = "select * from IA_ela_stats;"
-	
+
 	con.query(query, function(error, result) {
 
 		if (error){
@@ -225,6 +225,48 @@ function ela_mcas(req, res) {
 		}
 	});
 }
+
+app.get('/IAELAaverages.json', ela_averages);
+
+function ela_averages(req, res) {
+
+	console.log("ELA averages requested by client");
+
+	var query = "select avg(pro_adv_per) as average, adminyear, student_group from IA_ela_stats group by adminyear, student_group;"
+
+	con.query(query, function(error, result) {
+
+		if (error){
+			console.log(error);
+		}
+		else{
+			//console.log(result);
+			res.json(result);
+		}
+	});
+}
+
+app.get('/IAMATHaverages.json', math_averages);
+
+function math_averages(req, res) {
+
+	console.log("MATH averages requested by client");
+
+	var query = "select avg(pro_adv_per) as average, adminyear, student_group from IA_math_stats group by adminyear, student_group;"
+
+	con.query(query, function(error, result) {
+
+		if (error){
+			console.log(error);
+		}
+		else{
+			//console.log(result);
+			res.json(result);
+		}
+	});
+}
+
+
 
 // start up the server
 app.listen(8080, function (error, response) {
