@@ -15,7 +15,8 @@ var math_data,
 	math_averages; 
 
 var colorScaleMap = d3.scaleOrdinal(d3.schemeCategory10)
-	colorScaleGraph = d3.scaleOrdinal(d3.schemeCategory20b);
+	colorScaleGraph = d3.scaleOrdinal(d3.schemeCategory20)
+		.domain([0,1,2,3,4,5,6,7,8,9]);
 
 var current_subject = $("#subject_form")[0].value,
 	current_factor = $("#factor_form")[0].value,
@@ -422,7 +423,7 @@ function drawGraph(data) {
 			.attr("class", "line")
 			.attr("d", valueline);
 
-    }else{
+    }else if (current_grade == "ALL" && current_subject == "ELA"){
 
     	current_average_data = averages_interpolate(ela_averages);
 
@@ -499,10 +500,42 @@ function drawGraph(data) {
 		graphToolTip.style("display", "none");
 	});
 
+	//Working on changing data in response to forms!
+	d3.select("#factor_form").on("change", function(d){
+		var new_data;
+		current_factor = $("#factor_form")[0].value;
+		if(current_subject == "ELA"){
+			new_data = interpolate(ela_data, current_grade, current_factor);
+		}else if (current_subject == "Math"){
+			new_data = interpolate(math_data, current_grade, current_factor);
+		}
+		$("#graph").empty();
+		drawGraph(new_data);
+	});
 
-	d3.select("#filter_form").on("change", function(d){
+	d3.select("#subject_form").on("change", function(d){
+		var new_data;
+		current_subject = $("#subject_form")[0].value;
+		if(current_subject == "ELA"){
+			new_data = interpolate(ela_data, current_grade, current_factor);
+		}else if (current_subject == "Math"){
+			new_data = interpolate(math_data, current_grade, current_factor);
+		}
+		$("#graph").empty();
+		drawGraph(new_data);
+	});
 
-	})
+	d3.select("#grade_form").on("change", function(d){
+		var new_data;
+		current_grade = $("#grade_form")[0].value;
+		if(current_subject == "ELA"){
+			new_data = interpolate(ela_data, current_grade, current_factor);
+		}else if (current_subject == "Math"){
+			new_data = interpolate(math_data, current_grade, current_factor);
+		}
+		$("#graph").empty();
+		drawGraph(new_data);
+	});
 
 }
 
@@ -510,15 +543,15 @@ function color(d){
 
 	if(current_factor == "Race"){
 		if(d.student_group == "Black"){
-			return colorScaleMap(16);
+			return colorScaleMap(4);
 		}else{
-			return colorScaleMap(18);
+			return colorScaleMap(5);
 		}
 	}else{
 		if(d.student_group == "Low Income"){
-			return colorScaleMap(8);
+			return colorScaleMap(6);
 		}else{
-			return colorScaleMap(12);
+			return colorScaleMap(7);
 		}
 	}
 	
