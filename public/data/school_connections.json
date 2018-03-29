@@ -1,6 +1,30 @@
 
 var school_connections = 
 [
-{ "type": "Feature", "id": 490506, "properties": { "SITE_NAME": "Cambridge Rindge and Latin", "ADDRESS": "459 Broadway", "PHONE": "617-349-6630", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 4618.0, "EditDate": "", "level": 3}, "geometry": { "type": "Point", "coordinates": [ -71.111886517599814, 42.374397727502306, -71.097883755350267, 42.369295344080754 ] } }
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [-71.097883755350267, 42.369295344080754 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.095885819845492, 42.366789610872395 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.095885819845492, 42.366789610872395 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.123689181121236, 42.38267658546264 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.152592767980224, 42.378038868214716 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.086615337827226, 42.36941573558417 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.091701499610849, 42.371964216736743 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.112998968950336, 42.366889404704651 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.112719449671488, 42.355906733958072 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.12836872952164, 42.392311052409845 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.139835802763884, 42.384418635836781 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.116696738787127, 42.382341261266333 ]] } }
+,
+{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.112602985810724, 42.367350885236114 ]] } }
 
 ]

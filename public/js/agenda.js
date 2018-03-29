@@ -101,6 +101,8 @@ function drawMap(current_data){
 	var width = 650;
 	var height = 475;
 
+	console.log(current_data);
+
 	// Create SVG
 	var svg = d3.select("#map")
 	    .append("svg")
@@ -189,6 +191,24 @@ function drawMap(current_data){
 		.attr( "d", geoPath)
 		.attr( "class", "road");
 
+	//Add paths connect schools before adding schools so schools are
+	//on top
+
+	//Need to add paths for post-IA schools so that they're drawn
+	//correctly
+
+	var school_paths = svg.append("g");
+
+	var path = school_paths.selectAll( "path" )
+		.data(school_connections)
+			.enter()
+		.append( "path" )
+		.attr( "fill" , "steelblue")
+		.attr( "stroke" , "steelblue")
+		.attr( "stroke-width" , 2)
+		.attr( "d" , geoPath)
+		.attr( "class" , "school-paths");
+
 	var schools = svg.append( "g" );
 
 	var school = schools.selectAll( "path" )
@@ -202,8 +222,19 @@ function drawMap(current_data){
 		.attr( "d", geoPath )
 		.attr( "class", "school");
 
+	//I think animating the paths fucks up the asynchronous nature
+	//of the initial requests for data. Might have to go back and queue
+	//all the calls for data
 
-	//WORK ON ADDING PATHS BETWEEN SCHOOLS
+	/*var totalLength = path.node().getTotalLength();
+
+	path
+	  .attr("stroke-dasharray", totalLength + " " + totalLength)
+	  .attr("stroke-dashoffset", totalLength)
+	  .transition()
+	    .duration(20)
+	    .ease("linear")
+	    .attr("stroke-dashoffset", 0);*/
 
 	//Adding a key
 	var radius = 10;
@@ -255,7 +286,7 @@ function drawMap(current_data){
 
 	school.on("mouseover", function(d){
 		schoolTooltip
-			.style("left", d3.event.pageX - 125 + "px")
+			.style("left", d3.event.pageX - 110 + "px")
           	.style("top", d3.event.pageY - 250 + "px")
           	.style("display", "inline-block")
           	.html("<h4>"+d.properties.SITE_NAME+"</h4>" +
