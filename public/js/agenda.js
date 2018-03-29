@@ -71,7 +71,8 @@ $( document ).ready(function() {
 		drawMap(current_data);
 	});
 
-	d3.queue(4)
+	d3.queue(5)
+		.defer(d3.request, '/IAschooldemogs.json')
 		.defer(d3.request, '/IAmathmcas.json')
 		.defer(d3.request, '/IAelamcas.json')
 		.defer(d3.request, '/IAMATHaverages.json')
@@ -82,10 +83,52 @@ $( document ).ready(function() {
 
 function start(error, results) {
 
-	math_data = JSON.parse(results[0].response);
-	ela_data = JSON.parse(results[1].response);
-	math_averages = JSON.parse(results[2].response);
-	ela_averages = JSON.parse(results[3].response);
+	//Setup map data
+	var allData = JSON.parse(results[0].response);
+		//console.log(allData);
+	var i,j,k;
+	for(i = 0; i < allData.length; i++){
+		var row = allData[i];
+		var school_id = row.school_id;
+		if(row.year == 2012){
+			for(j = 0; j < before_data.length; j++){
+				var key = before_data[j];
+				var id = key.id;
+				if(id == school_id){
+					key.aa = +row.aa;
+					key.asian = +row.asian;
+					key.hispanic = +row.hispanic;
+					key.white = +row.white;
+					key.native = +row.native;
+					key.ELL = +row.ELL;
+					key.disabilities = +row.disabilities;
+					key.low_income = +row.low_income;
+				}
+			}
+		}else{
+			for(k = 0; k < after_data.length; k++){
+				var key = after_data[k];
+				var id = key.id;
+				if(id == school_id){
+					key.aa = +row.aa;
+					key.asian = +row.asian;
+					key.hispanic = +row.hispanic;
+					key.white = +row.white;
+					key.native = +row.native;
+					key.ELL = +row.ELL;
+					key.disabilities = +row.disabilities;
+					key.low_income = +row.low_income;
+				}
+			}
+		}
+	}
+
+	//Set up ELA data
+
+	math_data = JSON.parse(results[1].response);
+	ela_data = JSON.parse(results[2].response);
+	math_averages = JSON.parse(results[3].response);
+	ela_averages = JSON.parse(results[4].response);
 
 	var selected_data;
 
@@ -95,6 +138,7 @@ function start(error, results) {
 		selected_data = interpolate(ela_data, current_grade, current_factor);
 	}
 	
+	drawMap(current_data);
 	drawGraph(selected_data);
 }
 
