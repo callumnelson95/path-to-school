@@ -202,6 +202,9 @@ function drawMap(current_data){
 		.attr( "d", geoPath )
 		.attr( "class", "school");
 
+
+	//WORK ON ADDING PATHS BETWEEN SCHOOLS
+
 	//Adding a key
 	var radius = 10;
 
@@ -405,7 +408,7 @@ function drawGraph(data) {
 	    })
 	    .y(function(d) { 
 	    	return yScale(d.average); 
-	    });
+	    }).curve(d3.curveBundle.beta(0.9));
     
     var	current_average_data;
 

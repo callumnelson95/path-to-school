@@ -1,0 +1,6 @@
+
+var school_connections = 
+[
+{ "type": "Feature", "id": 490506, "properties": { "SITE_NAME": "Cambridge Rindge and Latin", "ADDRESS": "459 Broadway", "PHONE": "617-349-6630", "SHELTER": "YES", "SHEL_FOOD": "YES", "SHEL_CAP": 4618.0, "EditDate": "", "level": 3}, "geometry": { "type": "Point", "coordinates": [ -71.111886517599814, 42.374397727502306, -71.097883755350267, 42.369295344080754 ] } }
+
+]
