@@ -9,6 +9,10 @@ var before_data = schools_json.before_features,
 	after_data = schools_json.after_features,
 	current_data = before_data;
 
+var before_connections = school_connections.before_connections,
+	after_connections = school_connections.after_connections,
+	current_connections = before_connections;
+
 var math_data,
 	ela_data,
 	ela_averages,
@@ -101,8 +105,6 @@ function drawMap(current_data){
 	var width = 650;
 	var height = 475;
 
-	console.log(current_data);
-
 	// Create SVG
 	var svg = d3.select("#map")
 	    .append("svg")
@@ -110,8 +112,8 @@ function drawMap(current_data){
 	    .attr("height", height);
 
 	var zoom = d3.zoom()
-		//.scaleExtent([1, 40])
-		//.translateExtent([[-100, -100], [width + 90, height + 100]])
+		.scaleExtent([1, 20])
+		.translateExtent([[-100, -100], [width + 90, height + 100]])
 		.on("zoom", zoomed);
 
 	//Add tooltip to hover over basically whatever I want
@@ -169,7 +171,7 @@ function drawMap(current_data){
 		.attr( "d", geoPath)
 		.attr( "class", "building");*/
 
-	var water_bodies = svg.append( "g" );
+	var water_bodies = g.append( "g" );
 
 	var water = water_bodies.selectAll( "path" )
 		.data(water_json.features)
@@ -180,7 +182,7 @@ function drawMap(current_data){
 		.attr( "d", geoPath)
 		.attr( "class", "water");
 
-	var roads = svg.append( "g" );
+	var roads = g.append( "g" );
 
 	var road = roads.selectAll( "path" )
 		.data(roads_json.features)
@@ -197,19 +199,21 @@ function drawMap(current_data){
 	//Need to add paths for post-IA schools so that they're drawn
 	//correctly
 
-	var school_paths = svg.append("g");
+	var school_paths = g.append("g");
 
 	var path = school_paths.selectAll( "path" )
-		.data(school_connections)
+		.data(current_connections)
 			.enter()
 		.append( "path" )
-		.attr( "fill" , "steelblue")
-		.attr( "stroke" , "steelblue")
+		.attr( "fill" , "none")
+		.attr( "stroke" , function(d){
+			return colorScaleMap(d.properties.level);
+		})
 		.attr( "stroke-width" , 2)
 		.attr( "d" , geoPath)
 		.attr( "class" , "school-paths");
 
-	var schools = svg.append( "g" );
+	var schools = g.append( "g" );
 
 	var school = schools.selectAll( "path" )
 		.data( current_data )
@@ -343,6 +347,15 @@ function drawMap(current_data){
 		toolTip.style("display", "none");
 	});
 
+	//Testing connections
+	/*path.on("mousemove", function(d){
+        toolTip
+          .style("left", d3.event.pageX - 175 + "px")
+          .style("top", d3.event.pageY - 180 + "px")
+          .style("display", "inline-block")
+          .html(d.properties.connection);
+    });*/
+
 	d3.select("#before_button")
 		.on("click", function() {
 			$("#map").empty();
@@ -350,6 +363,7 @@ function drawMap(current_data){
 			current_data = before_data;
 			$(this).addClass("active");
 			$("#after_button").removeClass("active");
+			current_connections = before_connections;
 			drawMap(current_data);
 		});
 
@@ -360,14 +374,15 @@ function drawMap(current_data){
 			current_data = after_data;
 			$(this).addClass("active");
 			$("#before_button").removeClass("active");
+			current_connections = after_connections;
 			drawMap(current_data);
 		});
 
 	function zoomed() {
-		svg.attr("transform", d3.event.transform);
+		g.attr("transform", d3.event.transform);
 	}
 
-	//d3.select("#map").call(zoom);
+	d3.select("#map").call(zoom);
 
 }
 
@@ -439,7 +454,7 @@ function drawGraph(data) {
 	    })
 	    .y(function(d) { 
 	    	return yScale(d.average); 
-	    }).curve(d3.curveBundle.beta(0.9));
+	    }).curve(d3.curveCardinal);
     
     var	current_average_data;
 

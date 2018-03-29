@@ -1,30 +1,52 @@
 
-var school_connections = 
-[
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [-71.097883755350267, 42.369295344080754 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.095885819845492, 42.366789610872395 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.095885819845492, 42.366789610872395 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.123689181121236, 42.38267658546264 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.152592767980224, 42.378038868214716 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.086615337827226, 42.36941573558417 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.091701499610849, 42.371964216736743 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.112998968950336, 42.366889404704651 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.112719449671488, 42.355906733958072 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.12836872952164, 42.392311052409845 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.139835802763884, 42.384418635836781 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.116696738787127, 42.382341261266333 ]] } }
-,
-{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport-Rindge"}, "geometry": { "type": "LineString", "coordinates": [[ -71.111886517599814, 42.374397727502306], [ -71.112602985810724, 42.367350885236114 ]] } }
+var school_connections = {
+	"before_connections": [
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Cambridgeport", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[-71.097883755350267, 42.369295344080754 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Fletcher/Maynard Academy", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.095885819845492, 42.366789610872395 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Graham and Parks", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.123689181121236, 42.38267658546264 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Haggerty", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.152592767980224, 42.378038868214716 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Kennedy-Longfellow", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.086615337827226, 42.36941573558417 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "King Open", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.091701499610849, 42.371964216736743 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Martin Luther King, Jr.", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.112998968950336, 42.366889404704651 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Morse", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.112719449671488, 42.355906733958072 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Peabody", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.12836872952164, 42.392311052409845 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "John M. Tobin", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.139835802763884, 42.384418635836781 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Maria L. Baldwin", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.116696738787127, 42.382341261266333 ],[ -71.111886517599814, 42.374397727502306]] } }
+	,
+	{ "type": "Feature", "id": 490506, "properties": {"connection": "Amigos", "level": 3}, "geometry": { "type": "LineString", "coordinates": [[ -71.112602985810724, 42.367350885236114 ],[ -71.111886517599814, 42.374397727502306]] } }
 
-]
+	],
+	"after_connections": [
+	{"type": "Feature", "id": 490006, "properties": {"connection": "Amigos", "level": 3}, "geometry": {"type": "LineString", "coordinates": [[-71.1082255, 42.3629904],[ -71.111886517599814, 42.374397727502306]]}},
+
+	{"type": "Feature", "id": 490305, "properties": {"connection": "Cambridge Street Upper School", "level": 3}, "geometry": {"type": "LineString", "coordinates": [[-71.0875278, 42.3695056],[ -71.111886517599814, 42.374397727502306]]}}, 
+		{"type": "Feature", "id": 490090, "properties": {"SITE_NAME": "Fletcher/Maynard Academy", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.0959243, 42.3668461],[-71.0875278, 42.3695056]]}}, 
+		{"type": "Feature", "id": 490007, "properties": {"SITE_NAME": "Cambridgeport", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.0978276, 42.3693603],[-71.0875278, 42.3695056]]}}, 
+		{"type": "Feature", "id": 490035, "properties": {"SITE_NAME": "King Open", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.1038626, 42.3709829],[-71.0875278, 42.3695056]]}}, 
+
+	{"type": "Feature", "id": 490310, "properties": {"connection": "Putnam Avenue Upper School", "level": 3}, "geometry": {"type": "LineString", "coordinates": [[-71.1133073, 42.3670478],[ -71.111886517599814, 42.374397727502306]]}},
+		{"type": "Feature", "id": 490040, "properties": {"SITE_NAME": "Kennedy-Longfellow", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.0865278, 42.3695056],[-71.0959243, 42.3628461],[-71.1133073, 42.3670478]]}}, 
+		{"type": "Feature", "id": 490030, "properties": {"SITE_NAME": "Martin Luther King, Jr.", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.1124252, 42.3670495],[-71.1133073, 42.3670478]]}}, 
+		{"type": "Feature", "id": 490045, "properties": {"SITE_NAME": "Morse", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.1127756, 42.3558719],[-71.1133073, 42.3670478]]}}, 
+
+	{"type": "Feature", "id": 490315, "properties": {"connection": "Rindge Avenue Upper School", "level": 3}, "geometry": {"type": "LineString", "coordinates": [[-71.1282134, 42.3922447],[ -71.111886517599814, 42.374397727502306]]}}, 
+		{"type": "Feature", "id": 490050, "properties": {"SITE_NAME": "Peabody", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.1272134, 42.3922447],[-71.1282134, 42.3922447]]}}, 
+		{"type": "Feature", "id": 490005, "properties": {"SITE_NAME": "Maria L. Baldwin", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.1168143, 42.3823558],[-71.1282134, 42.3922447]]}}, 
+
+	{"type": "Feature", "id": 490320, "properties": {"connection": "Vassal Lane Upper School", "level": 3}, "geometry": {"type": "LineString", "coordinates": [[-71.1397456, 42.3844033],[ -71.111886517599814, 42.374397727502306]]}}, 
+		{"type": "Feature", "id": 490065, "properties": {"SITE_NAME": "John M Tobin", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.1387456, 42.3844033],[-71.1397456, 42.3844033]]}}, 
+		{"type": "Feature", "id": 490080, "properties": {"SITE_NAME": "Graham and Parks", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.1236381, 42.3828869],[-71.1397456, 42.3844033]]}}, 
+		{"type": "Feature", "id": 490020, "properties": {"SITE_NAME": "Haggerty", "level": 2}, "geometry": {"type": "LineString", "coordinates": [[-71.1524555, 42.3781208],[-71.1397456, 42.3844033]]}}, 
+
+	]
+	}

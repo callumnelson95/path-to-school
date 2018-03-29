@@ -30,6 +30,7 @@
 	top: 45px;
 	right: 10px;
 	font-size: 12px;
+	background-color: white;
 }
 #label_wrapper th {
 	border-bottom: 1px dotted black;
@@ -112,17 +113,12 @@
 
 .school-paths {
         fill: none;
-        /*stroke: #aaa;
-        stroke: #43484c;
-        stroke: #405275;
-        stroke: rgba(40, 53, 79, .95);
-        stroke: #161719;
-        stroke: #f99e1a;*/
-        stroke: steelblue;
         stroke-width: 2px;
         stroke-dasharray:1000;
         stroke-dashoffset: 1000;
-        animation: dash 5s linear alternate infinite;
+        animation: dash 10s linear infinite;
+        animation-fill-mode: forwards;
+    	animation-iteration-count: 1;
     }
 
 @keyframes dash{
