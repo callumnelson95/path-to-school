@@ -29,48 +29,6 @@ var current_subject = $("#subject_form")[0].value,
 
 $( document ).ready(function() {
 
-	$.get('/IAschooldemogs.json', function(result){
-		var allData = result;
-		//console.log(allData);
-		var i,j,k;
-		for(i = 0; i < allData.length; i++){
-			var row = allData[i];
-			var school_id = row.school_id;
-			if(row.year == 2012){
-				for(j = 0; j < before_data.length; j++){
-					var key = before_data[j];
-					var id = key.id;
-					if(id == school_id){
-						key.aa = +row.aa;
-						key.asian = +row.asian;
-						key.hispanic = +row.hispanic;
-						key.white = +row.white;
-						key.native = +row.native;
-						key.ELL = +row.ELL;
-						key.disabilities = +row.disabilities;
-						key.low_income = +row.low_income;
-					}
-				}
-			}else{
-				for(k = 0; k < after_data.length; k++){
-					var key = after_data[k];
-					var id = key.id;
-					if(id == school_id){
-						key.aa = +row.aa;
-						key.asian = +row.asian;
-						key.hispanic = +row.hispanic;
-						key.white = +row.white;
-						key.native = +row.native;
-						key.ELL = +row.ELL;
-						key.disabilities = +row.disabilities;
-						key.low_income = +row.low_income;
-					}
-				}
-			}
-		}
-		drawMap(current_data);
-	});
-
 	d3.queue(5)
 		.defer(d3.request, '/IAschooldemogs.json')
 		.defer(d3.request, '/IAmathmcas.json')
