@@ -266,7 +266,10 @@ function math_averages(req, res) {
 	});
 }
 
-
+var port = process.env.PORT || 8080;
+app.listen(port, function() {
+	console.log("Listening on " + port);
+});
 
 // start up the server
 /*app.listen(8080, function (error, response) {
