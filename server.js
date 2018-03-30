@@ -18,6 +18,8 @@ app.get('/', function (req, res) {
 
 });
 
+var port = process.env.PORT || 8080;
+
 //Page requests
 
 app.get('/about.html', function(request, response){
@@ -37,12 +39,20 @@ app.get('/innovation_agenda.html', function(request, response){
 
 var mysql = require('mysql');
 
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "Brownbear1!",
-  database: "mydb"
-});
+var con;
+
+if(process.env.JAWSDB_URL) {
+  //Heroku deployment
+    con = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  //local host
+    con = mysql.createConnection({
+        host: "localhost",
+		user: "root",
+		password: "Brownbear1!",
+		database: "mydb"
+    });
+};
 
 con.connect(function(err) {
   if (err) throw err;
@@ -266,7 +276,7 @@ function math_averages(req, res) {
 	});
 }
 
-var port = process.env.PORT || 8080;
+
 app.listen(port, function() {
 	console.log("Listening on " + port);
 });
