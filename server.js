@@ -269,7 +269,7 @@ function math_averages(req, res) {
 
 
 // start up the server
-app.listen(8080, function (error, response) {
+/*app.listen(8080, function (error, response) {
     if (error != null){
 		console.log("Error: " + error);
 	}
@@ -277,5 +277,5 @@ app.listen(8080, function (error, response) {
 		console.log('listening on http://localhost:8080');
 	}
 
-});
+});)*/
 
