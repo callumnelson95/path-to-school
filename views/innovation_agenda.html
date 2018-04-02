@@ -19,134 +19,146 @@
   <script src="../data/city_boundary.json"></script>
   <script src="../data/school_connections.json"></script>
 </head>
-<body>
+<body id="page-top">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Home</a>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Home</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/map.html">MA School Success</a></li>
+        <li class="active"><a href="/innovation_agenda.html">The Innovation Agenda</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/map.html">MA School Success</a></li>
-      <li class="active"><a href="/innovation_agenda.html">The Innovation Agenda</a></li>
-    </ul>
-  </div>
-</nav>
+  </nav>
 
-<div class="container" id="main-content">
-  <div id="control_panel">
-    <div class="col-lg-3">
-      <button id="before_button" type="button" class="btn btn-primary active">Before Innovation Agenda (Pre-2012)</button>
-    </div>
-    <div class="col-sm-1"></div>
-    <div class="col-lg-3">
-      <button id="after_button" type="button" class="btn btn-info">After Innovation Agenda (Post-2012)</button>
-    </div>
-    <div class="col-sm-1"></div>
-    <div class="col-lg-4">
-      <div class="form-group">
-        <select class="form-control" id="factor_form">
-          <option selected value="Race">Race</option>
-          <option value="Income">Income</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <select class="form-control" id="subject_form">
-          <option selected value="ELA">ELA</option>
-          <option value="Math">Math</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <select class="form-control" id="grade_form">
-          <option selected value="ALL">ALL</option>
-          <option value="6">6th Grade</option>
-          <option value="7">7th Grade</option>
-          <option value="8">8th Grade</option>
-        </select>
+  <section id="introduction" class="content-section">
+    <div class="row">
+      <div class="container" class="col-lg-8">
+        <div class="background">
+          <h3> Background </h3>
+          <p> One of the most important topics of school reform today is the issue of school structure. School structure is often used interchangeable with "grade-span configuration" and other terms that are all used to describe the same thing: the organization of grades within a school building. For example, having kindergarten through eighth grade (K-8) grouped together in one building is one form of elementary school structure. Another is to separate the early grades (K-4 or K-5) from the older grades (6-8), which are what we typically consider a "middle school." Different again is the idea of combining grades 7-12 into a structure called the "junior high school." </p>
+          <p> Researchers and educators have fiercely debated the merits of each of these structures throughout the years. At certain points in the last century, each of the three structures described above has had its turn as the "dominant" structure in the public education landscape. Most recently, the K-8 structure is widely believed to be the "best". </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-lg-7" id="leftpane">
-    <div id="label_wrapper">
-      <h3>Cambridge Schools</h3>
-      <div>
-        <h5>City Averages</h5>
-        <table frame="box">
-          <tr>
-            <th>Race</th>
-            <th>Before (%)</th> 
-            <th>After (%)</th>
-          </tr>
-          <tr>
-            <td>African American</td>
-            <td>30.25</td> 
-            <td>28.82</td>
-          </tr>
-          <tr>
-            <td>Asian</td>
-            <td>11.07</td> 
-            <td>12.23</td>
-          </tr>
-          <tr>
-            <td>Hispanic</td>
-            <td>13.82</td> 
-            <td>13.42</td>
-          </tr>
-          <tr>
-            <td>Native</td>
-            <td>0.58</td> 
-            <td>0.51</td>
-          </tr>
-          <tr>
-            <td>White</td>
-            <td>38.54</td> 
-            <td>38.41</td>
-          </tr>
-          <tr>
-            <th>Selected Population</th>
-            <th>Before (%)</th> 
-            <th>After (%)</th>
-          </tr>
-          <tr>
-            <td>ELL</th>
-            <td>5.01</th> 
-            <td>5.43</th>
-          </tr>
-          <tr>
-            <td>With Disabilities</th>
-            <td>19.15</th> 
-            <td>19.78</th>
-          </tr>
-          <tr>
-            <td>Low Income</th>
-            <td>48.16</th> 
-            <td>48.86</th>
-          </tr>
-        </table>
+  </section>
+    
+  <section id="map-and-graph">
+    <div class="container">
+      <div id="control_panel">
+        <div class="col-lg-3">
+          <button id="before_button" type="button" class="btn btn-primary active">Before Innovation Agenda (Pre-2012)</button>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-lg-3">
+          <button id="after_button" type="button" class="btn btn-info">After Innovation Agenda (Post-2012)</button>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <select class="form-control" id="factor_form">
+              <option selected value="Race">Race</option>
+              <option value="Income">Income</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="subject_form">
+              <option selected value="ELA">ELA</option>
+              <option value="Math">Math</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="grade_form">
+              <option selected value="ALL">ALL</option>
+              <option value="6">6th Grade</option>
+              <option value="7">7th Grade</option>
+              <option value="8">8th Grade</option>
+            </select>
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="map_wrapper">
-      <p id="map"></p>
-    </div>
-    <div id="key">
-    </div>
-  </div>
-  <div class="col-lg-5" id="rightpane">
-    <div id="graph_label_wrapper">
+      <div class="col-lg-7" id="leftpane">
+        <div id="label_wrapper">
+          <h3>Cambridge Schools</h3>
+          <div>
+            <h5>City Averages</h5>
+            <table frame="box">
+              <tr>
+                <th>Race</th>
+                <th>Before (%)</th> 
+                <th>After (%)</th>
+              </tr>
+              <tr>
+                <td>African American</td>
+                <td>30.25</td> 
+                <td>28.82</td>
+              </tr>
+              <tr>
+                <td>Asian</td>
+                <td>11.07</td> 
+                <td>12.23</td>
+              </tr>
+              <tr>
+                <td>Hispanic</td>
+                <td>13.82</td> 
+                <td>13.42</td>
+              </tr>
+              <tr>
+                <td>Native</td>
+                <td>0.58</td> 
+                <td>0.51</td>
+              </tr>
+              <tr>
+                <td>White</td>
+                <td>38.54</td> 
+                <td>38.41</td>
+              </tr>
+              <tr>
+                <th>Selected Population</th>
+                <th>Before (%)</th> 
+                <th>After (%)</th>
+              </tr>
+              <tr>
+                <td>ELL</th>
+                <td>5.01</th> 
+                <td>5.43</th>
+              </tr>
+              <tr>
+                <td>With Disabilities</th>
+                <td>19.15</th> 
+                <td>19.78</th>
+              </tr>
+              <tr>
+                <td>Low Income</th>
+                <td>48.16</th> 
+                <td>48.86</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="map_wrapper">
+          <p id="map"></p>
+        </div>
+        <div id="key">
+        </div>
+      </div>
+      <div class="col-lg-5" id="rightpane">
+        <div id="graph_label_wrapper">
 
+        </div>
+        <div id="graph_wrapper">
+          <p id="graph"></p>
+        </div>
+        <div id="graph_key">
+          
+        </div>
+      </div>
     </div>
-    <div id="graph_wrapper">
-      <p id="graph"></p>
-    </div>
-    <div id="graph_key">
-      
-    </div>
-  </div>
+  </section>
   
-</div>
-
-
 
 <script type="text/javascript" src="../js/agenda.js"></script>
 </body>
