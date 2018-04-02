@@ -37,8 +37,6 @@ app.get('/innovation_agenda.html', function(request, response){
 	response.render('innovation_agenda.html');
 });
 
-var mysql = require('mysql');
-
 var con;
 
 if(process.env.JAWSDB_URL) {
@@ -280,15 +278,4 @@ function math_averages(req, res) {
 app.listen(port, function() {
 	console.log("Listening on " + port);
 });
-
-// start up the server
-/*app.listen(8080, function (error, response) {
-    if (error != null){
-		console.log("Error: " + error);
-	}
-	else {
-		console.log('listening on http://localhost:8080');
-	}
-
-});)*/
 
