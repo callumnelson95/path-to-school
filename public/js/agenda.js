@@ -201,7 +201,7 @@ function drawMap(current_data){
 	//Need to add paths for post-IA schools so that they're drawn
 	//correctly
 
-	var school_paths = g.append("g");
+	/*var school_paths = g.append("g");
 
 	var path = school_paths.selectAll( "path" )
 		.data(current_connections)
@@ -213,7 +213,7 @@ function drawMap(current_data){
 		})
 		.attr( "stroke-width" , 2)
 		.attr( "d" , geoPath)
-		.attr( "class" , "school-paths");
+		.attr( "class" , "school-paths");*/
 
 	var schools = g.append( "g" );
 
@@ -231,16 +231,6 @@ function drawMap(current_data){
 	//I think animating the paths fucks up the asynchronous nature
 	//of the initial requests for data. Might have to go back and queue
 	//all the calls for data
-
-	/*var totalLength = path.node().getTotalLength();
-
-	path
-	  .attr("stroke-dasharray", totalLength + " " + totalLength)
-	  .attr("stroke-dashoffset", totalLength)
-	  .transition()
-	    .duration(20)
-	    .ease("linear")
-	    .attr("stroke-dashoffset", 0);*/
 
 	//Adding a key
 	var radius = 10;
@@ -384,7 +374,7 @@ function drawMap(current_data){
 		g.attr("transform", d3.event.transform);
 	}
 
-	d3.select("#map").call(zoom);
+	//d3.select("#map").call(zoom);
 
 }
 
