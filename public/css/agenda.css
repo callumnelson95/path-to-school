@@ -1,5 +1,6 @@
 #map-and-graph {
-	margin-top: 70px;
+	height: 100vh;
+	margin-top: 60px;
 	padding: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
@@ -175,5 +176,69 @@
 
 #key svg {
 	height: 100%;
+}
+
+#scroll_button a {
+  position: absolute;
+  bottom: 20px;
+  left: 56.45%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: black;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+#scroll_button a:hover {
+  opacity: .5;
+}
+
+#scroll_button a {
+  padding-top: 60px;
+}
+
+#scroll_button a span {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
 }
 

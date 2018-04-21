@@ -1,4 +1,4 @@
-var mapScale = 500000,
+var mapScale = 480000,
 	latitude = 71.1097,
 	longitude = 42.3736;
 
@@ -105,7 +105,7 @@ function start(error, results) {
 function drawMap(current_data){
 
 	var width = 650;
-	var height = 475;
+	var height = 450;
 
 	// Create SVG
 	var svg = d3.select("#map")
@@ -385,7 +385,7 @@ function drawGraph(data) {
 		factor;
 
 	var width = 425;
-	var height = 475;
+	var height = 450;
 
 	var margin = {top: 50, right: 50, bottom: 50, left: 50};
 
@@ -664,5 +664,12 @@ function averages_interpolate(data){
 
 	return interpolated;
 }
+
+$(function() {
+  $('a[href*="#"]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
 
 
